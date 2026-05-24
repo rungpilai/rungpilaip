@@ -39,7 +39,7 @@ const Home = () => {
                         Creative Technologist<br />and Product Designer
                     </PageTitle>
 
-                    <div className="flex flex-wrap gap-12 mb-15">
+                    <div className="flex flex-col sm:flex-row flex-wrap gap-8 md:gap-12 mb-15">
                         <div className="flex flex-col gap-1">
                             <span className="text-sm tracking-widest text-muted uppercase">BASED IN</span>
                             <span className="text-(--color-text)">Bangkok, TH</span>
@@ -76,13 +76,13 @@ const Home = () => {
                         here are some of the ones I'm most proud of.
                     </p>
 
-                    <div className="grid grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {FEATURED_WORKS.map((work) => (
                             <CardWork key={work.slug} {...work} />
                         ))}
                     </div>
 
-                    <div className="flex justify-end mt-20">
+                    <div className="flex justify-start md:justify-end mt-20">
                         <ActionLink to="/work" icon="›">ALL WORK</ActionLink>
                     </div>
                 </section>

@@ -1,13 +1,13 @@
 const HeaderWork = ({ title, category, role, duration }) => {
     return (
         <header>
-            <h1 className="font-serif text-[clamp(1.75rem,4vw,2.5rem)] font-normal leading-[1.2] text-(--color-text) mb-3">
+            <h1 className="font-serif text-[clamp(2.25rem,5vw,2.75rem)] font-normal leading-[1.2] text-(--color-text) mb-3">
                 {title}
             </h1>
             <p className="text-muted mb-7 tracking-[0.01em]">
                 {category}
             </p>
-            <div className="grid grid-cols-2 gap-8 border-t border-b border-(--color-border) py-6 mb-12">
+            <div className="grid grid-cols-2 gap-4 md:gap-8 border-t border-b border-(--color-border) py-6 mb-12">
                 <div className="flex flex-col gap-1.5">
                     <span className="text-sm tracking-widest text-muted uppercase">
                         ROLE

@@ -10,7 +10,7 @@ const S = {
     body: 'text-(--color-text) mb-4',
     list: 'text-(--color-text) list-disc pl-5 mt-1 ml-3',
     imgFull: 'w-full max-w-[680px] h-auto rounded mt-6 ',
-    twoCol: 'grid grid-cols-2 gap-6 mt-6',
+    twoCol: 'grid grid-cols-1 md:grid-cols-2 gap-6 mt-6',
     colLabel: 'text-sm tracking-widest text-card-meta uppercase mb-2',
     caption: 'text-text-secondary text-sm italic mt-2',
 };
@@ -18,7 +18,7 @@ const S = {
 const SCG = () => {
     return (
         <>
-            <main className="max-w-4xl mx-auto mt-16">
+            <main className="container max-w-4xl mx-auto mt-16">
                 <HeaderWork
                     title={<><span className="text-(--color-primary-purple)">SCG Home</span> UX Case Study for Home Renovators</>}
                     category="UX Design"
@@ -151,7 +151,7 @@ const SCG = () => {
                     </div>
                 </div>
 
-                <div className={S.sectionFull}>
+                <div className={S.section}>
                     <p className={S.label}>PROTOTYPE TESTING</p>
                     <p>3 Test Activities</p>
                     <p>Task 1</p>
@@ -159,17 +159,15 @@ const SCG = () => {
                         <li className='text-card-meta'>Find a bedroom design you like.</li>
                         <li className='text-card-meta'>Rate how easy it was to find the design (1-5) (5 = Very easy)</li>
                     </ul>
-                </div>
-                <div>
-                    <h5 className="font-medium mb-3">Task 2: Evaluate detail page</h5>
-                    <ul className="list-disc pl-5 flex flex-col gap-2">
+
+                    <p>Task 2</p>
+                    <ul className={S.list}>
                         <li className='text-card-meta'>View details of the selected room.</li>
                         <li className='text-card-meta'>Rate interest in purchasing products from the design (1-5) (5 = Very interested)</li>
                     </ul>
-                </div>
-                <div>
-                    <h5 className="font-medium mb-3">Task 3: Overall visual appeal</h5>
-                    <ul className="list-disc pl-5 flex flex-col gap-2">
+
+                    <p>Task 3</p>
+                    <ul className={S.list}>
                         <li className='text-card-meta'>Review the overall design layout.</li>
                         <li className='text-card-meta'>Rate the visual appeal of the design (1-5) (5 = Very beautiful)</li>
                     </ul>
@@ -187,7 +185,7 @@ const SCG = () => {
                         Overall,  the new UI scored 20% higher in aesthetics and purchase interest.
                     </p>
 
-                    <img src="/img/work/scg/test-result.jpg" alt="Test result" className="max-w-xl! mx-auto mt-8" />
+                    <img src="/img/work/scg/test-result.jpg" alt="Test result" className="w-full md:w-auto md:max-w-xl! mx-auto mt-8" />
                     <p className={S.caption}>Test results comparing the existing and new UI across 4 users. Every participant rated the new UI higher, with improvements ranging from 13% to 20%</p>
                 </div>
 

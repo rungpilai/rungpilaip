@@ -49,7 +49,7 @@ const Work = () => {
                 </section>
 
                 <section className="container pb-12">
-                    <div className="grid grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {ALL_WORKS.map((work) => (
                             <CardWork key={work.slug} {...work} />
                         ))}

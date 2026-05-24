@@ -10,7 +10,7 @@ const S = {
     body: 'text-(--color-text) mb-4',
     list: 'text-(--color-text) list-disc pl-5 mt-1 ml-3',
     imgFull: 'w-full max-w-[680px] h-auto rounded mt-6 ',
-    twoCol: 'grid grid-cols-2 gap-6 mt-6',
+    twoCol: 'grid grid-cols-1 md:grid-cols-2 gap-6 mt-6',
     colLabel: 'text-sm text-center tracking-widest text-muted uppercase mb-2',
     caption: 'text-text-secondary text-sm italic mt-2',
 };
@@ -18,7 +18,7 @@ const S = {
 const ET = () => {
     return (
         <>
-            <main className="max-w-4xl mx-auto mt-16">
+            <main className="container max-w-4xl mx-auto mt-16">
                 <HeaderWork
                     title={<><span className="text-(--color-primary-purple)">AI Eye Tracking</span>{' '}for Design Practice in Corporate Routine</>}
                     category="Idea Validation & Experimental Design"
@@ -41,15 +41,15 @@ const ET = () => {
                 </div>
 
                 <div className={S.sectionFull}>
-                    <div className="grid grid-cols-[2.5fr_1fr] gap-8 mt-6 items-center">
+                    <div className="grid grid-cols-1 md:grid-cols-[2.5fr_1fr] gap-8 mt-6 items-center">
                         <div>
                             <img src="/img/work/et/process.png" alt="Double diamond process" className="w-full h-auto rounded" />
                         </div>
                         <div>
                             <img src="/img/work/et/whiteboard.png" alt="Research whiteboard" className="w-full h-auto rounded" />
                         </div>
-                        <p className={S.caption}>Planning the research using the Double Diamond approach</p>
                     </div>
+                    <p className={S.caption}>Planning the research using the Double Diamond approach</p>
                 </div>
 
                 <div className={S.section}>
@@ -79,9 +79,9 @@ const ET = () => {
                         Recall = Number of actual gaze points correctly predicted by marketers/designers or MGETs<br />
                         Precision = Number of predicted gaze points that correctly matched actual gaze points
                     </p>
-                    <div className="grid grid-cols-[2.1fr_1fr] gap-6 mt-6 items-start">
+                    <div className="grid grid-cols-1 md:grid-cols-[2.1fr_1fr] gap-6 mt-6 items-start">
                         <img src="/img/work/et/doe.png" alt="Experimental design" className="w-full h-auto rounded" />
-                        <img src="/img/work/et/test-card.jpg" alt="Test Card" className="w-full h-auto rounded" />
+                        <img src="/img/work/et/test-card.jpg" alt="Test Card" className="max-w-xs mx-auto w-full h-auto rounded" />
                     </div>
                     <p className={S.caption}>Setting up the comparison and test card defining the hypothesis, method, and success criteria for the experiment</p>
                 </div>

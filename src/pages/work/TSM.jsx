@@ -10,7 +10,7 @@ const S = {
     body: 'text-(--color-text) mb-4',
     list: 'text-(--color-text) list-disc pl-5 mt-1 ml-3',
     imgFull: 'w-full max-w-[680px] h-auto rounded mt-6 ',
-    twoCol: 'grid grid-cols-2 gap-6 mt-6',
+    twoCol: 'grid grid-cols-1 md:grid-cols-2 gap-6 mt-6',
     colLabel: 'text-sm tracking-widest text-card-meta uppercase mb-2',
     caption: 'text-text-secondary text-sm italic mt-2',
 };
@@ -18,7 +18,7 @@ const S = {
 const TSM = () => {
     return (
         <>
-            <main className="max-w-4xl mx-auto mt-16">
+            <main className="container max-w-4xl mx-auto mt-16">
                 <HeaderWork
                     title={<><span className="text-(--color-primary-purple)">ThangSaiMai</span> Antique Shop Website Design</>}
                     category="UI Design"
@@ -59,7 +59,7 @@ const TSM = () => {
                 </div>
 
                 <div className={S.sectionFull}>
-                    <div className="grid grid-cols-[3.7fr_1fr] gap-6 mt-6 items-start">
+                    <div className="grid grid-cols-[3.6fr_1fr] gap-6 mt-6 items-start">
                         <div>
                             <img src="/img/work/tsm/design-desktop.jpg" alt="Desktop design" className="w-full h-auto rounded" />
                         </div>

@@ -12,7 +12,7 @@ const Footer = () => {
                     <CopyEmailButton className="text-card-meta hover:text-(--color-link-hover)" />
                 </div>
 
-                <nav className="flex items-center gap-6 mt-3">
+                <nav className="flex flex-wrap justify-center items-center gap-4 md:gap-6 mt-3">
                     {[
                         { label: 'LinkedIn', href: 'https://linkedin.com/in/rungpilaip' },
                         { label: 'Instagram', href: 'https://instagram.com/x01experiment.project/' },

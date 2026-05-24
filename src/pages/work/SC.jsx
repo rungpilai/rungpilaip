@@ -9,14 +9,14 @@ const S = {
     body: 'text-(--color-text) mb-4',
     list: 'text-(--color-text) list-disc pl-5 mt-1 ml-3',
     imgFull: 'w-full max-w-[680px] h-auto rounded mt-6 ',
-    twoCol: 'grid grid-cols-2 gap-6 mt-6',
+    twoCol: 'grid grid-cols-1 md:grid-cols-2 gap-6 mt-6',
     colLabel: 'text-sm text-center tracking-widest text-muted uppercase mb-2',
 };
 
 const SC = () => {
     return (
         <>
-            <main className="max-w-4xl mx-auto mt-16">
+            <main className="container max-w-4xl mx-auto mt-16">
                 <HeaderWork
                     title={<>SourceCode Company Website Redesign:<br />Before the <span className="text-(--color-primary-purple)">AI Shift</span></>}
                     category="Branding & UI Design"
