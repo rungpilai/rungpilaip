@@ -2,13 +2,15 @@
 
 @import "tailwindcss";
 
-:root {
+@theme {
     --color-bg: #ffffff;
     --color-text: #0F0F10;
     --color-text-secondary: #9194A0;
     --color-text-light: #9194A0;
     --color-border: #e8e8e8;
     --color-accent: #8c7b6b;
+    --color-accent-light: #8c9ab5;
+    --color-primary: #6b8cba;
 
     --color-link: #1D1E20;
     --color-link-hover: #ACB0C6;
@@ -18,48 +20,45 @@
     --color-card-desc: #9194A0;
     --color-card-hover-bg: #F5F5F7;
 
+    --color-muted: #A7A9B3;
+    --color-muted-dark: #494A50;
+
     --font-serif: 'Playfair Display', Georgia, serif;
     --font-sans: 'Open Sans', system-ui, sans-serif;
 
-    --max-width: 1350px;
-    --page-padding: 1.5rem;
+    --container-max-width: 1350px;
 }
 
-html {
-    font-size: 16px;
-    scroll-behavior: smooth;
+@utility container {
+    max-width: var(--container-max-width);
+    margin-inline: auto;
+    padding-inline: 1.5rem;
 }
 
-body {
-    font-family: var(--font-sans);
-    background-color: var(--color-bg);
-    color: var(--color-text);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+@layer base {
+    html {
+        font-size: 16px;
+        scroll-behavior: smooth;
+    }
 
-img {
-    display: block;
-    max-width: 100%;
-}
+    body {
+        font-family: var(--font-sans);
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
+    img {
+        display: block;
+        max-width: 100%;
+    }
 
-.container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-}
-
-.font-serif {
-    font-family: var(--font-serif);
-}
-
-.font-sans {
-    font-family: var(--font-sans);
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 }
 
 .page-enter {

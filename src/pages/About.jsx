@@ -1,5 +1,7 @@
 import Footer from '../components/Footer';
 import ActionLink from '../components/ActionLink';
+import PageTitle from '../components/PageTitle';
+import CopyEmailButton from '../components/CopyEmailButton';
 
 const About = () => {
     return (
@@ -7,12 +9,12 @@ const About = () => {
             <main className='mt-16 pb-10'>
                 <div className="max-w-5xl mx-auto">
                     <section className="flex items-center justify-between">
-                        <h1 className="font-serif text-[clamp(2rem,5vw,3rem)] font-normal">
-                            About <span className="text-[#8c9ab5]">Rungpilai</span>
-                        </h1>
-                        <ActionLink 
-                            href="/img/resume.png" 
-                            download 
+                        <PageTitle>
+                            About <span className="text-accent-light">Rungpilai</span>
+                        </PageTitle>
+                        <ActionLink
+                            href="/img/resume.png"
+                            download
                             className="mt-4"
                             icon={
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -50,17 +52,16 @@ const About = () => {
 
                     <section className="mb-20">
                         <p className="text-[20px] font-medium leading-relaxed mb-4">
-                            My <span className="text-[#8c9ab5]">workflow</span> is not a straight line.<br />
+                            My <span className="text-accent-light">workflow</span> is not a straight line.<br />
                             More like layers of thinking stacked over time.
                         </p>
-                        <p className="text-[#494A50]! leading-[1.7] mb-10">
+                        <p className="text-muted-dark leading-[1.7] mb-10">
                             It doesn't always start clearly, sometimes just fragments, thoughts,<br />
                             and questions. But over time, a process takes shape.
                         </p>
                         <img
                             src="/img/about/process-desktop.jpg"
                             alt="Design process diagram"
-                            className="w-full max-w-175 h-auto"
                         />
                     </section>
 
@@ -82,21 +83,12 @@ const About = () => {
                             />
                             <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/90 text-xl whitespace-nowrap flex items-center gap-1.5">
                                 rungpilai.p@gmail.com
-                                <button
-                                    onClick={() => navigator.clipboard.writeText('rungpilai.p@gmail.com')}
-                                    aria-label="Copy email"
-                                    className="bg-transparent border-none cursor-pointer text-white flex items-center p-0 transition-colors duration-200 hover:text-white"
-                                >
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                        <rect x="9" y="9" width="13" height="13" rx="2" />
-                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
-                                    </svg>
-                                </button>
+                                <CopyEmailButton className="text-white hover:text-white" size={16} strokeWidth={2} />
                             </span>
                         </div>
 
                         <div>
-                            <p className="text-[1.3rem] text-[#494A50]! max-w-sm leading-[1.7]">
+                            <p className="text-[1.3rem] text-muted-dark max-w-sm leading-[1.7]">
                                 If my perspective resonates with you, perhaps we can create experiences that people not only use, but genuinely connect with.
                             </p>
                         </div>

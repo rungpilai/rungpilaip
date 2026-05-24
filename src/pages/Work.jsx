@@ -1,5 +1,6 @@
 import CardWork from '../components/CardWork';
 import Footer from '../components/Footer';
+import PageTitle from '../components/PageTitle';
 
 const ALL_WORKS = [
     {
@@ -41,8 +42,8 @@ const Work = () => {
         <>
             <main className='mt-16'>
                 <section className="container">
-                    <h1 className="font-serif text-[clamp(2rem,5vw,3rem)] font-normal mb-2">All Work</h1>
-                    <p className="text-(--color-card-meta) mb-8">
+                    <PageTitle className="mb-2">All Work</PageTitle>
+                    <p className="text-card-meta mb-8">
                         A collection of projects from product design, branding, and design experiments.
                     </p>
                 </section>
@@ -54,7 +55,7 @@ const Work = () => {
                         ))}
                     </div>
 
-                    <p className="text-[#A7A9B3]! text-center mt-35 mb-10">
+                    <p className="text-muted text-center mt-35 mb-10">
                         More experiments in progress ...
                     </p>
                 </section>

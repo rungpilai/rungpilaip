@@ -5,14 +5,14 @@ import ActionLink from '../../components/ActionLink';
 const S = {
     section: 'mb-12',
     sectionFull: 'mb-12',
-    label: 'text-[#A7A9B3]! text-sm tracking-[0.08em] font-sans! text-(--color-card-meta) uppercase mb-3',
+    label: 'text-muted text-sm tracking-[0.08em] font-sans! uppercase mb-3',
     subHeading: 'text-(--color-text) font-medium mb-3',
     body: 'text-(--color-text) mb-4',
     list: 'text-(--color-text) list-disc pl-5 mt-1 ml-3',
     imgFull: 'w-full max-w-[680px] h-auto rounded mt-6 ',
     twoCol: 'grid grid-cols-2 gap-6 mt-6',
-    colLabel: 'text-sm tracking-widest text-[#666870]! uppercase mb-2',
-    caption: 'text-[#9194A0]! text-sm italic mt-2',
+    colLabel: 'text-sm tracking-widest text-card-meta uppercase mb-2',
+    caption: 'text-text-secondary text-sm italic mt-2',
 };
 
 const SCG = () => {
@@ -20,7 +20,7 @@ const SCG = () => {
         <>
             <main className="max-w-4xl mx-auto mt-16">
                 <HeaderWork
-                    title={<><span className="text-[#6b8cba]">SCG Home</span> UX Case Study for Home Renovators</>}
+                    title={<><span className="text-primary">SCG Home</span> UX Case Study for Home Renovators</>}
                     category="UX Design"
                     role="UX Designer"
                     duration="Jun - Oct 2024"
@@ -97,7 +97,7 @@ const SCG = () => {
                 </div>
 
                 <div className={S.sectionFull}>
-                    <img src="/img/work/scg/persona.png" alt="User persona" className={`${S.imgFull} mx-auto rounded-xl`} />
+                    <img src="/img/work/scg/persona.png" alt="User persona" className="rounded-xl" />
                     <p className={S.caption}>User persona: K. Patcharee, 30, seeking modern design inspiration for her home.</p>
                 </div>
 
@@ -156,18 +156,22 @@ const SCG = () => {
                     <p>3 Test Activities</p>
                     <p>Task 1</p>
                     <ul className={S.list}>
-                        <li className='text-[#666870]!'>Find a bedroom design you like.</li>
-                        <li className='text-[#666870]!'>Rate how easy it was to find the design (1-5) (5 = Very easy)</li>
+                        <li className='text-card-meta'>Find a bedroom design you like.</li>
+                        <li className='text-card-meta'>Rate how easy it was to find the design (1-5) (5 = Very easy)</li>
                     </ul>
-                    <p>Task 2</p>
-                    <ul className={S.list}>
-                        <li className='text-[#666870]!'>View details of the selected room.</li>
-                        <li className='text-[#666870]!'>Rate interest in purchasing products from the design (1-5) (5 = Very interested)</li>
+                </div>
+                <div>
+                    <h5 className="font-medium mb-3">Task 2: Evaluate detail page</h5>
+                    <ul className="list-disc pl-5 flex flex-col gap-2">
+                        <li className='text-card-meta'>View details of the selected room.</li>
+                        <li className='text-card-meta'>Rate interest in purchasing products from the design (1-5) (5 = Very interested)</li>
                     </ul>
-                    <p>Task 3</p>
-                    <ul className={S.list}>
-                        <li className='text-[#666870]!'>Review the overall design layout.</li>
-                        <li className='text-[#666870]!'>Rate the visual appeal of the design (1-5) (5 = Very beautiful)</li>
+                </div>
+                <div>
+                    <h5 className="font-medium mb-3">Task 3: Overall visual appeal</h5>
+                    <ul className="list-disc pl-5 flex flex-col gap-2">
+                        <li className='text-card-meta'>Review the overall design layout.</li>
+                        <li className='text-card-meta'>Rate the visual appeal of the design (1-5) (5 = Very beautiful)</li>
                     </ul>
 
                     <img src="/img/work/scg/test-card.jpg" alt="Test card" className="max-w-sm! mx-auto mt-8" />

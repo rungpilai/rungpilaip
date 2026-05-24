@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import Tag from './Tag';
 
 const CardWork = ({ year, tags = [], title, description, thumbnail, slug }) => {
     const navigate = useNavigate();
@@ -21,15 +22,10 @@ const CardWork = ({ year, tags = [], title, description, thumbnail, slug }) => {
             </div>
 
             <div className="mt-3 flex flex-col gap-1.5">
-                <span className="text-sm text-(--color-card-meta)">{year}</span>
+                <span className="text-sm text-card-meta">{year}</span>
                 <div className="flex flex-wrap gap-1.5">
                     {tags.map((tag) => (
-                        <span
-                            key={tag}
-                            className="text-sm text-(--color-card-meta) border border-(--color-border) rounded-full px-3 py-0.5 whitespace-nowrap"
-                        >
-                            {tag}
-                        </span>
+                        <Tag key={tag}>{tag}</Tag>
                     ))}
                 </div>
             </div>

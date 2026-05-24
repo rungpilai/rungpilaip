@@ -5,14 +5,14 @@ import ActionLink from '../../components/ActionLink';
 const S = {
     section: 'mb-12',
     sectionFull: 'mb-12',
-    label: 'text-[#A7A9B3]! text-sm tracking-[0.08em] font-sans! text-(--color-card-meta) uppercase mb-3',
+    label: 'text-muted text-sm tracking-[0.08em] font-sans! uppercase mb-3',
     subHeading: 'text-(--color-text) font-medium mb-3',
     body: 'text-(--color-text) mb-4',
     list: 'text-(--color-text) list-disc pl-5 mt-1 ml-3',
     imgFull: 'w-full max-w-[680px] h-auto rounded mt-6 ',
     twoCol: 'grid grid-cols-2 gap-6 mt-6',
-    colLabel: 'text-sm tracking-widest text-[#666870]! uppercase mb-2',
-    caption: 'text-[#9194A0]! text-sm italic mt-2',
+    colLabel: 'text-sm tracking-widest text-card-meta uppercase mb-2',
+    caption: 'text-text-secondary text-sm italic mt-2',
 };
 
 const TSM = () => {
@@ -20,7 +20,7 @@ const TSM = () => {
         <>
             <main className="max-w-4xl mx-auto mt-16">
                 <HeaderWork
-                    title={<><span className="text-[#6b8cba]">ThangSaiMai</span> Antique Shop Website Design</>}
+                    title={<><span className="text-primary">ThangSaiMai</span> Antique Shop Website Design</>}
                     category="UI Design"
                     role="UI Designer"
                     duration="May - Jun 2025"
