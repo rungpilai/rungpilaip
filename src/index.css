@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Open+Sans:wght@400&display=swap');
+
+@import "tailwindcss";
+
+:root {
+    --color-bg: #ffffff;
+    --color-text: #0F0F10;
+    --color-text-secondary: #9194A0;
+    --color-text-light: #9194A0;
+    --color-border: #e8e8e8;
+    --color-accent: #8c7b6b;
+
+    --color-link: #1D1E20;
+    --color-link-hover: #ACB0C6;
+
+    --color-card-meta: #666870;
+    --color-card-title: #0F0F10;
+    --color-card-desc: #9194A0;
+    --color-card-hover-bg: #F5F5F7;
+
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Open Sans', system-ui, sans-serif;
+
+    --max-width: 1350px;
+    --page-padding: 1.5rem;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.font-serif {
+    font-family: var(--font-serif);
+}
+
+.font-sans {
+    font-family: var(--font-sans);
+}
+
+.page-enter {
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
