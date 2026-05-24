@@ -18,7 +18,7 @@ const SC = () => {
         <>
             <main className="max-w-4xl mx-auto mt-16">
                 <HeaderWork
-                    title={<>SourceCode Company Website Redesign:<br />Before the <span className="text-primary">AI Shift</span></>}
+                    title={<>SourceCode Company Website Redesign:<br />Before the <span className="text-(--color-primary-purple)">AI Shift</span></>}
                     category="Branding & UI Design"
                     role="UX Designer"
                     duration="Jun - Oct 2025"

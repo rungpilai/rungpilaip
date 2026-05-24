@@ -20,7 +20,7 @@ const SCG = () => {
         <>
             <main className="max-w-4xl mx-auto mt-16">
                 <HeaderWork
-                    title={<><span className="text-primary">SCG Home</span> UX Case Study for Home Renovators</>}
+                    title={<><span className="text-(--color-primary-purple)">SCG Home</span> UX Case Study for Home Renovators</>}
                     category="UX Design"
                     role="UX Designer"
                     duration="Jun - Oct 2024"

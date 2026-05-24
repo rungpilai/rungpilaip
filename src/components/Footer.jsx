@@ -9,7 +9,7 @@ const Footer = () => {
 
                 <div className="flex items-center gap-1.5 text-base text-card-meta">
                     <span>rungpilai.p@gmail.com</span>
-                    <CopyEmailButton className="text-card-meta hover:text-(--color-text)" />
+                    <CopyEmailButton className="text-card-meta hover:text-(--color-link-hover)" />
                 </div>
 
                 <nav className="flex items-center gap-6 mt-3">
@@ -23,7 +23,7 @@ const Footer = () => {
                             href={href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-sm text-card-meta transition-opacity duration-200 hover:opacity-50"
+                            className="text-sm text-card-meta transition-opacity duration-200 hover:text-(--color-link-hover)"
                         >
                             {label}
                         </a>,

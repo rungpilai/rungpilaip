@@ -20,7 +20,7 @@ const ET = () => {
         <>
             <main className="max-w-4xl mx-auto mt-16">
                 <HeaderWork
-                    title={<><span className="text-primary">AI Eye Tracking</span>{' '}for Design Practice in Corporate Routine</>}
+                    title={<><span className="text-(--color-primary-purple)">AI Eye Tracking</span>{' '}for Design Practice in Corporate Routine</>}
                     category="Idea Validation & Experimental Design"
                     role="UX Researcher"
                     duration="Mar - May 2025"

@@ -10,7 +10,7 @@ const About = () => {
                 <div className="max-w-5xl mx-auto">
                     <section className="flex items-center justify-between">
                         <PageTitle>
-                            About <span className="text-accent-light">Rungpilai</span>
+                            About <span className="text-(--color-primary-purple)">Rungpilai</span>
                         </PageTitle>
                         <ActionLink
                             href="/img/resume.png"
@@ -52,7 +52,7 @@ const About = () => {
 
                     <section className="mb-20">
                         <p className="text-[20px] font-medium leading-relaxed mb-4">
-                            My <span className="text-accent-light">workflow</span> is not a straight line.<br />
+                            My <span className="text-(--color-primary-purple)">workflow</span> is not a straight line.<br />
                             More like layers of thinking stacked over time.
                         </p>
                         <p className="text-muted-dark leading-[1.7] mb-10">

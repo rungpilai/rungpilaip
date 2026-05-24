@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom';
 
-const ActionLink = ({ 
-    to, 
-    href, 
-    download, 
-    onClick, 
-    children, 
-    icon, 
-    iconPosition = 'right', 
-    className = '' 
+const ActionLink = ({
+    to,
+    href,
+    download,
+    onClick,
+    children,
+    icon,
+    iconPosition = 'right',
+    className = ''
 }) => {
-    const baseClass = `bg-transparent border-none cursor-pointer text-sm font-medium tracking-[0.08em] text-(--color-text) inline-flex items-center gap-1.5 transition-opacity duration-200 hover:opacity-50 w-fit ${className}`;
-    
+    const baseClass = `bg-transparent border-none cursor-pointer text-sm font-medium tracking-[0.08em] text-(--color-text) hover:text-(--color-link-hover) inline-flex items-center gap-1.5 transition-opacity duration-200 w-fit ${className}`;
+
     const content = (
         <>
             {iconPosition === 'left' && icon && (

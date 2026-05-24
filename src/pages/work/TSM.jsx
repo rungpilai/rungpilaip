@@ -20,7 +20,7 @@ const TSM = () => {
         <>
             <main className="max-w-4xl mx-auto mt-16">
                 <HeaderWork
-                    title={<><span className="text-primary">ThangSaiMai</span> Antique Shop Website Design</>}
+                    title={<><span className="text-(--color-primary-purple)">ThangSaiMai</span> Antique Shop Website Design</>}
                     category="UI Design"
                     role="UI Designer"
                     duration="May - Jun 2025"
