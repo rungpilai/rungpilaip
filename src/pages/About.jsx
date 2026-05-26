@@ -13,7 +13,7 @@ const About = () => {
                             About <span className="text-(--color-primary-purple)">Rungpilai</span>
                         </PageTitle>
                         <ActionLink
-                            href="/img/resume.png"
+                            href="/rungpilai_resume_2026.pdf"
                             download
                             className="mt-4"
                             icon={
@@ -29,7 +29,7 @@ const About = () => {
                     </section>
 
                     <section className="mt-10 mb-8">
-                        <p className="font-medium leading-normal mb-6">
+                        <p className="font-medium text-[20px] leading-normal mb-6">
                             Still exploring, shaped by what I create<br />
                             and what I choose to leave behind.
                         </p>

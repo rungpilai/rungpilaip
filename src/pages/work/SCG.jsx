@@ -33,7 +33,7 @@ const SCG = () => {
                 <div className={S.section}>
                     <p className={S.label}>OVERVIEW</p>
                     <p className={S.body}>
-                        This UX case study explores how homeowners navigate the experience of home renovation — from finding inspiration to selecting materials and planning their space. Based on user research and testing, the gallery experience was redesigned to help homeowners discover design inspiration more easily, reduce uncertainty during decision-making, and create a more intuitive connection between room ideas and products connected to purchasing decisions.
+                        This UX case study explores how homeowners navigate the experience of home renovation from finding inspiration to selecting materials and planning their space. Based on user research and testing, the gallery experience was redesigned to help homeowners discover design inspiration more easily, reduce uncertainty during decision-making, and create a more intuitive connection between room ideas and products connected to purchasing decisions.
                     </p>
                 </div>
 
