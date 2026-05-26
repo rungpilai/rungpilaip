@@ -30,7 +30,7 @@ const About = () => {
 
                     <section className="mt-10 mb-8">
                         <p className="font-medium text-[20px] leading-normal mb-6">
-                            Still exploring, shaped by what I create<br />
+                            Still exploring, shaped by what I create <br className="hidden sm:block" />
                             and what I choose to leave behind.
                         </p>
                         <p className="leading-relaxed text-(--color-text) mb-4">
