@@ -70,7 +70,7 @@ const TSM = () => {
                 </div>
 
                 <div className="mt-16">
-                    <ActionLink to="/work" icon="‹" iconPosition="left">BACK TO ALL WORK</ActionLink>
+                    <ActionLink to="/works" icon="‹" iconPosition="left">BACK TO ALL WORKS</ActionLink>
                 </div>
             </main>
 

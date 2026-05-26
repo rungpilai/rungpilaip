@@ -37,12 +37,12 @@ const ALL_WORKS = [
     },
 ];
 
-const Work = () => {
+const Works = () => {
     return (
         <>
             <main className='mt-16'>
                 <section className="container">
-                    <PageTitle className="mb-2">All Work</PageTitle>
+                    <PageTitle className="mb-2">All Works</PageTitle>
                     <p className="text-card-meta mb-8">
                         A collection of projects from product design, branding, and design experiments.
                     </p>
@@ -68,4 +68,4 @@ const Work = () => {
     );
 };
 
-export default Work;
+export default Works;

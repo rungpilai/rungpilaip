@@ -9,14 +9,14 @@ const Navbar = () => {
                 </Link>
                 <div className="flex gap-5">
                     <Link
-                        to="/work"
-                        className="text-sm p-2 font-normal! tracking-widest text-(--color-link) transition-colors duration-200 hover:text-(--color-link-hover)!"
+                        to="/works"
+                        className="text-sm p-2 font-normal! tracking-wider text-(--color-link) transition-colors duration-200 hover:text-(--color-link-hover)!"
                     >
-                        WORK
+                        WORKS
                     </Link>
                     <Link
                         to="/about"
-                        className="text-sm p-2 font-normal! tracking-widest text-(--color-link) transition-colors duration-200 hover:text-(--color-link-hover)!"
+                        className="text-sm p-2 font-normal! tracking-wider text-(--color-link) transition-colors duration-200 hover:text-(--color-link-hover)!"
                     >
                         ABOUT
                     </Link>

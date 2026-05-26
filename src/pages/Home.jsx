@@ -35,7 +35,7 @@ const Home = () => {
         <>
             <main className='mt-16'>
                 <section className="container">
-                    <PageTitle className="mb-10 max-w-130">
+                    <PageTitle className="mb-10">
                         Creative Technologist<br />and Product Designer
                     </PageTitle>
 
@@ -82,8 +82,8 @@ const Home = () => {
                         ))}
                     </div>
 
-                    <div className="flex justify-start md:justify-end mt-20">
-                        <ActionLink to="/work" icon="›">ALL WORK</ActionLink>
+                    <div className="flex justify-end mt-20">
+                        <ActionLink to="/works" icon="›">ALL WORKS</ActionLink>
                     </div>
                 </section>
             </main>

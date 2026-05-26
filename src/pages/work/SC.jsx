@@ -60,7 +60,7 @@ const SC = () => {
                     <p className={S.body}>
                         Before moving into solutions, I identified key issues in structure, navigation, and brand clarity through research and stakeholder insights.
                     </p>
-                    <img src="/img/work/sourcecoode/process.png" alt="Design process" className={`${S.imgFull} max-w-3xl! mx-auto`} />
+                    <img src="/img/work/sourcecoode/process.png" alt="Design process" className="w-full h-auto rounded mt-6 mx-auto sm:max-w-3xl" />
                 </div>
 
                 <div className={S.section}>
@@ -68,7 +68,7 @@ const SC = () => {
                     <p className={S.body}>
                         A clear brand direction was defined to align visual identity, tone, and interface design, ensuring a consistent and cohesive experience across all touchpoints.
                     </p>
-                    <img src="/img/work/sourcecoode/sc-branding.jpg" alt="Brand direction whiteboard" className={`${S.imgFull} max-w-lg! mx-auto rounded-xl`} />
+                    <img src="/img/work/sourcecoode/sc-branding.jpg" alt="Brand direction whiteboard" className="w-full h-auto mt-6 mx-auto sm:max-w-lg rounded-xl" />
                     <p className='text-text-secondary text-sm italic mt-2'>Visual identity guidelines defining the brand's core elements: logo lockups, primary blue palette, type system (Poppins / Mitr), and personality keywords</p>
                 </div>
 
@@ -126,7 +126,7 @@ const SC = () => {
                 </div>
 
                 <div className="mt-16">
-                    <ActionLink to="/work" icon="‹" iconPosition="left">BACK TO ALL WORK</ActionLink>
+                    <ActionLink to="/works" icon="‹" iconPosition="left">BACK TO ALL WORKS</ActionLink>
                 </div>
             </main>
 

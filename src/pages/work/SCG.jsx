@@ -97,7 +97,7 @@ const SCG = () => {
                 </div>
 
                 <div className={S.sectionFull}>
-                    <img src="/img/work/scg/persona.png" alt="User persona" className="rounded-xl" />
+                    <img src="/img/work/scg/persona.png" alt="User persona" className="w-full h-auto -auto rounded-xl" />
                     <p className={S.caption}>User persona: K. Patcharee, 30, seeking modern design inspiration for her home.</p>
                 </div>
 
@@ -172,7 +172,7 @@ const SCG = () => {
                         <li className='text-card-meta'>Rate the visual appeal of the design (1-5) (5 = Very beautiful)</li>
                     </ul>
 
-                    <img src="/img/work/scg/test-card.jpg" alt="Test card" className="max-w-sm! mx-auto mt-8" />
+                    <img src="/img/work/scg/test-card.jpg" alt="Test card" className="w-full sm:max-w-sm mx-auto mt-8" />
                     <p className={S.caption}>Test Card for validating the Idea Gallery Page: hypothesis, test, metric, and success criteria in one frame</p>
                 </div>
 
@@ -185,12 +185,12 @@ const SCG = () => {
                         Overall,  the new UI scored 20% higher in aesthetics and purchase interest.
                     </p>
 
-                    <img src="/img/work/scg/test-result.jpg" alt="Test result" className="w-full md:w-auto md:max-w-xl! mx-auto mt-8" />
+                    <img src="/img/work/scg/test-result.jpg" alt="Test result" className="w-full sm:max-w-xl mx-auto mt-8" />
                     <p className={S.caption}>Test results comparing the existing and new UI across 4 users. Every participant rated the new UI higher, with improvements ranging from 13% to 20%</p>
                 </div>
 
                 <div className="mt-16">
-                    <ActionLink to="/work" icon="‹" iconPosition="left">BACK TO ALL WORK</ActionLink>
+                    <ActionLink to="/works" icon="‹" iconPosition="left">BACK TO ALL WORKS</ActionLink>
                 </div>
             </main>
 

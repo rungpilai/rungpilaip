@@ -1,7 +1,7 @@
 const HeaderWork = ({ title, category, role, duration }) => {
     return (
         <header>
-            <h1 className="font-serif text-[clamp(2.25rem,5vw,2.75rem)] font-normal leading-[1.2] text-(--color-text) mb-3">
+            <h1 className="font-serif text-[32px] sm:text-[40px] font-normal leading-[1.2] text-(--color-text) mb-3">
                 {title}
             </h1>
             <p className="text-muted mb-7 tracking-[0.01em]">

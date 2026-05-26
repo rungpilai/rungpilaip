@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import Work from './pages/Work';
+import Works from './pages/Works';
 import About from './pages/About';
 import SC from './pages/work/SC';
 import ET from './pages/work/ET';
@@ -25,7 +25,7 @@ const App = () => {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/work" element={<Work />} />
+                <Route path="/works" element={<Works />} />
                 <Route path="/work/sc" element={<SC />} />
                 <Route path="/work/et" element={<ET />} />
                 <Route path="/work/tsm" element={<TSM />} />

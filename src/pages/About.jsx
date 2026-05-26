@@ -62,7 +62,7 @@ const About = () => {
                         <img
                             src="/img/about/process-desktop.jpg"
                             alt="Design process diagram"
-                            className="hidden md:block"
+                            className="hidden md:block w-full h-auto"
                         />
                         <img
                             src="/img/about/process-mobile.png"
