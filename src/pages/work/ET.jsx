@@ -117,6 +117,13 @@ const ET = () => {
                     </p>
                 </div>
 
+                <div className={S.section}>
+                    <p className={S.label}>ACKNOWLEDGEMENT</p>
+                    <p className={S.body}>
+                        BENTO Team (Business Experimentation and Technology), SCG Distribution
+                    </p>
+                </div>
+
                 <div className="mt-16">
                     <ActionLink to="/works" icon="‹" iconPosition="left">BACK TO ALL WORKS</ActionLink>
                 </div>

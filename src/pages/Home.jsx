@@ -70,9 +70,9 @@ const Home = () => {
                 </section>
 
                 <section id="selected-work" className="container pb-8 scroll-mt-26">
-                    <h2 className="font-serif text-3xl font-normal mb-3">Selected Work</h2>
+                    <h2 className="font-serif text-3xl font-normal mb-3">Selected Works</h2>
                     <p className="text-(--color-card-meta) leading-relaxed mb-10">
-                        Each project quietly reshapes how I think and who I'm becoming as a designer,<br />
+                        Each project quietly reshapes how I think and who I'm becoming as a designer, <br className="hidden sm:block" />
                         here are some of the ones I'm most proud of.
                     </p>
 

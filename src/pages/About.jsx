@@ -85,9 +85,9 @@ const About = () => {
                             <img
                                 src="/img/about/flower-cosmos.jpeg"
                                 alt="Cosmos flower"
-                                className="w-full aspect-3/4 object-cover rounded-2xl md:rounded-lg"
+                                className="w-full aspect-3/4 object-cover rounded-2xl md:rounded-lg brightness-80"
                             />
-                            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/90 text-sm sm:text-base md:text-xl whitespace-nowrap flex items-center gap-1.5">
+                            <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/40 px-4 py-1 rounded-sm text-white/90 text-sm sm:text-base md:text-xl whitespace-nowrap flex items-center gap-2">
                                 rungpilai.p@gmail.com
                                 <CopyEmailButton className="text-white hover:text-white" size={14} strokeWidth={2} />
                             </span>
