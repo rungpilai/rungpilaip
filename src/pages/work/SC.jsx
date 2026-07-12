@@ -18,7 +18,7 @@ const SC = () => {
         <>
             <main className="container max-w-4xl mx-auto mt-16">
                 <HeaderWork
-                    title={<>SourceCode Company Website Redesign:<br />Before the <span className="text-(--color-primary-purple)">AI Shift</span></>}
+                    title={<>SourceCode Website Redesign: Rebuilding Brand Trust <span className="text-(--color-primary-purple)">Through UX</span></>}
                     category="Branding & UI Design"
                     role="UX Designer"
                     duration="Jun - Oct 2025"
@@ -31,7 +31,7 @@ const SC = () => {
                 <div className={S.section}>
                     <p className={S.label}>OVERVIEW</p>
                     <p className={S.body}>
-                        The last website redesign before AI took over content creation at SourceCode. This case study captures a human-led design approach at a turning point when designers still owned every word, image, and structural decision.
+                        SourceCode's website made it difficult for visitors to understand what the company offered. Through stakeholder research, information architecture, branding, and interface design, this project restructured the experience into one that is clearer, more consistent, and easier to navigate.
                     </p>
                 </div>
 
@@ -40,19 +40,6 @@ const SC = () => {
                     <p className={S.body}>
                         Visitors landed on the homepage without a clear understanding of what SourceCode offered. Overlapping product categories created confusion, while partnership inquiries declined despite consistent website traffic.
                     </p>
-                </div>
-
-                <div className={S.section}>
-                    <p className={S.label}>SOLUTION</p>
-                    <p>Enhancing User Experience &amp; Strengthening Brand Presence</p>
-                    <ul className={S.list}>
-                        <li>Improve usability with clear navigation and structure</li>
-                        <li>Simplify and organize product information</li>
-                        <li>Modernise the overall visual design</li>
-                        <li>Establish consistent brand identity (typography, tone)</li>
-                        <li>Introduced a blog to support SEO and visibility</li>
-                        <li>Added detailed company information and real company imagery to build credibility and increase trust</li>
-                    </ul>
                 </div>
 
                 <div className={S.section}>
@@ -73,24 +60,23 @@ const SC = () => {
                 </div>
 
                 <div className={S.section}>
+                    <p className={`${S.label} mt-10`}>Stakeholder Interview with the CEO</p>
                     <p className={S.body}>
                         To align the redesign with the company's direction, I started with research on both the business and audience side.
                     </p>
-                    <p className={`${S.label} mt-10`}>Stakeholder Interview with the CEO</p>
-                    <p>I spoke with the CEO to understand the company's vision and product direction, focusing on:</p>
                     <ul className={S.list}>
                         <li>Target audiences the company wants to attract</li>
                         <li>Products to prioritize moving forward</li>
                         <li>How SourceCode should be perceived externally</li>
                         <li>Types of partnerships the company is aiming for</li>
                     </ul>
-                    <p>
-                        The conversation revealed that the existing website didn't reflect the CEO's vision, and the product structure wasn't organized around business priorities.
-                    </p>
                 </div>
 
                 <div className={S.section}>
                     <p className={S.label}>Key Insights</p>
+                    <p>
+                        These requirements revealed that the existing website didn't clearly communicate the company's priorities:
+                    </p>
                     <ul className={S.list}>
                         <li>The homepage must communicate core products clearly</li>
                         <li>Information architecture should reflect business priorities</li>
@@ -118,15 +104,8 @@ const SC = () => {
                     </p>
                 </div>
 
-                <div className={S.section}>
-                    <p className={S.label}>REFLECTION IN THE AGE OF AI</p>
-                    <p className={S.body}>
-                        This project was created through a fully human-led design process. With the company’s transition to AI-generated design, production became faster and more automated. However, this shift also highlights the importance of human thinking in shaping user experience, defining structure, and building meaningful brand narratives. Rather than replacing design, AI changes the role of the designer, from creating interfaces to directing systems.
-                    </p>
-                </div>
-
                 <div className="mt-16">
-                    <ActionLink to="/works" icon="‹" iconPosition="left">BACK TO ALL WORKS</ActionLink>
+                    <ActionLink to="/works" icon="‹" iconPosition="left">BACK</ActionLink>
                 </div>
             </main>
 
