@@ -1,8 +1,7 @@
-import CardWork from '../components/CardWork';
 import Footer from '../components/Footer';
 import ActionLink from '../components/ActionLink';
 import PageTitle from '../components/PageTitle';
-import { WORKS } from '../utils/works';
+import FilterableWorks from '../components/FilterableWorks';
 
 const Home = () => {
     return (
@@ -50,11 +49,7 @@ const Home = () => {
                         here are some of the ones I'm most proud of.
                     </p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {WORKS.slice(0, 3).map((work) => (
-                            <CardWork key={work.slug} {...work} />
-                        ))}
-                    </div>
+                    <FilterableWorks />
 
                     <div className="flex justify-end mt-20">
                         <ActionLink to="/works" icon="›">ALL WORKS</ActionLink>
