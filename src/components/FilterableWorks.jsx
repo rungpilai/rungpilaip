@@ -3,7 +3,7 @@ import { TAGS, WORKS } from "../utils/works";
 import CardWork from "./CardWork";
 import Chip from "./Chip";
 
-const FilterableWorks = () => {
+const FilterableWorks = ({ onWorkClick }) => {
   const [selectedTag, setSelectedTag] = useState("");
 
   const handleSelectTag = (tag) => {
@@ -33,7 +33,7 @@ const FilterableWorks = () => {
           {WORKS.filter((work) =>
             selectedTag ? work.tags.includes(selectedTag) : true,
           ).map((work) => (
-            <CardWork key={work.slug} {...work} />
+            <CardWork key={work.slug} onClick={onWorkClick} {...work}  />
           ))}
         </div>
       </div>

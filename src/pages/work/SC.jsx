@@ -1,6 +1,4 @@
 import HeaderWork from '../../components/HeaderWork';
-import Footer from '../../components/Footer';
-import ActionLink from '../../components/ActionLink';
 
 const S = {
     section: 'mb-12',
@@ -103,15 +101,7 @@ const SC = () => {
                         The redesigned website elevates brand credibility and clarifies offerings, helping support partnerships, client connections, and early-stage sales conversations. (Impact is qualitative, as no tracking or lead analytics are implemented yet.)
                     </p>
                 </div>
-
-                <div className="mt-16">
-                    <ActionLink to="/works" icon="‹" iconPosition="left">BACK</ActionLink>
-                </div>
             </main>
-
-            <div className="container">
-                <Footer />
-            </div>
         </>
     );
 };

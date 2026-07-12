@@ -1,13 +1,13 @@
 import { useNavigate } from 'react-router-dom';
 import Tag from './Tag';
 
-const CardWork = ({ year, tags = [], title, description, thumbnail, slug }) => {
+const CardWork = ({ onClick, year, tags = [], title, description, thumbnail, slug }) => {
     const navigate = useNavigate();
 
     return (
         <article
             className="cursor-pointer group outline-none"
-            onClick={() => navigate(slug)}
+            onClick={() => onClick(slug)}
             role="button"
             tabIndex={0}
             onKeyDown={(e) => e.key === 'Enter' && navigate(slug)}

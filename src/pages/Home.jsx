@@ -1,11 +1,38 @@
+import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import ActionLink from '../components/ActionLink';
 import PageTitle from '../components/PageTitle';
 import FilterableWorks from '../components/FilterableWorks';
+import Modal from '../components/Modal';
+import About from './About';
+import ET from './work/ET';
+import SC from './work/SC';
+import SCG from './work/SCG';
+import TSM from './work/TSM';
+import { useState } from 'react';
 
 const Home = () => {
+    const [selectedModelPage, setSelectedModelPage] = useState('');
+
+    const renderModalContent = (slug) => {
+        switch (slug) {
+            case '/about':
+                return <About />;
+            case '/work/et':
+                return <ET />;
+            case '/work/sc':
+                return <SC />;
+            case '/work/scg':
+                return <SCG />;
+            case '/work/tsm':
+                return <TSM />;
+            default:
+                return null;
+        }
+    };
+
     return (
         <>
+            <Navbar onAboutClick={() => setSelectedModelPage('/about')} />
             <main className='mt-16'>
                 <section className="container">
                     <PageTitle className="mb-10">
@@ -49,17 +76,23 @@ const Home = () => {
                         here are some of the ones I'm most proud of.
                     </p>
 
-                    <FilterableWorks />
-
-                    <div className="flex justify-end mt-20">
-                        <ActionLink to="/works" icon="›">ALL WORKS</ActionLink>
-                    </div>
+                    <FilterableWorks onWorkClick={(slug) => setSelectedModelPage(slug)} />
                 </section>
             </main>
 
             <div className="container">
                 <Footer />
             </div>
+
+            {
+                selectedModelPage.length != 0 ?
+                    <Modal
+                    isOpen={selectedModelPage.length != 0}
+                    onClose={() => setSelectedModelPage('')}>
+                        {renderModalContent(selectedModelPage)}
+                    </Modal>
+                : null
+            }
         </>
     );
 };

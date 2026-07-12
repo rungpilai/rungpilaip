@@ -17,7 +17,7 @@ const ActionLink = ({
             {iconPosition === 'left' && icon && (
                 <span className="text-base leading-none relative -top-px flex items-center">{icon}</span>
             )}
-            <span className="underline underline-offset-4">{children}</span>
+            <span>{children}</span>
             {iconPosition === 'right' && icon && (
                 <span className="text-base leading-none relative -top-px flex items-center">{icon}</span>
             )}

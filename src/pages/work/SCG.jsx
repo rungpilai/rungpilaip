@@ -1,6 +1,4 @@
 import HeaderWork from '../../components/HeaderWork';
-import Footer from '../../components/Footer';
-import ActionLink from '../../components/ActionLink';
 
 const S = {
     section: 'mb-12',
@@ -188,15 +186,7 @@ const SCG = () => {
                     <img src="/img/work/scg/test-result.jpg" alt="Test result" className="w-full sm:max-w-xl mx-auto mt-8" />
                     <p className={S.caption}>Test results comparing the existing and new UI across 4 users. Every participant rated the new UI higher, with improvements ranging from 13% to 20%</p>
                 </div>
-
-                <div className="mt-16">
-                    <ActionLink to="/works" icon="‹" iconPosition="left">BACK TO ALL WORKS</ActionLink>
-                </div>
             </main>
-
-            <div className="container">
-                <Footer />
-            </div>
         </>
     );
 };
