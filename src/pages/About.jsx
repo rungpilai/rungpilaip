@@ -34,7 +34,7 @@ const About = () => {
                             and what I choose to leave behind.
                         </p>
                         <p className="leading-relaxed text-(--color-text) mb-4">
-                            <span className="font-serif float-left text-[3.5rem] leading-[0.75] mr-2.5 mt-1 text-(--color-text)">F</span>
+                            <span className="float-left text-[3.5rem] leading-[0.75] mr-2.5 mt-1 text-(--color-text)">F</span>
                             ashion was one of the first forms of design I truly connected with. I became fascinated by the idea that even the most expressive pieces begin with structure, patterns, construction, and thoughtful decisions beneath the surface. That way of thinking continues to influence my work today. I approach design not only through visuals, but through systems, context, and the relationship between logic and feeling.
                         </p>
                         <p className="leading-relaxed text-(--color-text)">
