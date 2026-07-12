@@ -27,7 +27,7 @@
 
     --color-primary-text: var(--color-greyscale-100);
     --color-secondary-text: var(--color-greyscale-90);
-    --color-tertiary-text: #999999;
+    --color-tertiary-text: var(--color-greyscale-70);
     --color-text-subtitle: var(--color-greyscale-50);
     --color-border-default: var(--color-greyscale-10);
 
