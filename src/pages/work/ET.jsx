@@ -1,6 +1,4 @@
 import HeaderWork from '../../components/HeaderWork';
-import Footer from '../../components/Footer';
-import ActionLink from '../../components/ActionLink';
 
 const S = {
     section: 'mb-12',
@@ -123,15 +121,7 @@ const ET = () => {
                         BENTO Team (Business Experimentation and Technology), SCG Distribution
                     </p>
                 </div>
-
-                <div className="mt-16">
-                    <ActionLink to="/works" icon="‹" iconPosition="left">BACK TO ALL WORKS</ActionLink>
-                </div>
             </main>
-
-            <div className="container">
-                <Footer />
-            </div>
         </>
     );
 };

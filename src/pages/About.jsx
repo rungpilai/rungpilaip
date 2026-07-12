@@ -101,10 +101,6 @@ const About = () => {
                     </section>
                 </div>
             </main>
-
-            <div className="container">
-                <Footer />
-            </div>
         </>
     );
 };
