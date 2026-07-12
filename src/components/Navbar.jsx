@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav className="sticky top-0 z-100 bg-white py-3">
+        <nav className="sticky top-0 z-100 backdrop-blur-sm bg-white/70 py-3">
             <div className="container flex items-center justify-between">
                 <Link to="/">
                     <img src="/img/logo-navbar-footer.svg" alt="Rungpilai" width={83} height={45} />
