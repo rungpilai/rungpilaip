@@ -37,7 +37,7 @@ const Modal = ({ isOpen, onClose, children }) => {
                     </ActionLink>
                     <button
                     onClick={handleClose}
-                    className="ml-auto inline-flex md:hidden rounded-full size-8 items-center justify-center border border-[#E9EAEC]  text-[#666870] hover:text-white hover:bg-[#666870] transition-colors"
+                    className="ml-auto inline-flex md:hidden rounded-full size-8 items-center justify-center border border-(--color-border-default)  text-(--color-card-meta) hover:text-white hover:bg-(--color-card-meta) transition-colors"
                     >
                     ✕
                     </button>

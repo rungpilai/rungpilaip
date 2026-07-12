@@ -3,26 +3,54 @@
 @import "tailwindcss";
 
 @theme {
-    --color-bg: #ffffff;
-    --color-text: #0F0F10;
-    --color-text-secondary: #9194A0;
-    --color-text-light: #9194A0;
-    --color-border: #e8e8e8;
-    --color-accent: #8c7b6b;
-    --color-accent-light: #8c9ab5;
-    --color-primary: #6b8cba;
-    --color-primary-purple: #747BA0;
+    --color-primitive-10:#E3E5EC;
+    --color-primitive-20:#C7CAD9;
+    --color-primitive-30:#ACB0C6;
+    --color-primitive-40:#9095B3;
+    --color-primitive-50:#747BA0;
+    --color-primitive-60:#686F90;
+    --color-primitive-70:#5D6280;
+    --color-primitive-80:#464A60;
+    --color-primitive-90:#2E3140;
+    --color-primitive-100:#171920;
 
-    --color-link: #1D1E20;
-    --color-link-hover: #ACB0C6;
+    --color-greyscale-10:#E9EAEC;
+    --color-greyscale-20:#D3D4D9;
+    --color-greyscale-30:#BDBFC6;
+    --color-greyscale-40:#A7A9B3;
+    --color-greyscale-50:#999CA9;
+    --color-greyscale-60:#838590;
+    --color-greyscale-70:#666870;
+    --color-greyscale-80:#494A50;
+    --color-greyscale-90:#313336;
+    --color-greyscale-100:#0F0F10;
 
-    --color-card-meta: #666870;
-    --color-card-title: #0F0F10;
-    --color-card-desc: #9194A0;
-    --color-card-hover-bg: #F5F5F7;
+    --color-primary-text: var(--color-greyscale-100);
+    --color-secondary-text: var(--color-greyscale-90);
+    --color-tertiary-text: #999999;
+    --color-text-subtitle: var(--color-greyscale-50);
+    --color-border-default: var(--color-greyscale-10);
 
-    --color-muted: #A7A9B3;
-    --color-muted-dark: #494A50;
+    --color-bg: var(--color-white);
+    --color-text: var(--color-greyscale-100);
+    --color-text-secondary: var(--color-greyscale-100);
+    --color-text-light: var(--color-greyscale-100);
+    --color-border: var(--color-greyscale-10);
+    --color-accent: var(--color-greyscale-60);
+    --color-accent-light: var(--color-greyscale-60);
+    --color-primary: var(--color-greyscale-70);
+    --color-primary-purple: var(--color-primitive-50);
+
+    --color-link: var(--color-primitive-100);
+    --color-link-hover: var(--color-primitive-30);
+
+    --color-card-meta: var(--color-greyscale-70);
+    --color-card-title: var(--color-greyscale-100);
+    --color-card-desc: var(--color-greyscale-50);
+    --color-card-hover-bg: var(--color-greyscale-10);
+
+    --color-muted: var(--color-greyscale-40);
+    --color-muted-dark: var(--color-greyscale-80);
     
     --font-sans: 'Open Sans', system-ui, sans-serif;
 
