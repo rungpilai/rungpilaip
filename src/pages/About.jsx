@@ -29,7 +29,7 @@ const About = () => {
                     </section>
 
                     <section className="mt-10 mb-8">
-                        <p className="font-medium text-[20px] leading-normal mb-6">
+                        <p className="text-[20px] leading-normal mb-6">
                             Still exploring, shaped by what I create <br className="hidden sm:block" />
                             and what I choose to leave behind.
                         </p>
@@ -51,7 +51,7 @@ const About = () => {
                     </section>
 
                     <section className="mb-20">
-                        <p className="text-[20px] font-medium leading-relaxed mb-4">
+                        <p className="text-[20px] leading-relaxed mb-4">
                             My <span className="text-(--color-primary-purple)">workflow</span> is not a straight line.<br />
                             More like layers of thinking stacked over time.
                         </p>

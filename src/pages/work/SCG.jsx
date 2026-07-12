@@ -6,7 +6,7 @@ const S = {
     section: 'mb-12',
     sectionFull: 'mb-12',
     label: 'text-muted text-sm tracking-[0.08em] font-sans! uppercase mb-3',
-    subHeading: 'text-(--color-text) font-medium mb-3',
+    subHeading: 'text-(--color-text) mb-3',
     body: 'text-(--color-text) mb-4',
     list: 'text-(--color-text) list-disc pl-5 mt-1 ml-3',
     imgFull: 'w-full max-w-[680px] h-auto rounded mt-6 ',

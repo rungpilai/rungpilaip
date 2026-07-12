@@ -10,7 +10,7 @@ const ActionLink = ({
     iconPosition = 'right',
     className = ''
 }) => {
-    const baseClass = `bg-transparent border-none cursor-pointer text-sm font-medium tracking-[0.08em] text-(--color-text) hover:text-(--color-link-hover) inline-flex items-center gap-1.5 transition-opacity duration-200 w-fit ${className}`;
+    const baseClass = `bg-transparent border-none cursor-pointer text-sm tracking-[0.08em] text-(--color-text) hover:text-(--color-link-hover) inline-flex items-center gap-1.5 transition-opacity duration-200 w-fit ${className}`;
 
     const content = (
         <>
