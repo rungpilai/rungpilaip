@@ -2,33 +2,7 @@ import CardWork from '../components/CardWork';
 import Footer from '../components/Footer';
 import ActionLink from '../components/ActionLink';
 import PageTitle from '../components/PageTitle';
-
-const FEATURED_WORKS = [
-    {
-        year: '2025',
-        tags: ['Branding & UX Design'],
-        title: 'SourceCode Company Website Redesign: Before the AI Shift',
-        description: 'Led the redesign of a company website to improve information structure, usability, and brand presence.',
-        thumbnail: '/img/thumnails/sc-thum.jpg',
-        slug: '/work/sc',
-    },
-    {
-        year: '2025',
-        tags: ['Idea Validation & Experimental Design'],
-        title: 'Exploring AI Eye Tracking for Design Practice in Corporate Routine',
-        description: 'From gut feeling to data-driven design, exploring if AI eye tracking reflects real user attention.',
-        thumbnail: '/img/thumnails/et-thum.jpg',
-        slug: '/work/et',
-    },
-    {
-        year: '2024',
-        tags: ['UX Design'],
-        title: 'SCG Home UX Case Study for Home Renovators',
-        description: 'Simplified renovation decisions through a gallery redesign grounded in user behavior.',
-        thumbnail: '/img/thumnails/scg-thum.jpg',
-        slug: '/work/scg',
-    },
-];
+import { WORKS } from '../utils/works';
 
 const Home = () => {
     return (
@@ -77,7 +51,7 @@ const Home = () => {
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {FEATURED_WORKS.map((work) => (
+                        {WORKS.slice(0, 3).map((work) => (
                             <CardWork key={work.slug} {...work} />
                         ))}
                     </div>

@@ -24,7 +24,7 @@ const CardWork = ({ year, tags = [], title, description, thumbnail, slug }) => {
             <div className="mt-3 flex flex-col gap-1.5 transition-opacity duration-250 group-hover:opacity-70">
                 <span className="text-sm text-card-meta">{year}</span>
                 <div className="flex flex-wrap gap-1.5">
-                    {tags.map((tag) => (
+                    {[tags.join(' & ')].map((tag) => (
                         <Tag key={tag}>{tag}</Tag>
                     ))}
                 </div>
