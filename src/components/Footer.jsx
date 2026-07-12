@@ -15,8 +15,8 @@ const Footer = () => {
                 <nav className="flex flex-wrap justify-center items-center gap-4 md:gap-6 mt-3">
                     {[
                         { label: 'LinkedIn', href: 'https://linkedin.com/in/rungpilaip' },
+                        { label: 'Github', href: 'https://github.com/rungpilai' },
                         { label: 'Instagram', href: 'https://instagram.com/x01experiment.project/' },
-                        { label: 'Behance', href: 'https://behance.net/rungpilaip' },
                     ].map(({ label, href }, index, array) => [
                         <a
                             key={label}
