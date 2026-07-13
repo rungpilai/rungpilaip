@@ -1,6 +1,6 @@
 const PageTitle = ({ children, className = '' }) => {
     return (
-        <h1 className={`font-serif text-[32px] sm:text-[48px] font-normal leading-[1.15] ${className}`}>
+        <h1 className={`text-5xl sm:text-3xl font-normal leading-[1.15] text-(--color-text-primary) ${className}`}>
             {children}
         </h1>
     );

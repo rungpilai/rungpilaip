@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
-import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Works from './pages/Works';
 import About from './pages/About';
@@ -22,7 +21,6 @@ const App = () => {
     return (
         <BrowserRouter>
             <ScrollToTop />
-            <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/works" element={<Works />} />

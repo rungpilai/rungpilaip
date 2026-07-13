@@ -1,18 +1,16 @@
 import HeaderWork from '../../components/HeaderWork';
-import Footer from '../../components/Footer';
-import ActionLink from '../../components/ActionLink';
 
 const S = {
     section: 'mb-12',
     sectionFull: 'mb-12',
-    label: 'text-muted text-sm tracking-[0.08em] font-sans! uppercase mb-3',
-    subHeading: 'text-(--color-text) font-medium mb-3',
-    body: 'text-(--color-text) mb-4',
-    list: 'text-(--color-text) list-disc pl-5 mt-1 ml-3',
+    label: 'text-(--color-text-subtitle) text-sm tracking-[0.08em] font-sans! uppercase mb-3',
+    subHeading: 'text-(--color-text-primary) mb-3',
+    body: 'text-(--color-text-primary) mb-4',
+    list: 'text-(--color-text-primary) list-disc pl-5 mt-1 ml-3',
     imgFull: 'w-full max-w-[680px] h-auto rounded mt-6 ',
     twoCol: 'grid grid-cols-1 md:grid-cols-2 gap-6 mt-6',
-    colLabel: 'text-sm tracking-widest text-card-meta uppercase mb-2',
-    caption: 'text-text-secondary text-sm italic mt-2',
+    colLabel: 'text-sm tracking-widest text-(--color-text-tertiary) uppercase mb-2',
+    caption: 'text-(--color-text-subtitle) text-sm italic mt-2',
 };
 
 const SCG = () => {
@@ -20,7 +18,7 @@ const SCG = () => {
         <>
             <main className="container max-w-4xl mx-auto mt-16">
                 <HeaderWork
-                    title={<><span className="text-(--color-primary-purple)">SCG Home</span> UX Case Study for Home Renovators</>}
+                    title={<><span className="text-(--color-primary)">SCG Home</span> UX Case Study for Home Renovators</>}
                     category="UX Design"
                     role="UX Designer"
                     duration="Jun - Oct 2024"
@@ -156,20 +154,20 @@ const SCG = () => {
                     <p>3 Test Activities</p>
                     <p>Task 1</p>
                     <ul className={S.list}>
-                        <li className='text-card-meta'>Find a bedroom design you like.</li>
-                        <li className='text-card-meta'>Rate how easy it was to find the design (1-5) (5 = Very easy)</li>
+                        <li className='text-(--color-text-tertiary)'>Find a bedroom design you like.</li>
+                        <li className='text-(--color-text-tertiary)'>Rate how easy it was to find the design (1-5) (5 = Very easy)</li>
                     </ul>
 
                     <p>Task 2</p>
                     <ul className={S.list}>
-                        <li className='text-card-meta'>View details of the selected room.</li>
-                        <li className='text-card-meta'>Rate interest in purchasing products from the design (1-5) (5 = Very interested)</li>
+                        <li className='text-(--color-text-tertiary)'>View details of the selected room.</li>
+                        <li className='text-(--color-text-tertiary)'>Rate interest in purchasing products from the design (1-5) (5 = Very interested)</li>
                     </ul>
 
                     <p>Task 3</p>
                     <ul className={S.list}>
-                        <li className='text-card-meta'>Review the overall design layout.</li>
-                        <li className='text-card-meta'>Rate the visual appeal of the design (1-5) (5 = Very beautiful)</li>
+                        <li className='text-(--color-text-tertiary)'>Review the overall design layout.</li>
+                        <li className='text-(--color-text-tertiary)'>Rate the visual appeal of the design (1-5) (5 = Very beautiful)</li>
                     </ul>
 
                     <img src="/img/work/scg/test-card.jpg" alt="Test card" className="w-full sm:max-w-sm mx-auto mt-8" />
@@ -188,15 +186,7 @@ const SCG = () => {
                     <img src="/img/work/scg/test-result.jpg" alt="Test result" className="w-full sm:max-w-xl mx-auto mt-8" />
                     <p className={S.caption}>Test results comparing the existing and new UI across 4 users. Every participant rated the new UI higher, with improvements ranging from 13% to 20%</p>
                 </div>
-
-                <div className="mt-16">
-                    <ActionLink to="/works" icon="‹" iconPosition="left">BACK TO ALL WORKS</ActionLink>
-                </div>
             </main>
-
-            <div className="container">
-                <Footer />
-            </div>
         </>
     );
 };
