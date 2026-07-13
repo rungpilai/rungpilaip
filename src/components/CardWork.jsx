@@ -30,7 +30,7 @@ const CardWork = ({ onClick, year, tags = [], title, description, thumbnail, slu
                 </div>
             </div>
 
-            <h3 className="font-sans text-[20px] font-normal leading-[1.35] mt-2 text-(--color-text-primary) transition-colors duration-250 group-hover:text-(--color-primary)">
+            <h3 className="font-sans text-xl font-normal leading-[1.35] mt-2 text-(--color-text-primary) transition-colors duration-250 group-hover:text-(--color-primary)">
                 {title}
             </h3>
 
