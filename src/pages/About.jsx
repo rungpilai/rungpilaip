@@ -1,7 +1,7 @@
-import Footer from '../components/Footer';
 import ActionLink from '../components/ActionLink';
 import PageTitle from '../components/PageTitle';
 import CopyEmailButton from '../components/CopyEmailButton';
+import { EMAIL_ADDRESS } from '../utils/email';
 
 const About = () => {
     return (
@@ -88,7 +88,7 @@ const About = () => {
                                 className="w-full aspect-3/4 object-cover rounded-2xl md:rounded-lg brightness-80"
                             />
                             <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/40 px-4 py-1 rounded-sm text-white/90 text-sm sm:text-base md:text-xl whitespace-nowrap flex items-center gap-2">
-                                rungpilai.p@gmail.com
+                                {EMAIL_ADDRESS}
                                 <CopyEmailButton className="text-white hover:text-white" size={14} strokeWidth={2} />
                             </span>
                         </div>

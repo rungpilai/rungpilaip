@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { EMAIL_ADDRESS } from '../utils/email';
 
-const CopyEmailButton = ({ email = 'rungpilai.p@gmail.com', className = '', size = 14, strokeWidth = 1.8 }) => {
+const CopyEmailButton = ({ email = EMAIL_ADDRESS, className = '', size = 14, strokeWidth = 1.8 }) => {
     const [copied, setCopied] = useState(false);
 
     const handleCopyEmail = () => {
