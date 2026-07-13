@@ -25,12 +25,22 @@
     --color-greyscale-90:#313336;
     --color-greyscale-100:#0F0F10;
 
-    --color-primary-text: var(--color-greyscale-100);
-    --color-secondary-text: var(--color-greyscale-90);
-    --color-tertiary-text: var(--color-greyscale-70);
+    --color-text-primary: var(--color-greyscale-100);
+    --color-text-secondary: var(--color-greyscale-90);
+    --color-text-tertiary: var(--color-greyscale-70);
     --color-text-subtitle: var(--color-greyscale-50);
-    --color-border-default: var(--color-greyscale-10);
+    --color-border: var(--color-greyscale-10);
 
+    --color-primary: var(--color-primitive-50);
+    --color-primary-border: var(--color-primitive-30);
+    --color-primary-active: var(--color-primitive-40);
+
+    --color-logo: #1D1E20;
+    --color-content-pdf: #515151;
+    --color-sub-content-pdf: #8B8B8B;
+    --color-caption-pdf: #2F2F2F;
+
+    /*
     --color-bg: var(--color-white);
     --color-text: var(--color-greyscale-100);
     --color-text-secondary: var(--color-greyscale-100);
@@ -51,10 +61,12 @@
 
     --color-muted: var(--color-greyscale-40);
     --color-muted-dark: var(--color-greyscale-80);
+    */
     
     --font-sans: 'Open Sans', system-ui, sans-serif;
 
-    --container-max-width: 1350px;
+    --container-max-width-default: 1240px;
+    --container-max-width-work: 820px;
 }
 
 @utility container {
