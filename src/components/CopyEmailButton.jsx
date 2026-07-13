@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { EMAIL_ADDRESS } from '../utils/email';
 
-const CopyEmailButton = ({ email = 'rungpilai.p@gmail.com', className = '', size = 14, strokeWidth = 1.8 }) => {
+const CopyEmailButton = ({ email = EMAIL_ADDRESS, className = '', size = 14, strokeWidth = 1.8 }) => {
     const [copied, setCopied] = useState(false);
 
     const handleCopyEmail = () => {
@@ -12,7 +13,7 @@ const CopyEmailButton = ({ email = 'rungpilai.p@gmail.com', className = '', size
     return (
         <button
             onClick={handleCopyEmail}
-            className={`flex items-center p-0 border-none bg-transparent cursor-pointer transition-colors duration-200 ${className}`}
+            className={`flex items-center p-0 border-none bg-transparent cursor-copy transition-colors duration-200 ${className}`}
             title="Copy email"
             aria-label="Copy email"
         >

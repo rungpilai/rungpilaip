@@ -3,14 +3,14 @@ import HeaderWork from '../../components/HeaderWork';
 const S = {
     section: 'mb-12',
     sectionFull: 'mb-12',
-    label: 'text-muted text-sm tracking-[0.08em] font-sans! uppercase mb-3',
-    subHeading: 'text-(--color-text) mb-3',
-    body: 'text-(--color-text) mb-4',
-    list: 'text-(--color-text) list-disc pl-5 mt-1 ml-3',
+    label: 'text-(--color-text-subtitle) text-sm tracking-[0.08em] font-sans! uppercase mb-3',
+    subHeading: 'text-(--color-text-primary) mb-3',
+    body: 'text-(--color-text-primary) mb-4',
+    list: 'text-(--color-text-primary) list-disc pl-5 mt-1 ml-3',
     imgFull: 'w-full max-w-[680px] h-auto rounded mt-6 ',
     twoCol: 'grid grid-cols-1 md:grid-cols-2 gap-6 mt-6',
-    colLabel: 'text-sm tracking-widest text-card-meta uppercase mb-2',
-    caption: 'text-text-secondary text-sm italic mt-2',
+    colLabel: 'text-sm tracking-widest text-(--color-text-tertiary) uppercase mb-2',
+    caption: 'text-(--color-text-subtitle) text-sm italic mt-2',
 };
 
 const TSM = () => {
@@ -18,7 +18,7 @@ const TSM = () => {
         <>
             <main className="container max-w-4xl mx-auto mt-16">
                 <HeaderWork
-                    title={<><span className="text-(--color-primary-purple)">ThangSaiMai</span> Antique Shop Website Design</>}
+                    title={<><span className="text-(--color-primary)">ThangSaiMai</span> Antique Shop Website Design</>}
                     category="UI Design"
                     role="UI Designer"
                     duration="May - Jun 2025"

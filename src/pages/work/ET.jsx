@@ -3,14 +3,14 @@ import HeaderWork from '../../components/HeaderWork';
 const S = {
     section: 'mb-12',
     sectionFull: 'mb-12',
-    label: 'text-muted text-sm tracking-[0.08em] font-sans! uppercase mb-3',
-    subHeading: 'text-(--color-text) mb-3',
-    body: 'text-(--color-text) mb-4',
-    list: 'text-(--color-text) list-disc pl-5 mt-1 ml-3',
+    label: 'text-(--color-text-subtitle) text-sm tracking-[0.08em] font-sans! uppercase mb-3',
+    subHeading: 'text-(--color-text-primary) mb-3',
+    body: 'text-(--color-text-primary) mb-4',
+    list: 'text-(--color-text-primary) list-disc pl-5 mt-1 ml-3',
     imgFull: 'w-full max-w-[680px] h-auto rounded mt-6 ',
     twoCol: 'grid grid-cols-1 md:grid-cols-2 gap-6 mt-6',
-    colLabel: 'text-sm text-center tracking-widest text-muted uppercase mb-2',
-    caption: 'text-text-secondary text-sm italic mt-2',
+    colLabel: 'text-sm text-center tracking-widest text-(--color-text-subtitle) uppercase mb-2',
+    caption: 'text-(--color-text-subtitle) text-sm italic mt-2',
 };
 
 const ET = () => {
@@ -18,7 +18,7 @@ const ET = () => {
         <>
             <main className="container max-w-4xl mx-auto mt-16">
                 <HeaderWork
-                    title={<><span className="text-(--color-primary-purple)">AI Eye Tracking</span>{' '}for Design Practice in Corporate Routine</>}
+                    title={<><span className="text-(--color-primary)">AI Eye Tracking</span>{' '}for Design Practice in Corporate Routine</>}
                     category="Idea Validation & Experimental Design"
                     role="UX Researcher"
                     duration="Mar - May 2025"
@@ -64,7 +64,7 @@ const ET = () => {
                     <div className="text-center py-8">
                         <img src="/img/work/et/vector.svg" alt="Problem identification" className="w-8 h-auto mx-auto mb-4" />
                         <p className={S.label}>PROBLEM IDENTIFICATION</p>
-                        <blockquote className="text-[1.1rem] text-(--color-text) mx-auto leading-relaxed">
+                        <blockquote className="text-[1.1rem] text-(--color-text-primary) mx-auto leading-relaxed">
                             "Is it true that marketers' assumptions align with the actual customers' eye focus area?"
                         </blockquote>
                     </div>
@@ -73,7 +73,7 @@ const ET = () => {
                 <div className={S.section}>
                     <p className={S.label}>EXPERIMENTAL DESIGN (DOE)</p>
                     <p className={`${S.body}`}>Testing Similarity in Perception Using Recall &amp; Precision Metrics.</p>
-                    <p className='text-text-secondary text-sm italic'>
+                    <p className='text-(--color-text-subtitle) text-sm italic'>
                         Recall = Number of actual gaze points correctly predicted by marketers/designers or MGETs<br />
                         Precision = Number of predicted gaze points that correctly matched actual gaze points
                     </p>

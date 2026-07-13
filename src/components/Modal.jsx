@@ -7,7 +7,10 @@ const Modal = ({ isOpen, onClose, children }) => {
     const [isClosing, setIsClosing] = useState(false);
 
     useEffect(() => {
-        setIsMounted(true);
+        const handle = () => {
+            setIsMounted(true);
+        };
+        handle();
     }, []);
 
     const handleClose = () => {
@@ -32,12 +35,12 @@ const Modal = ({ isOpen, onClose, children }) => {
         >
             <div className="relative z-30 w-full max-h-screen overflow-scroll">
                 <div className="mt-16 container max-w-5xl mx-auto flex flex-row justify-between">
-                    <ActionLink onClick={handleClose} icon="‹" iconPosition="left" className="text-gray-500 !hidden md:!inline-flex">
+                    <ActionLink onClick={handleClose} icon="‹" iconPosition="left" className="!hidden md:!inline-flex">
                         BACK
                     </ActionLink>
                     <button
                     onClick={handleClose}
-                    className="ml-auto inline-flex md:hidden rounded-full size-8 items-center justify-center border border-[#E9EAEC]  text-[#666870] hover:text-white hover:bg-[#666870] transition-colors"
+                    className="ml-auto inline-flex md:hidden rounded-full size-8 items-center justify-center border border-(--color-border)  text-(--color-text-tertiary) hover:text-white hover:bg-(--color-text-tertiary) transition-colors"
                     >
                     ✕
                     </button>

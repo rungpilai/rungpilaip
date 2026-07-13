@@ -7,8 +7,8 @@ const Works = () => {
         <>
             <main className='mt-16'>
                 <section className="container">
-                    <PageTitle className="mb-2">All Works</PageTitle>
-                    <p className="text-card-meta mb-8">
+                    <PageTitle className="mb-2 text-(--color-text-primary)">All Works</PageTitle>
+                    <p className=" text-(--color-text-secondary) mb-8">
                         A collection of projects from product design, branding, and design experiments.
                     </p>
                 </section>
@@ -16,7 +16,7 @@ const Works = () => {
                 <section className="container pb-12">
                     <FilterableWorks />
 
-                    <p className="text-muted text-center mt-35 mb-10">
+                    <p className="text-(--color-text-subtitle) text-center mt-35 mb-10">
                         More experiments in progress ...
                     </p>
                 </section>

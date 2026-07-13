@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({ onAboutClick }) => {
     return (
-        <nav className="sticky top-0 z-10 backdrop-blur-sm bg-white/70 py-3">
+        <nav className="sticky top-0 z-10 bg-white/80 backdrop-blur-[20px] py-3">
             <div className="container flex items-center justify-between">
                 <Link to="/">
                     <img src="/img/logo-navbar-footer.svg" alt="Rungpilai" width={83} height={45} />
@@ -10,7 +10,7 @@ const Navbar = ({ onAboutClick }) => {
                 <div className="flex gap-5">
                     <button
                         onClick={onAboutClick}
-                        className="text-sm p-2 font-normal! tracking-wider text-(--color-link) transition-colors duration-200 hover:text-(--color-link-hover)!"
+                        className="text-sm p-2 font-normal! tracking-wider transition-colors duration-200 cursor-pointer text-(--color-text-subtitle) hover:text-(--color-text-secondary)"
                     >
                         ABOUT
                     </button>
