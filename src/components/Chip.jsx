@@ -1,15 +1,17 @@
-const Chip = ({ tag, isSelected, onClick }) => {
+import { TAGS } from "../utils/works";
+
+const Chip = ({ tag = TAGS[0], count = 0, isSelected, onClick }) => {
   return (
     <button
       className={`px-4 py-2 rounded-full border ${
         isSelected
-          ? "bg-(--color-primary-purple) text-white"
-          : `bg-white text-(--color-card-meta) border-(--color-border) ${
-            `hover:border-(--color-link-hover) hover:text-(--color-primary-purple)`}`
+          ? "bg-(--color-primary) text-white"
+          : `bg-white text-(--color-text-tertiary) border-(--color-border) ${
+            `hover:border-(--color-primary-active) hover:text-(--color-primary)`}`
       }`}
       onClick={() => onClick(tag)}
     >
-      {tag}
+      {tag.title}{isSelected ? ` (${count})`: ""}
     </button>
   );
 };

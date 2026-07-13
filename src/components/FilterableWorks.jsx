@@ -4,26 +4,29 @@ import CardWork from "./CardWork";
 import Chip from "./Chip";
 
 const FilterableWorks = ({ onWorkClick }) => {
-  const [selectedTag, setSelectedTag] = useState("");
+  const [selectedTag, setSelectedTag] = useState(TAGS[0]);
+  const [workCount, setWorkCount] = useState(WORKS.length);
 
   const handleSelectTag = (tag) => {
-    setSelectedTag(tag === selectedTag ? "" : tag);
+    setSelectedTag(tag.title === selectedTag.title ? TAGS[0] : tag);
+    setWorkCount(WORKS
+    .filter((work) =>
+      tag
+        .keywords
+        ?.some(keyword => work.tags.includes(keyword)),
+    ).length);
   };
 
   return (
     <>
       <div className="flex flex-col gap-8">
         <div className="flex flex-wrap gap-4">
-          <Chip
-            tag="All"
-            isSelected={selectedTag === ""}
-            onClick={() => handleSelectTag("")}
-          />
           {TAGS.map((tag) => (
             <Chip
-              key={tag}
+              key={tag.title}
               tag={tag}
-              isSelected={selectedTag === tag}
+              count={workCount}
+              isSelected={selectedTag.title === tag.title}
               onClick={handleSelectTag}
             />
           ))}
@@ -31,7 +34,7 @@ const FilterableWorks = ({ onWorkClick }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {WORKS.filter((work) =>
-            selectedTag ? work.tags.includes(selectedTag) : true,
+            selectedTag.keywords?.some(keyword => work.tags.includes(keyword)),
           ).map((work) => (
             <CardWork key={work.slug} onClick={onWorkClick} {...work}  />
           ))}
