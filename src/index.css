@@ -69,16 +69,18 @@
     --container-max-width-work: 820px;
 }
 
-@utility container {
-    max-width: var(--container-max-width-default);
-    margin-inline: auto;
-    padding-inline: 1.5rem;
-}
+@layer utilities {
+    .container {
+        max-width: var(--container-max-width-default);
+        margin-inline: auto;
+        padding-inline: 1.5rem;
+    }
 
-@utility container-work {
-    max-width: var(--container-max-width-work);
-    margin-inline: auto;
-    padding-inline: 1.5rem;
+    .container-work {
+        max-width: var(--container-max-width-work);
+        margin-inline: auto;
+        padding-inline: 1.5rem;
+    }
 }
 
 @layer base {
