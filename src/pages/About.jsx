@@ -10,7 +10,7 @@ const About = () => {
                 <div className="container max-w-5xl mx-auto">
                     <section className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0">
                         <PageTitle>
-                            About <span className="text-(--color-primary-purple)">Rungpilai</span>
+                            About <span className="text-(--color-primary)">Rungpilai</span>
                         </PageTitle>
                         <ActionLink
                             href="/rungpilai_resume_2026.pdf"
@@ -29,15 +29,15 @@ const About = () => {
                     </section>
 
                     <section className="mt-10 mb-8">
-                        <p className="text-[20px] leading-normal mb-6">
+                        <p className="text-[20px] leading-normal mb-6 text-(--color-text-primary)">
                             Still exploring, shaped by what I create <br className="hidden sm:block" />
                             and what I choose to leave behind.
                         </p>
-                        <p className="leading-relaxed text-(--color-text) mb-4">
-                            <span className="float-left text-[3.5rem] leading-[0.75] mr-2.5 mt-1 text-(--color-text)">F</span>
+                        <p className="leading-relaxed text-(--color-text-secondary) mb-4">
+                            <span className="float-left text-[3.5rem] leading-[0.75] mr-2.5 mt-1 text-(--color-text-secondary)">F</span>
                             ashion was one of the first forms of design I truly connected with. I became fascinated by the idea that even the most expressive pieces begin with structure, patterns, construction, and thoughtful decisions beneath the surface. That way of thinking continues to influence my work today. I approach design not only through visuals, but through systems, context, and the relationship between logic and feeling.
                         </p>
-                        <p className="leading-relaxed text-(--color-text)">
+                        <p className="leading-relaxed text-(--color-text-secondary)">
                             Today, I see design as more than creating interfaces. For me, it’s about understanding behavior, experimenting with emerging technologies, and building experiences that connect people with technology in a more natural and meaningful way.
                         </p>
                     </section>
@@ -51,11 +51,11 @@ const About = () => {
                     </section>
 
                     <section className="mb-20">
-                        <p className="text-[20px] leading-relaxed mb-4">
-                            My <span className="text-(--color-primary-purple)">workflow</span> is not a straight line.<br />
+                        <p className="text-[20px] leading-relaxed mb-4 text-(--color-text-primary)">
+                            My <span className="text-(--color-primary)">workflow</span> is not a straight line.<br />
                             More like layers of thinking stacked over time.
                         </p>
-                        <p className="text-muted-dark leading-[1.7] mb-10">
+                        <p className="text-(--color-text-secondary) leading-[1.7] mb-10">
                             It doesn't always start clearly, sometimes just fragments, thoughts,<br className="hidden md:block" />
                             and questions. But over time, a process takes shape.
                         </p>
@@ -73,7 +73,7 @@ const About = () => {
 
                     <section className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 items-center mb-16">
                         <div className="text-center md:text-right">
-                            <p className="font-sans text-[1.5rem] md:text-[1.75rem] font-normal leading-[1.35]">
+                            <p className="font-sans text-[1.5rem] md:text-[1.75rem] font-normal leading-[1.35] text-(--color-text-primary)">
                                 Create first. <br className="hidden md:block" />
                                 Refine later. <br />
                                 Become through <br className="hidden md:block" />
@@ -94,7 +94,7 @@ const About = () => {
                         </div>
 
                         <div className="flex justify-center md:justify-start">
-                            <p className="text-[1.1rem] md:text-[1.3rem] text-muted-dark text-center md:text-left leading-[1.7]">
+                            <p className="text-[1.1rem] md:text-[1.3rem] text-(--color-text-secondary) text-center md:text-left leading-[1.7]">
                                 If my perspective resonates with you, perhaps we can create experiences that people not only use, but genuinely connect with.
                             </p>
                         </div>

@@ -10,7 +10,7 @@ const Navbar = ({ onAboutClick }) => {
                 <div className="flex gap-5">
                     <button
                         onClick={onAboutClick}
-                        className="text-sm p-2 font-normal! tracking-wider text-(--color-link) transition-colors duration-200 hover:text-(--color-link-hover)!"
+                        className="text-sm p-2 font-normal! tracking-wider transition-colors duration-200 cursor-pointer text-(--color-text-subtitle) hover:text-(--color-text-secondary)"
                     >
                         ABOUT
                     </button>

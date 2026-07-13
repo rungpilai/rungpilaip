@@ -10,7 +10,7 @@ const ActionLink = ({
     iconPosition = 'right',
     className = ''
 }) => {
-    const baseClass = `bg-transparent border-none cursor-pointer text-sm tracking-[0.08em] text-(--color-text) hover:text-(--color-link-hover) inline-flex items-center gap-1.5 transition-opacity duration-200 w-fit ${className}`;
+    const baseClass = `bg-transparent cursor-pointer text-sm tracking-[0.08em] text-(--color-text-subtitle) hover:text-(--color-text-secondary) inline-flex items-center gap-1.5 transition-opacity duration-200 w-fit ${className}`;
 
     const content = (
         <>
@@ -34,7 +34,17 @@ const ActionLink = ({
 
     if (href) {
         return (
-            <a href={href} download={download} className={baseClass} onClick={onClick}>
+            <a href={href} download={download} className={`${
+                    baseClass
+                } ${
+                    "gap-2 px-4 py-2 border rounded-full"
+                } ${
+                    "text-(--color-text-tertiary) border-(--color-border)"
+                } ${
+                    "hover:text-white hover:bg-(--color-primary)"
+                } ${
+                    "active:bg-(--color-primary-active)"
+                }`} onClick={onClick}>
                 {content}
             </a>
         );

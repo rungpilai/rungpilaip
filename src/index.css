@@ -40,29 +40,6 @@
     --color-sub-content-pdf: #8B8B8B;
     --color-caption-pdf: #2F2F2F;
 
-    /*
-    --color-bg: var(--color-white);
-    --color-text: var(--color-greyscale-100);
-    --color-text-secondary: var(--color-greyscale-100);
-    --color-text-light: var(--color-greyscale-100);
-    --color-border: var(--color-greyscale-10);
-    --color-accent: var(--color-greyscale-60);
-    --color-accent-light: var(--color-greyscale-60);
-    --color-primary: var(--color-greyscale-70);
-    --color-primary-purple: var(--color-primitive-50);
-
-    --color-link: var(--color-primitive-100);
-    --color-link-hover: var(--color-primitive-30);
-
-    --color-card-meta: var(--color-greyscale-70);
-    --color-card-title: var(--color-greyscale-100);
-    --color-card-desc: var(--color-greyscale-50);
-    --color-card-hover-bg: var(--color-greyscale-10);
-
-    --color-muted: var(--color-greyscale-40);
-    --color-muted-dark: var(--color-greyscale-80);
-    */
-    
     --font-sans: 'Open Sans', system-ui, sans-serif;
 
     --container-max-width-default: 1240px;
@@ -91,8 +68,8 @@
 
     body {
         font-family: var(--font-sans);
-        background-color: var(--color-bg);
-        color: var(--color-text);
+        background-color: var(--color-white);
+        color: var(--color-text-primary);
         line-height: 1.6;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;

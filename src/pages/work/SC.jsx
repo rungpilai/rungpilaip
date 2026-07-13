@@ -3,12 +3,12 @@ import HeaderWork from '../../components/HeaderWork';
 const S = {
     section: 'mb-12',
     sectionFull: 'mb-12',
-    label: 'text-muted text-sm tracking-[0.08em] font-sans! uppercase mb-3',
+    label: 'text-(--color-text-subtitle) text-sm tracking-[0.08em] font-sans! uppercase mb-3',
     body: 'text-(--color-text) mb-4',
     list: 'text-(--color-text) list-disc pl-5 mt-1 ml-3',
     imgFull: 'w-full max-w-[680px] h-auto rounded mt-6 ',
     twoCol: 'grid grid-cols-1 md:grid-cols-2 gap-6 mt-6',
-    colLabel: 'text-sm text-center tracking-widest text-muted uppercase mb-2',
+    colLabel: 'text-sm text-center tracking-widest text-(--color-text-subtitle) uppercase mb-2',
 };
 
 const SC = () => {
@@ -16,7 +16,7 @@ const SC = () => {
         <>
             <main className="container max-w-4xl mx-auto mt-16">
                 <HeaderWork
-                    title={<>SourceCode Website Redesign: Rebuilding Brand Trust <span className="text-(--color-primary-purple)">Through UX</span></>}
+                    title={<>SourceCode Website Redesign: Rebuilding Brand Trust <span className="text-(--color-primary)">Through UX</span></>}
                     category="Branding & UI Design"
                     role="UX Designer"
                     duration="Jun - Oct 2025"
@@ -54,7 +54,7 @@ const SC = () => {
                         A clear brand direction was defined to align visual identity, tone, and interface design, ensuring a consistent and cohesive experience across all touchpoints.
                     </p>
                     <img src="/img/work/sourcecoode/sc-branding.jpg" alt="Brand direction whiteboard" className="w-full h-auto mt-6 mx-auto sm:max-w-lg rounded-xl" />
-                    <p className='text-text-secondary text-sm italic mt-2'>Visual identity guidelines defining the brand's core elements: logo lockups, primary blue palette, type system (Poppins / Mitr), and personality keywords</p>
+                    <p className='text-(--color-text-subtitle) text-sm italic mt-2'>Visual identity guidelines defining the brand's core elements: logo lockups, primary blue palette, type system (Poppins / Mitr), and personality keywords</p>
                 </div>
 
                 <div className={S.section}>
