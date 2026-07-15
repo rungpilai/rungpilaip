@@ -51,7 +51,7 @@ const Home = () => {
                         <div className="flex flex-col gap-1">
                             <span className="text-sm tracking-widest text-(--color-text-subtitle) uppercase">CURRENTLY</span>
                             <span className="text-(--color-text-secondary)">
-                                Exploring the human experience behind evolving technology.
+                                Exploring physical computing, creative technology, and the future of interaction.
                             </span>
                         </div>
                     </div>
