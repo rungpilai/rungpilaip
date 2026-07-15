@@ -1,6 +1,6 @@
 import { TAGS } from "../utils/works";
 
-const Chip = ({ tag = TAGS[0], count = 0, isSelected, onClick }) => {
+const Chip = ({ tag = TAGS[0], isSelected, onClick }) => {
   return (
     <button
       className={`px-4 py-2 rounded-full border ${
@@ -11,7 +11,7 @@ const Chip = ({ tag = TAGS[0], count = 0, isSelected, onClick }) => {
       }`}
       onClick={() => onClick(tag)}
     >
-      {tag.title}{isSelected ? ` (${count})`: ""}
+      {tag.title}
     </button>
   );
 };

@@ -24,7 +24,7 @@ const CardWork = ({ onClick, year, tags = [], title, description, thumbnail, slu
             <div className="mt-3 flex flex-col gap-1.5 transition-opacity duration-250 group-hover:opacity-70">
                 <span className="text-sm text-(--color-text-subtitle)">{year}</span>
                 <div className="flex flex-wrap gap-1.5">
-                    {[tags.join(' & ')].map((tag) => (
+                    {tags.map((tag) => (
                         <Tag key={tag}>{tag}</Tag>
                     ))}
                 </div>
