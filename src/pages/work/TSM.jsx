@@ -16,7 +16,7 @@ const S = {
 const TSM = () => {
     return (
         <>
-            <main className="container-work mx-auto mt-16">
+            <main className="container-work md:mt-16">
                 <HeaderWork
                     title={<><span className="text-(--color-primary)">ThangSaiMai</span> Antique Shop Website Design</>}
                     tags={['UI Design', 'Branding']}

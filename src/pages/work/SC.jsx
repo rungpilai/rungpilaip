@@ -14,7 +14,7 @@ const S = {
 const SC = () => {
     return (
         <>
-            <main className="container-work mx-auto md:mt-16">
+            <main className="container-work md:mt-16">
                 <HeaderWork
                     title={<>SourceCode Website Redesign: Rebuilding Brand Trust <span className="text-(--color-primary)">Through UX</span></>}
                     tags={['UX/UI Design', 'Branding']}
