@@ -3,7 +3,7 @@ import Tag from "./Tag";
 const HeaderWork = ({ title, tags, role, duration }) => {
     return (
         <header>
-            <h1 className="text-3xl sm:text-4xl font-normal leading-[1.2] mb-3">
+            <h1 className="text-[28px] sm:text-4xl font-normal leading-[1.2] mb-3">
                 {title}
             </h1>
             <div className="mb-7 flex flex-wrap gap-2">

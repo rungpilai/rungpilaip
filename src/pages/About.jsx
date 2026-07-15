@@ -7,8 +7,8 @@ const About = () => {
     return (
         <>
             <main className='md:mt-12'>
-                <div className="container max-w-5xl mx-auto">
-                    <PageTitle className="mb-12 md:mb-16">
+                <div className="container mx-auto">
+                    <PageTitle className="text-[32px] mb-12 md:mb-16">
                         About <span className="text-(--color-primary)">Rungpilai</span>
                     </PageTitle>
 
@@ -33,31 +33,31 @@ const About = () => {
                         <div className="self-stretch inline-flex justify-between items-start pt-5 border-t border-(--color-border)">
                             <div className="inline-flex flex-col justify-start items-start gap-1">
                                 <span className="text-(--color-text-secondary) font-medium">UX/UI Designer</span>
-                                <span className="text-(--color-text-tertiary)">Smile Education (Education)</span>
+                                <span className="text-sm md:text-base text-(--color-text-tertiary)">Smile Education (Education)</span>
                             </div>
-                            <span className="text-(--color-text-tertiary)">2026 - Present</span>
+                            <span className="text-sm md:text-base text-(--color-text-tertiary)">2026 - Present</span>
                         </div>
                         <div className="self-stretch inline-flex justify-between items-start pt-5 border-t border-(--color-border)">
                             <div className="inline-flex flex-col justify-start items-start gap-1">
                                 <span className="text-(--color-text-secondary) font-medium">UX/UI Designer</span>
-                                <span className="text-(--color-text-tertiary)">SourceCode (Software Solutions) </span>
+                                <span className="text-sm md:text-base text-(--color-text-tertiary)">SourceCode (Software Solutions) </span>
                             </div>
-                            <span className="text-(--color-text-tertiary)">2025 - 2026</span>
+                            <span className="text-sm md:text-base text-(--color-text-tertiary)">2025 - 2026</span>
                         </div>
                         <div className="self-stretch inline-flex justify-between items-start pt-5 border-t border-(--color-border)">
                             <div className="inline-flex flex-col justify-start items-start gap-1">
                                 <span className="text-(--color-text-secondary) font-medium">UX Trainee and Researcher</span>
-                                <span className="text-(--color-text-tertiary)">SCG Home (Home Solutions)</span>
+                                <span className="text-sm md:text-base text-(--color-text-tertiary)">SCG Home (Home Solutions)</span>
                             </div>
-                            <span className="text-(--color-text-tertiary)">2024 - 2025</span>
+                            <span className="text-sm md:text-base text-(--color-text-tertiary)">2024 - 2025</span>
                         </div>
                         <div className="justify-start text-xl mt-12">Education</div>
                         <div className="self-stretch inline-flex justify-between items-start pt-5 border-t border-(--color-border)">
                             <div className="inline-flex flex-col justify-start items-start gap-1">
                                 <span className="text-(--color-text-secondary) font-medium">Bachelor of Arts, Language and Information Technology</span>
-                                <span className="text-(--color-text-tertiary)">Chulalongkorn University</span>
+                                <span className="text-sm md:text-base text-(--color-text-tertiary)">Chulalongkorn University</span>
                             </div>
-                            <span className="text-(--color-text-tertiary)">2021 - 2025</span>
+                            <span className="text-sm md:text-base text-(--color-text-tertiary)">2021 - 2025</span>
                         </div>
                     </div>
 
