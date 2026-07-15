@@ -6,9 +6,9 @@ import { EMAIL_ADDRESS } from '../utils/email';
 const About = () => {
     return (
         <>
-            <main className='mt-16 pb-10'>
+            <main className='md:mt-12'>
                 <div className="container max-w-5xl mx-auto">
-                    <PageTitle className="mb-16">
+                    <PageTitle className="mb-12 md:mb-16">
                         About <span className="text-(--color-primary)">Rungpilai</span>
                     </PageTitle>
 
@@ -17,7 +17,6 @@ const About = () => {
                         <ActionLink
                             href="/rungpilai_resume_2026.pdf"
                             download
-                            className="mt-4"
                             icon={
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -32,31 +31,39 @@ const About = () => {
 
                     <div className="flex flex-col justify-start items-start gap-5">
                         <div className="self-stretch inline-flex justify-between items-start pt-5 border-t border-(--color-border)">
-                            <div className="size- inline-flex flex-col justify-start items-start gap-1">
+                            <div className="inline-flex flex-col justify-start items-start gap-1">
                                 <span className="text-(--color-text-secondary) font-medium">UX/UI Designer</span>
                                 <span className="text-(--color-text-tertiary)">Smile Education (Education)</span>
                             </div>
                             <span className="text-(--color-text-tertiary)">2026 - Present</span>
                         </div>
                         <div className="self-stretch inline-flex justify-between items-start pt-5 border-t border-(--color-border)">
-                            <div className="w-64 inline-flex flex-col justify-start items-start gap-1">
-                                <span className="=text-(--color-text-secondary) font-medium">UX/UI Designer</span>
+                            <div className="inline-flex flex-col justify-start items-start gap-1">
+                                <span className="text-(--color-text-secondary) font-medium">UX/UI Designer</span>
                                 <span className="text-(--color-text-tertiary)">SourceCode (Software Solutions) </span>
                             </div>
                             <span className="text-(--color-text-tertiary)">2025 - 2026</span>
                         </div>
                         <div className="self-stretch inline-flex justify-between items-start pt-5 border-t border-(--color-border)">
-                            <div className="w-64 inline-flex flex-col justify-start items-start gap-1">
-                                <span className="=text-(--color-text-secondary) font-medium">UX Trainee and Researcher</span>
+                            <div className="inline-flex flex-col justify-start items-start gap-1">
+                                <span className="text-(--color-text-secondary) font-medium">UX Trainee and Researcher</span>
                                 <span className="text-(--color-text-tertiary)">SCG Home (Home Solutions)</span>
                             </div>
                             <span className="text-(--color-text-tertiary)">2024 - 2025</span>
                         </div>
+                        <div className="justify-start text-xl mt-12">Education</div>
+                        <div className="self-stretch inline-flex justify-between items-start pt-5 border-t border-(--color-border)">
+                            <div className="inline-flex flex-col justify-start items-start gap-1">
+                                <span className="text-(--color-text-secondary) font-medium">Bachelor of Arts, Language and Information Technology</span>
+                                <span className="text-(--color-text-tertiary)">Chulalongkorn University</span>
+                            </div>
+                            <span className="text-(--color-text-tertiary)">2021 - 2025</span>
+                        </div>
                     </div>
 
-                    <div className="self-stretch flex flex-col justify-center items-start gap-6 md:gap-12 md:flex-row-reverse mt-16 mb-12 md:my-16">
-                        <section className="gap-5">
-                            <p className="text-xl leading-normal mb-5">
+                    <div className="self-stretch flex flex-col justify-center items-start gap-5 md:gap-12 md:flex-row-reverse mt-16 mb-12 md:my-16">
+                        <section className="flex flex-col gap-5">
+                            <p className="text-xl leading-normal">
                                 Still exploring, shaped by what I create <br className="hidden sm:block" />
                                 and what I choose to leave behind.
                             </p>
@@ -76,9 +83,9 @@ const About = () => {
                         </section>
                     </div>
 
-                    <section className="mb-20 flex flex-col gap-6 md:gap-12">
+                    <section className="my-12 md:mb-20 flex flex-col gap-6 md:gap-12">
                         <div className="flex flex-col gap-6 md:gap-5">
-                            <p className="text-xl leading-relaxed mb-4">
+                            <p className="text-xl leading-relaxed">
                                 My <span className="text-(--color-primary)">workflow</span> is not a straight line.<br />
                                 More like layers of thinking stacked over time.
                             </p>
