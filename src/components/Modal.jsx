@@ -34,20 +34,27 @@ const Modal = ({ isOpen, onClose, children }) => {
         }`}
         >
             <div className="relative z-30 w-full max-h-screen overflow-scroll">
-                <div className="mt-16 container max-w-5xl mx-auto flex flex-row justify-between">
+                <div className="mt-16 container mx-auto flex flex-row justify-between">
                     <ActionLink onClick={handleClose} icon="‹" iconPosition="left" className="!hidden md:!inline-flex">
                         BACK
                     </ActionLink>
                     <button
-                    onClick={handleClose}
-                    className="ml-auto inline-flex md:hidden rounded-full size-8 items-center justify-center border border-(--color-border)  text-(--color-text-tertiary) hover:text-white hover:bg-(--color-text-tertiary) transition-colors"
+                        onClick={handleClose}
+                        className={`ml-auto size-12 transition-colors ${
+                                "inline-flex md:hidden items-center justify-center"
+                            } ${
+                                "rounded-full border border-(--color-border)"
+                            } ${
+                                "text-(--color-text-tertiary) hover:text-white hover:bg-(--color-text-tertiary)"
+                            }`
+                        }
                     >
-                    ✕
+                        <span className="text-base font-semibold leading-none relative -top-px flex items-center">✕</span>
                     </button>
                 </div>
                 {children}
-                <div className="mb-16 container max-w-5xl mx-auto">
-                    <ActionLink onClick={handleClose} icon="‹" iconPosition="left">BACK</ActionLink>
+                <div className="mb-16 container mx-auto">
+                    <ActionLink onClick={handleClose} icon="‹" iconPosition="left" className="!hidden md:!inline-flex">BACK</ActionLink>
                 </div>
             </div>
         </div>
