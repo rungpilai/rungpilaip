@@ -16,7 +16,7 @@ const S = {
 const ET = () => {
     return (
         <>
-            <main className="container-workmx-auto mt-16">
+            <main className="container-work mx-auto mt-16">
                 <HeaderWork
                     title={<><span className="text-(--color-primary)">AI Eye Tracking</span>{' '}for Design Practice in Corporate Routine</>}
                     tags={['Experimental Design']}
