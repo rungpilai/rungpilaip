@@ -7,7 +7,7 @@ const Works = () => {
         <>
             <main className='mt-16'>
                 <section className="container">
-                    <PageTitle className="mb-2 text-(--color-text-primary)">All Works</PageTitle>
+                    <PageTitle className="mb-2">All Works</PageTitle>
                     <p className=" text-(--color-text-secondary) mb-8">
                         A collection of projects from product design, branding, and design experiments.
                     </p>

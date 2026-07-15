@@ -8,12 +8,12 @@ const About = () => {
         <>
             <main className='mt-16 pb-10'>
                 <div className="container max-w-5xl mx-auto">
-                    <PageTitle className="mb-16 text-5xl">
+                    <PageTitle className="mb-16">
                         About <span className="text-(--color-primary)">Rungpilai</span>
                     </PageTitle>
 
                     <section className="flex flex-row items-center justify-between mb-6">
-                        <div className="justify-start text-(--color-text-primary) text-xl">Career Summary</div>
+                        <div className="justify-start text-xl">Career Summary</div>
                         <ActionLink
                             href="/rungpilai_resume_2026.pdf"
                             download
@@ -56,7 +56,7 @@ const About = () => {
 
                     <div className="self-stretch flex flex-col justify-center items-start gap-6 md:gap-12 md:flex-row-reverse mt-16 mb-12 md:my-16">
                         <section className="gap-5">
-                            <p className="text-xl leading-normal mb-5 text-(--color-text-primary)">
+                            <p className="text-xl leading-normal mb-5">
                                 Still exploring, shaped by what I create <br className="hidden sm:block" />
                                 and what I choose to leave behind.
                             </p>
@@ -78,7 +78,7 @@ const About = () => {
 
                     <section className="mb-20 flex flex-col gap-6 md:gap-12">
                         <div className="flex flex-col gap-6 md:gap-5">
-                            <p className="text-xl leading-relaxed mb-4 text-(--color-text-primary)">
+                            <p className="text-xl leading-relaxed mb-4">
                                 My <span className="text-(--color-primary)">workflow</span> is not a straight line.<br />
                                 More like layers of thinking stacked over time.
                             </p>
@@ -100,7 +100,7 @@ const About = () => {
                     </section>
 
                     <section className="mt-12 mb-16 md:my-20 flex flex-col gap-5">
-                        <p className="text-xl text-(--color-text-primary)">
+                        <p className="text-xl">
                             Create first. <br />
                             Refine later. <br />
                             Become through repetition.

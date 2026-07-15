@@ -35,7 +35,7 @@ const Home = () => {
             <Navbar onAboutClick={() => setSelectedModelPage('/about')} />
             <main className='mt-16'>
                 <section className="container">
-                    <PageTitle className="mb-10 text-(--color-text-primary)">
+                    <PageTitle className="mb-10">
                         Design Technologist<br />and Product Designer
                     </PageTitle>
 
@@ -70,7 +70,7 @@ const Home = () => {
                 </section>
 
                 <section id="selected-work" className="container pb-8 scroll-mt-26">
-                    <h2 className="text-3xl font-normal mb-3 text-(--color-text-primary)">Curated Works</h2>
+                    <h2 className="text-3xl font-normal mb-3">Curated Works</h2>
                     <p className="text-(--color-text-secondary) leading-relaxed mb-10">
                         Each project quietly reshapes how I think and who I'm becoming as a designer, <br className="hidden sm:block" />
                         here are some of the ones I'm most proud of.
