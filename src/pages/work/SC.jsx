@@ -14,10 +14,10 @@ const S = {
 const SC = () => {
     return (
         <>
-            <main className="container max-w-4xl mx-auto mt-16">
+            <main className="container-work mx-auto md:mt-16">
                 <HeaderWork
                     title={<>SourceCode Website Redesign: Rebuilding Brand Trust <span className="text-(--color-primary)">Through UX</span></>}
-                    category="Branding & UI Design"
+                    tags={['UX/UI Design', 'Branding']}
                     role="UX Designer"
                     duration="Jun - Oct 2025"
                 />

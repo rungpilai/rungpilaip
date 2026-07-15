@@ -16,10 +16,10 @@ const S = {
 const ET = () => {
     return (
         <>
-            <main className="container max-w-4xl mx-auto mt-16">
+            <main className="container-workmx-auto mt-16">
                 <HeaderWork
                     title={<><span className="text-(--color-primary)">AI Eye Tracking</span>{' '}for Design Practice in Corporate Routine</>}
-                    category="Idea Validation & Experimental Design"
+                    tags={['Experimental Design']}
                     role="UX Researcher"
                     duration="Mar - May 2025"
                 />
@@ -64,7 +64,7 @@ const ET = () => {
                     <div className="text-center py-8">
                         <img src="/img/work/et/vector.svg" alt="Problem identification" className="w-8 h-auto mx-auto mb-4" />
                         <p className={S.label}>PROBLEM IDENTIFICATION</p>
-                        <blockquote className="text-[1.1rem] text-(--color-text-primary) mx-auto leading-relaxed">
+                        <blockquote className="text-[1.1rem] mx-auto leading-relaxed">
                             "Is it true that marketers' assumptions align with the actual customers' eye focus area?"
                         </blockquote>
                     </div>

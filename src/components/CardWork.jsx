@@ -23,14 +23,14 @@ const CardWork = ({ onClick, year, tags = [], title, description, thumbnail, slu
 
             <div className="mt-3 flex flex-col gap-1.5 transition-opacity duration-250 group-hover:opacity-70">
                 <span className="text-sm text-(--color-text-subtitle)">{year}</span>
-                <div className="flex flex-wrap gap-1.5">
-                    {[tags.join(' & ')].map((tag) => (
+                <div className="flex flex-wrap gap-2">
+                    {tags.map((tag) => (
                         <Tag key={tag}>{tag}</Tag>
                     ))}
                 </div>
             </div>
 
-            <h3 className="font-sans text-xl font-normal leading-[1.35] mt-2 text-(--color-text-primary) transition-colors duration-250 group-hover:text-(--color-primary)">
+            <h3 className="font-sans text-xl font-normal leading-[1.35] mt-2 transition-colors duration-250 group-hover:text-(--color-primary)">
                 {title}
             </h3>
 
