@@ -16,10 +16,10 @@ const S = {
 const ET = () => {
     return (
         <>
-            <main className="container max-w-4xl mx-auto mt-16">
+            <main className="container-workmx-auto mt-16">
                 <HeaderWork
                     title={<><span className="text-(--color-primary)">AI Eye Tracking</span>{' '}for Design Practice in Corporate Routine</>}
-                    category="Idea Validation & Experimental Design"
+                    tags={['Experimental Design']}
                     role="UX Researcher"
                     duration="Mar - May 2025"
                 />

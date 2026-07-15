@@ -16,10 +16,10 @@ const S = {
 const TSM = () => {
     return (
         <>
-            <main className="container max-w-4xl mx-auto mt-16">
+            <main className="container-workmx-auto mt-16">
                 <HeaderWork
                     title={<><span className="text-(--color-primary)">ThangSaiMai</span> Antique Shop Website Design</>}
-                    category="UI Design"
+                    tags={['UI Design', 'Branding']}
                     role="UI Designer"
                     duration="May - Jun 2025"
                 />
