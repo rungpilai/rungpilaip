@@ -7,7 +7,7 @@ const About = () => {
     return (
         <>
             <main className='md:mt-12'>
-                <div className="container mx-auto">
+                <div className="container-about">
                     <PageTitle className="text-[32px] mb-12 md:mb-16">
                         About <span className="text-(--color-primary)">Rungpilai</span>
                     </PageTitle>
