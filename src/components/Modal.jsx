@@ -34,13 +34,13 @@ const Modal = ({ isOpen, onClose, children }) => {
         }`}
         >
             <div className="relative z-30 w-full max-h-screen overflow-scroll">
-                <div className="mt-16 container mx-auto flex flex-row justify-between">
+                <div className="mt-16 container-about flex flex-row justify-between">
                     <ActionLink onClick={handleClose} icon="‹" iconPosition="left" className="!hidden md:!inline-flex">
                         BACK
                     </ActionLink>
                     <button
                         onClick={handleClose}
-                        className={`ml-auto size-12 transition-colors ${
+                        className={`fixed top-4 right-4 size-12 transition-colors ${
                                 "inline-flex md:hidden items-center justify-center"
                             } ${
                                 "rounded-full border border-(--color-border)"
@@ -49,11 +49,11 @@ const Modal = ({ isOpen, onClose, children }) => {
                             }`
                         }
                     >
-                        <span className="text-base font-semibold leading-none relative -top-px flex items-center">✕</span>
+                        <span className="text-lg font-semibold leading-none relative -top-px flex items-center">✕</span>
                     </button>
                 </div>
                 {children}
-                <div className="mb-16 container mx-auto">
+                <div className="mb-16 container-about">
                     <ActionLink onClick={handleClose} icon="‹" iconPosition="left" className="!hidden md:!inline-flex">BACK</ActionLink>
                 </div>
             </div>
