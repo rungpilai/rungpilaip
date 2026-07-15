@@ -33,13 +33,13 @@ const Home = () => {
     return (
         <>
             <Navbar onAboutClick={() => setSelectedModelPage('/about')} />
-            <main className='mt-16'>
+            <main className='mt-12 md:mt-16'>
                 <section className="container">
                     <PageTitle className="mb-10">
                         Design Technologist<br />and Product Designer
                     </PageTitle>
 
-                    <div className="flex flex-col sm:flex-row flex-wrap gap-8 md:gap-12 mb-15">
+                    <div className="flex flex-col sm:flex-row flex-wrap gap-8 md:gap-12 mb-12 md:mb-15">
                         <div className="flex flex-col gap-1">
                             <span className="text-sm tracking-widest text-(--color-text-subtitle) uppercase">BASED IN</span>
                             <span className="text-(--color-text-secondary)">Bangkok, TH</span>
