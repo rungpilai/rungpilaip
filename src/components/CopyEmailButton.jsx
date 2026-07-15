@@ -18,7 +18,7 @@ const CopyEmailButton = ({ email = EMAIL_ADDRESS, className = '', size = 14, str
             aria-label="Copy email"
         >
             {copied ? (
-                <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className="text-green-500">
+                <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className="text-(--color-primary)">
                     <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
             ) : (

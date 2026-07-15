@@ -45,7 +45,7 @@ const Modal = ({ isOpen, onClose, children }) => {
                             } ${
                                 "rounded-full border border-(--color-border)"
                             } ${
-                                "text-(--color-text-tertiary) hover:text-white hover:bg-(--color-text-tertiary)"
+                                "text-(--color-text-tertiary) bg-white hover:text-white hover:bg-(--color-text-tertiary)"
                             }`
                         }
                     >
