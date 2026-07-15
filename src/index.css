@@ -42,21 +42,60 @@
 
     --font-sans: 'Open Sans', system-ui, sans-serif;
 
-    --container-max-width-default: 1240px;
+    --container-max-width-home: 1240px;
+    --container-max-width-about: 1030px;
     --container-max-width-work: 820px;
+
+    --padding-home: 100px;
+    --padding-about: 205px;
+    --padding-work: 305px;
 }
 
 @layer utilities {
     .container {
-        max-width: var(--container-max-width-default);
         margin-inline: auto;
-        padding-inline: 1.5rem;
+        padding-inline: 20px;
+    }
+
+    .container-about {
+        margin-inline: auto;
+        padding-inline: 20px;
     }
 
     .container-work {
-        max-width: var(--container-max-width-work);
         margin-inline: auto;
-        padding-inline: 1.5rem;
+        padding-inline: 20px;
+    }
+
+    @media (min-width: theme('screens.md')) {
+        .container {
+            max-width: clamp(0px, var(--container-max-width-home), calc(100vw - var(--padding-home) * 1));
+            padding-inline: 0px;
+        }
+
+        .container-about {
+            max-width: clamp(0px, var(--container-max-width-about), calc(100vw - var(--padding-home) * 1.68));
+            padding-inline: 0px;
+        }
+
+        .container-work {
+            max-width: clamp(0px, var(--container-max-width-work), calc(100vw - var(--padding-home) * 1.68 * 1.68));
+            padding-inline: 0px;
+        }
+    }
+
+    @media (min-width: theme('screens.lg')) {
+        .container {
+            max-width: clamp(0px, var(--container-max-width-home), calc(100vw - var(--padding-home) * 2));
+        }
+
+        .container-about {
+            max-width: clamp(0px, var(--container-max-width-about), calc(100vw - var(--padding-about) * 2));
+        }
+
+        .container-work {
+            max-width: clamp(0px, var(--container-max-width-work), calc(100vw - var(--padding-work) * 2));
+        }
     }
 }
 

@@ -16,7 +16,7 @@ const S = {
 const SCG = () => {
     return (
         <>
-            <main className="container-work mx-auto mt-16">
+            <main className="container-work md:mt-16">
                 <HeaderWork
                     title={<><span className="text-(--color-primary)">SCG Home</span> UX Case Study for Home Renovators</>}
                     tags={['UX/UI Design']}
