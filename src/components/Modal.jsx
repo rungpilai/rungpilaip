@@ -40,12 +40,14 @@ const Modal = ({ isOpen, onClose, children }) => {
                     </ActionLink>
                     <button
                         onClick={handleClose}
-                        className={`fixed top-4 right-4 size-12 transition-colors ${
+                        className={`fixed top-4 right-4 z-40 ${
                                 "inline-flex md:hidden items-center justify-center"
                             } ${
-                                "rounded-full border border-(--color-border)"
+                                "rounded-full size-12 border transition-colors"
                             } ${
-                                "text-(--color-text-tertiary) bg-white hover:text-white hover:bg-(--color-text-tertiary)"
+                                "text-(--color-text-tertiary) bg-white border-(--color-border)"
+                            } ${
+                                "hover:text-white hover:bg-(--color-text-tertiary) hover:border-none"
                             }`
                         }
                     >
