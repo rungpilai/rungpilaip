@@ -2,6 +2,7 @@ import ActionLink from '../components/ActionLink';
 import PageTitle from '../components/PageTitle';
 import CopyEmailButton from '../components/CopyEmailButton';
 import { EMAIL_ADDRESS } from '../utils/email';
+import DownloadIcon from '../components/icon/DownloadIcon';
 
 const About = () => {
     return (
@@ -18,11 +19,7 @@ const About = () => {
                             href="/rungpilai_resume_2026.pdf"
                             download
                             icon={
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                                    <polyline points="7 10 12 15 17 10" />
-                                    <line x1="12" y1="15" x2="12" y2="3" />
-                                </svg>
+                                <DownloadIcon />
                             }
                         >
                             DOWNLOAD CV
@@ -54,27 +51,27 @@ const About = () => {
                         <div className="justify-start text-xl mt-12">Education</div>
                         <div className="self-stretch inline-flex justify-between items-start pt-5 border-t border-(--color-border)">
                             <div className="inline-flex flex-col justify-start items-start gap-1">
-                                <span className="text-(--color-text-secondary) font-medium">Bachelor of Arts, Language and Information Technology</span>
+                                <span className="text-(--color-text-secondary) font-medium">Bachelor of Arts, Language <br className="block sm:hidden" />and Information Technology</span>
                                 <span className="text-sm md:text-base text-(--color-text-tertiary)">Chulalongkorn University</span>
                             </div>
                             <span className="text-sm md:text-base text-(--color-text-tertiary) whitespace-nowrap">2021 - 2025</span>
                         </div>
                     </div>
 
-                    <div className="self-stretch flex flex-col justify-center items-start gap-5 md:gap-12 md:flex-row-reverse mt-16 mb-12 md:my-16">
-                        <section className="flex flex-col gap-5">
+                    <div className="self-stretch flex flex-col justify-center items-start gap-5 desktop:gap-12 desktop:flex-row-reverse mt-16 mb-12 desktop:my-16">
+                        <section className="flex flex-col gap-5 flex-[calc(409/1030*100%)]">
                             <p className="text-xl leading-normal">
                                 Still exploring, shaped by what I create <br className="hidden sm:block" />
                                 and what I choose to leave behind.
                             </p>
                             <p className="leading-relaxed text-(--color-text-secondary) mb-4">
-                                Fashion was one of the first forms of design I truly connected with. I became fascinated by the idea that even the most expressive pieces begin with structure, patterns, construction, and thoughtful decisions beneath the surface. That way of thinking continues to influence my work today. I approach design not only through visuals, but through systems, context, and the relationship between logic and feeling.
+                                Fashion was one of the first forms of design I truly connected with. I became fascinated by the idea that even the most expressive pieces begin with structure, patterns, construction, and thoughtful decisions beneath the surface. That way of thinking continues to influence my work. I approach design not only through visuals, but through the stories people create with it.
                             <br/><br/>
-                                Today, I see design as more than creating interfaces. For me, it's about understanding behavior, experimenting with emerging technologies, and building experiences that connect people with technology in a more natural and meaningful way.
+                                Today, my curiosity has expanded beyond digital interfaces into emerging technologies, interaction, and the ways people experience them.
                             </p>
                         </section>
 
-                        <section className="rounded-2xl overflow-hidden">
+                        <section className="rounded-2xl overflow-hidden flex-[calc(573/1030*100%)]">
                             <img
                                 src="/img/about/self-pic.jpg"
                                 alt="Rungpilai Patpai"
@@ -113,11 +110,13 @@ const About = () => {
                             Become through repetition.
                         </p>
                         <p className="text-(--color-text-secondary)">
-                            If my perspective resonates with you, perhaps we can create experiences that people not only use, but genuinely connect with.
+                            If my perspective resonates with you, perhaps we can create
+                            <br className="hidden md:block" />
+                            experiences that people not only use, but genuinely connect with.
                         </p>
                         <span className="text-(--color-text-tertiary) inline-flex gap-1 items-center">
                             {EMAIL_ADDRESS}
-                            <CopyEmailButton size={14} strokeWidth={2} />
+                            <CopyEmailButton />
                         </span>
                     </section>
                 </div>

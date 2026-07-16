@@ -10,7 +10,7 @@ const Footer = () => {
 
                 <div className="flex items-center gap-1.5 text-base text-(--color-text-tertiary)">
                     <span>{EMAIL_ADDRESS}</span>
-                    <CopyEmailButton className="text-(--color-text-tertiary) hover:text-(--color-text-secondary)" />
+                    <CopyEmailButton />
                 </div>
 
                 <nav className="flex flex-wrap justify-center items-center gap-4 md:gap-6 mt-3">

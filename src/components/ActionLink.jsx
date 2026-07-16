@@ -15,11 +15,11 @@ const ActionLink = ({
     const content = (
         <>
             {iconPosition === 'left' && icon && (
-                <span className="text-base leading-none relative -top-px flex items-center">{icon}</span>
+                icon
             )}
             <span>{children}</span>
             {iconPosition === 'right' && icon && (
-                <span className="text-base leading-none relative -top-px flex items-center">{icon}</span>
+                icon
             )}
         </>
     );
@@ -41,9 +41,9 @@ const ActionLink = ({
                 } ${
                     "text-(--color-text-tertiary) border-(--color-border)"
                 } ${
-                    "hover:text-white hover:bg-(--color-primary)"
+                    "hover:text-white hover:bg-(--color-primary) hover:border-transparent"
                 } ${
-                    "active:bg-(--color-primary-active)"
+                    "active:bg-(--color-primary-active) hover:border-transparent"
                 }`} onClick={onClick}>
                 {content}
             </a>

@@ -46,55 +46,71 @@
     --container-max-width-about: 1030px;
     --container-max-width-work: 820px;
 
-    --padding-home: 100px;
-    --padding-about: 205px;
-    --padding-work: 305px;
+    --padding-home-md: 6.944vw; /* 100 / 1440 */
+    --padding-about-md: 14.236vw; /* 205 / 1440 */
+    --padding-work-md: 21.181vw; /* 305 / 1440 */
+
+    --padding-home-desktop: 100px;
+    --padding-about-desktop: 205px;
+    --padding-work-desktop: 305px;
+
+    --breakpoint-desktop: 1440px;
 }
 
 @layer utilities {
     .container {
-        margin-inline: auto;
+        width: 100%;
+        margin-inline: 0px;
         padding-inline: 20px;
     }
 
     .container-about {
-        margin-inline: auto;
+        width: 100%;
+        margin-inline: 0px;
         padding-inline: 20px;
     }
 
     .container-work {
-        margin-inline: auto;
+        width: 100%;
+        margin-inline: 0px;
         padding-inline: 20px;
     }
 
     @media (min-width: theme('screens.md')) {
         .container {
-            max-width: clamp(0px, var(--container-max-width-home), calc(100vw - var(--padding-home) * 1));
-            padding-inline: 0px;
+            margin-inline: auto;
+            padding-inline: var(--padding-home-md);
+            max-width: calc(var(--container-max-width-home) + var(--padding-home-md) * 2);
         }
 
         .container-about {
-            max-width: clamp(0px, var(--container-max-width-about), calc(100vw - var(--padding-home) * 1.68));
-            padding-inline: 0px;
+            margin-inline: auto;
+            padding-inline: var(--padding-about-md);
+            max-width: calc(var(--container-max-width-about) + var(--padding-about-md) * 2);
         }
 
         .container-work {
-            max-width: clamp(0px, var(--container-max-width-work), calc(100vw - var(--padding-home) * 1.68 * 1.68));
-            padding-inline: 0px;
+            margin-inline: auto;
+            padding-inline: var(--padding-work-md);
+            max-width: calc(var(--container-max-width-work) + var(--padding-work-md) * 2);
         }
     }
 
-    @media (min-width: theme('screens.lg')) {
+    @media (min-width: theme('screens.desktop')) {
         .container {
-            max-width: clamp(0px, var(--container-max-width-home), calc(100vw - var(--padding-home) * 2));
+            margin-inline: auto;
+            padding-inline: var(--padding-home-desktop);
+            max-width: calc(var(--container-max-width-home) + var(--padding-home-desktop) * 2);
         }
-
         .container-about {
-            max-width: clamp(0px, var(--container-max-width-about), calc(100vw - var(--padding-about) * 2));
+            margin-inline: auto;
+            padding-inline: var(--padding-about-desktop);
+            max-width: calc(var(--container-max-width-about) + var(--padding-about-desktop) * 2);
         }
-
         .container-work {
-            max-width: clamp(0px, var(--container-max-width-work), calc(100vw - var(--padding-work) * 2));
+            margin-inline: auto;
+            padding-inline: var(--padding-work-desktop);
+            max-width: calc(var(--container-max-width-work) + var(--padding-work-desktop) * 2);
         }
     }
 }

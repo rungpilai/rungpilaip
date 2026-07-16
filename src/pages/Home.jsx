@@ -9,9 +9,26 @@ import SC from './work/SC';
 import SCG from './work/SCG';
 import TSM from './work/TSM';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 const Home = () => {
     const [selectedModelPage, setSelectedModelPage] = useState('');
+
+    const handleOpenModal = (slug) => {
+        setSelectedModelPage(slug)
+        window.history.pushState({ modalOpen: true }, '');
+    };
+
+    const handleCloseModal = () => {
+        setSelectedModelPage('')
+        if (window.history.state?.modalOpen) {
+            window.history.back();
+        }
+    };
+
+    const handleScrollToWorks = () => {
+        document.getElementById('selected-work')?.scrollIntoView({ behavior: 'smooth' })
+    }
 
     const renderModalContent = (slug) => {
         switch (slug) {
@@ -30,9 +47,21 @@ const Home = () => {
         }
     };
 
+    useEffect(() => {
+        const handlePopState = () => {
+        setSelectedModelPage('')
+        };
+
+        window.addEventListener('popstate', handlePopState);
+
+        return () => {
+            window.removeEventListener('popstate', handlePopState);
+        };
+    }, []);
+
     return (
         <>
-            <Navbar onAboutClick={() => setSelectedModelPage('/about')} />
+            <Navbar onAboutClick={() => handleOpenModal('/about')} />
             <main className='mt-12 md:mt-16'>
                 <section className="container">
                     <PageTitle className="text-[32px] mb-10">
@@ -58,7 +87,7 @@ const Home = () => {
 
                     <button
                         className="bg-transparent border-none cursor-pointer tracking-[0.08em] p-0 transition-opacity duration-200 text-(--color-text-subtitle) hover:text-(--color-text-secondary)"
-                        onClick={() => document.getElementById('selected-work')?.scrollIntoView({ behavior: 'smooth' })}
+                        onClick={() => handleScrollToWorks()}
                         aria-label="Scroll to work"
                     >
                         SCROLL ↓
@@ -76,7 +105,7 @@ const Home = () => {
                         here are some of the ones I'm most proud of.
                     </p>
 
-                    <FilterableWorks onWorkClick={(slug) => setSelectedModelPage(slug)} />
+                    <FilterableWorks onWorkClick={(slug) => handleOpenModal(slug)} />
                 </section>
             </main>
             <div className="px-2.5 py-28 flex justify-center items-center gap-2.5">
@@ -90,7 +119,7 @@ const Home = () => {
                 selectedModelPage.length != 0 ?
                     <Modal
                     isOpen={selectedModelPage.length != 0}
-                    onClose={() => setSelectedModelPage('')}>
+                    onClose={() => handleCloseModal()}>
                         {renderModalContent(selectedModelPage)}
                     </Modal>
                 : null

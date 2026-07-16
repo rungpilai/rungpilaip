@@ -54,19 +54,21 @@ const SC = () => {
                         A clear brand direction was defined to align visual identity, tone, and interface design, ensuring a consistent and cohesive experience across all touchpoints.
                     </p>
                     <img src="/img/work/sourcecoode/sc-branding.jpg" alt="Brand direction whiteboard" className="w-full h-auto mt-6 mx-auto sm:max-w-lg rounded-xl" />
-                    <p className='text-(--color-text-subtitle) text-sm italic mt-2'>Visual identity guidelines defining the brand's core elements: logo lockups, primary blue palette, type system (Poppins / Mitr), and personality keywords</p>
+                    <p className='text-(--color-text-subtitle) text-sm italic mt-2'>
+                        Visual identity guidelines defining the brand's core elements: logo lockups, primary blue palette, type system (Poppins / Mitr), and personality keywords
+                    </p>
                 </div>
 
                 <div className={S.section}>
-                    <p className={`${S.label} mt-10`}>Stakeholder Interview with the CEO</p>
+                    <p className={`${S.label} mt-10`}>Stakeholder Requirements</p>
                     <p className={S.body}>
-                        To align the redesign with the company's direction, I started with research on both the business and audience side.
+                        To better understand the company's vision and business priorities, I gathered stakeholder requirements and aligned the redesign around key objectives, including:
                     </p>
                     <ul className={S.list}>
                         <li>Target audiences the company wants to attract</li>
-                        <li>Products to prioritize moving forward</li>
-                        <li>How SourceCode should be perceived externally</li>
-                        <li>Types of partnerships the company is aiming for</li>
+                        <li>Priority products and services</li>
+                        <li>Desired brand perception</li>
+                        <li>Business and partnership goals</li>
                     </ul>
                 </div>
 
@@ -98,7 +100,7 @@ const SC = () => {
                 <div className={S.section}>
                     <p className={S.label}>IMPACT</p>
                     <p className={S.body}>
-                        The redesigned website elevates brand credibility and clarifies offerings, helping support partnerships, client connections, and early-stage sales conversations. (Impact is qualitative, as no tracking or lead analytics are implemented yet.)
+                        The redesigned website elevates brand credibility and clarifies offerings, helping support partnerships, client connections, and early-stage sales conversations.
                     </p>
                 </div>
             </main>
