@@ -1,6 +1,6 @@
 import { TAGS } from "../utils/works";
 
-const Chip = ({ tag = TAGS[0], isSelected, onClick }) => {
+const TagButton = ({ tag = TAGS[0], isSelected, onClick }) => {
   return (
     <button
       className={`px-4 py-2 rounded-full border text-sm ${
@@ -16,4 +16,4 @@ const Chip = ({ tag = TAGS[0], isSelected, onClick }) => {
   );
 };
 
-export default Chip;
+export default TagButton;

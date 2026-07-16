@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { TAGS, WORKS } from "../utils/works";
 import CardWork from "./CardWork";
-import Chip from "./Chip";
+import TagButton from "./TagButton";
 
 const FilterableWorks = ({ onWorkClick }) => {
   const [selectedTag, setSelectedTag] = useState(TAGS[0]);
@@ -22,7 +22,7 @@ const FilterableWorks = ({ onWorkClick }) => {
       <div className="flex flex-col">
         <div className="flex flex-wrap gap-4">
           {TAGS.map((tag) => (
-            <Chip
+            <TagButton
               key={tag.title}
               tag={tag}
               isSelected={selectedTag.title === tag.title}

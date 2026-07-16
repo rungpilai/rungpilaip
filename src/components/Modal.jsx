@@ -55,7 +55,7 @@ const Modal = ({ isOpen, onClose, children }) => {
                             } ${
                                 "text-(--color-text-tertiary) bg-white border-(--color-border)"
                             } ${
-                                "hover:text-white hover:bg-(--color-text-tertiary) hover:border-none"
+                                "hover:text-white hover:bg-(--color-text-tertiary) hover:border-transparent"
                             }`
                         }
                     >
