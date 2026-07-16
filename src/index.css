@@ -55,21 +55,23 @@
     --padding-work-desktop: 305px;
 
     --breakpoint-desktop: 1440px;
-    --breakpoint-mobile: 340px;
 }
 
 @layer utilities {
     .container {
+        width: 100%;
         margin-inline: 0px;
         padding-inline: 20px;
     }
 
     .container-about {
+        width: 100%;
         margin-inline: 0px;
         padding-inline: 20px;
     }
 
     .container-work {
+        width: 100%;
         margin-inline: 0px;
         padding-inline: 20px;
     }
