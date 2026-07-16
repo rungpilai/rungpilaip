@@ -54,14 +54,14 @@ const About = () => {
                         <div className="justify-start text-xl mt-12">Education</div>
                         <div className="self-stretch inline-flex justify-between items-start pt-5 border-t border-(--color-border)">
                             <div className="inline-flex flex-col justify-start items-start gap-1">
-                                <span className="text-(--color-text-secondary) font-medium">Bachelor of Arts, Language and Information Technology</span>
+                                <span className="text-(--color-text-secondary) font-medium">Bachelor of Arts, Language <br className="block sm:hidden" />and Information Technology</span>
                                 <span className="text-sm md:text-base text-(--color-text-tertiary)">Chulalongkorn University</span>
                             </div>
                             <span className="text-sm md:text-base text-(--color-text-tertiary) whitespace-nowrap">2021 - 2025</span>
                         </div>
                     </div>
 
-                    <div className="self-stretch flex flex-col justify-center items-start gap-5 md:gap-12 md:flex-row-reverse mt-16 mb-12 md:my-16">
+                    <div className="self-stretch flex flex-col justify-center items-start gap-5 desktop:gap-12 desktop:flex-row-reverse mt-16 mb-12 desktop:my-16">
                         <section className="flex flex-col gap-5 flex-[calc(409/1030*100%)]">
                             <p className="text-xl leading-normal">
                                 Still exploring, shaped by what I create <br className="hidden sm:block" />
@@ -78,7 +78,7 @@ const About = () => {
                             <img
                                 src="/img/about/self-pic.jpg"
                                 alt="Rungpilai Patpai"
-                                className="aspect-square md:aspect-3/4 xl:aspect-auto w-full object-cover object-top grayscale"
+                                className="aspect-square md:aspect-auto w-full object-cover object-top grayscale"
                             />
                         </section>
                     </div>

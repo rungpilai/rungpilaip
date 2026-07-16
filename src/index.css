@@ -49,6 +49,9 @@
     --padding-home: 100px;
     --padding-about: 205px;
     --padding-work: 305px;
+
+    --breakpoint-desktop: 1440px;
+    --breakpoint-mobile: 340px;
 }
 
 @layer utilities {
