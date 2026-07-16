@@ -51,7 +51,7 @@ const Modal = ({ isOpen, onClose, children }) => {
                             }`
                         }
                     >
-                        <span className="text-lg font-semibold leading-none relative -top-px flex items-center">✕</span>
+                        <span className="text-lg! font-semibold leading-none relative -top-px flex items-center">✕</span>
                     </button>
                 </div>
                 {children}
