@@ -61,7 +61,7 @@ const SC = () => {
 
                 <div className={S.section}>
                     <p className={`${S.label} mt-10`}>Stakeholder Requirements</p>
-                    <p className={S.body}>
+                    <p>
                         To better understand the company's vision and business priorities, I gathered stakeholder requirements and aligned the redesign around key objectives, including:
                     </p>
                     <ul className={S.list}>
