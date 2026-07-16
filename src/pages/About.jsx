@@ -62,23 +62,23 @@ const About = () => {
                     </div>
 
                     <div className="self-stretch flex flex-col justify-center items-start gap-5 md:gap-12 md:flex-row-reverse mt-16 mb-12 md:my-16">
-                        <section className="flex flex-col gap-5">
+                        <section className="flex flex-col gap-5 flex-[calc(409/1030*100%)]">
                             <p className="text-xl leading-normal">
                                 Still exploring, shaped by what I create <br className="hidden sm:block" />
                                 and what I choose to leave behind.
                             </p>
                             <p className="leading-relaxed text-(--color-text-secondary) mb-4">
-                                Fashion was one of the first forms of design I truly connected with. I became fascinated by the idea that even the most expressive pieces begin with structure, patterns, construction, and thoughtful decisions beneath the surface. That way of thinking continues to influence my work today. I approach design not only through visuals, but through systems, context, and the relationship between logic and feeling.
+                                Fashion was one of the first forms of design I truly connected with. I became fascinated by the idea that even the most expressive pieces begin with structure, patterns, construction, and thoughtful decisions beneath the surface. That way of thinking continues to influence my work. I approach design not only through visuals, but through the stories people create with it.
                             <br/><br/>
-                                Today, I see design as more than creating interfaces. For me, it's about understanding behavior, experimenting with emerging technologies, and building experiences that connect people with technology in a more natural and meaningful way.
+                                Today, my curiosity has expanded beyond digital interfaces into emerging technologies, interaction, and the ways people experience them.
                             </p>
                         </section>
 
-                        <section className="rounded-2xl overflow-hidden">
+                        <section className="rounded-2xl overflow-hidden flex-[calc(573/1030*100%)]">
                             <img
                                 src="/img/about/self-pic.jpg"
                                 alt="Rungpilai Patpai"
-                                className="aspect-square md:aspect-auto w-full object-cover object-top grayscale"
+                                className="aspect-square md:aspect-3/4 xl:aspect-auto w-full object-cover object-top grayscale"
                             />
                         </section>
                     </div>
@@ -113,7 +113,9 @@ const About = () => {
                             Become through repetition.
                         </p>
                         <p className="text-(--color-text-secondary)">
-                            If my perspective resonates with you, perhaps we can create experiences that people not only use, but genuinely connect with.
+                            If my perspective resonates with you, perhaps we can create
+                            <br className="hidden md:block" />
+                            experiences that people not only use, but genuinely connect with.
                         </p>
                         <span className="text-(--color-text-tertiary) inline-flex gap-1 items-center">
                             {EMAIL_ADDRESS}
