@@ -41,9 +41,9 @@ const ActionLink = ({
                 } ${
                     "text-(--color-text-tertiary) border-(--color-border)"
                 } ${
-                    "hover:text-white hover:bg-(--color-primary)"
+                    "hover:text-white hover:bg-(--color-primary) hover:border-none"
                 } ${
-                    "active:bg-(--color-primary-active)"
+                    "active:bg-(--color-primary-active) hover:border-none"
                 }`} onClick={onClick}>
                 {content}
             </a>
