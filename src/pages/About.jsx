@@ -2,7 +2,7 @@ import ActionLink from '../components/ActionLink';
 import PageTitle from '../components/PageTitle';
 import CopyEmailButton from '../components/CopyEmailButton';
 import { EMAIL_ADDRESS } from '../utils/email';
-import DownloadIcon from '../components/svg/DownloadIcon';
+import DownloadIcon from '../components/icon/DownloadIcon';
 
 const About = () => {
     return (

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { EMAIL_ADDRESS } from '../utils/email';
-import CopyIcon from './svg/CopyIcon';
-import CheckIcon from './svg/CheckIcon';
+import CheckIcon from 'icon/CheckIcon';
+import CopyIcon from 'icon/CopyIcon';
 
 const CopyEmailButton = ({ email = EMAIL_ADDRESS, className = '' }) => {
     const [copied, setCopied] = useState(false);
