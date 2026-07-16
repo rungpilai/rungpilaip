@@ -15,11 +15,11 @@ const ActionLink = ({
     const content = (
         <>
             {iconPosition === 'left' && icon && (
-                <span className="text-base leading-none relative -top-px flex items-center">{icon}</span>
+                icon
             )}
             <span>{children}</span>
             {iconPosition === 'right' && icon && (
-                <span className="text-base leading-none relative -top-px flex items-center">{icon}</span>
+                icon
             )}
         </>
     );

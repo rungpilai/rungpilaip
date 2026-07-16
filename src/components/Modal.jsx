@@ -35,7 +35,15 @@ const Modal = ({ isOpen, onClose, children }) => {
         >
             <div className="relative z-30 w-full max-h-screen overflow-scroll">
                 <div className="mt-16 container-about flex flex-row justify-between">
-                    <ActionLink onClick={handleClose} icon="‹" iconPosition="left" className="!hidden md:!inline-flex">
+                    <ActionLink
+                        onClick={handleClose}
+                        icon={
+                            <svg width="9" height="12" viewBox="0 0 9 12" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 1L2 6L7 11" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        }
+                        iconPosition="left"
+                        className="!hidden md:!inline-flex">
                         BACK
                     </ActionLink>
                     <button
@@ -56,7 +64,17 @@ const Modal = ({ isOpen, onClose, children }) => {
                 </div>
                 {children}
                 <div className="mb-16 container-about">
-                    <ActionLink onClick={handleClose} icon="‹" iconPosition="left" className="!hidden md:!inline-flex">BACK</ActionLink>
+                    <ActionLink
+                        onClick={handleClose}
+                        icon={
+                            <svg width="9" height="12" viewBox="0 0 9 12" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 1L2 6L7 11" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        }
+                        iconPosition="left"
+                        className="!hidden md:!inline-flex">
+                        BACK
+                    </ActionLink>
                 </div>
             </div>
         </div>
