@@ -59,7 +59,11 @@ const Modal = ({ isOpen, onClose, children }) => {
                             }`
                         }
                     >
-                        <span className="text-lg! font-semibold leading-none relative -top-px flex items-center">✕</span>
+                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.4043 17.5966L17.5975 8.40341M17.5975 17.5966L8.4043 8.40341" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        {/* <span className="text-lg! font-semibold leading-none relative -top-px flex items-center">✕</span> */}
                     </button>
                 </div>
                 {children}
