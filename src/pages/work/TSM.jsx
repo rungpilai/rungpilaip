@@ -19,7 +19,7 @@ const TSM = () => {
             <main className="container-work md:mt-16">
                 <HeaderWork
                     title={<><span className="text-(--color-primary)">ThangSaiMai</span> Antique Shop Website Design</>}
-                    tags={['UI Design', 'Branding']}
+                    tags={['UX/UI Design', 'Branding']}
                     role="UI Designer"
                     duration="May - Jun 2025"
                 />
