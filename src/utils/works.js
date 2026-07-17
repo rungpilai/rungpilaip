@@ -17,7 +17,7 @@ export const WORKS = [
     },
     {
         year: '2025',
-        tags: ['UI Design', 'Branding'],
+        tags: ['UX/UI Design', 'Branding'],
         title: 'ThangSaiMai Antique Shop Website: A Quiet Brand with a Story to Tell',
         description: "ThangSaiMai's first website, built into a distinctive antique brand.",
         thumbnail: '/img/thumnails/tsm-thum.jpg',
