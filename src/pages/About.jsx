@@ -66,7 +66,7 @@ const About = () => {
                             </p>
                             <p className="leading-relaxed text-(--color-text-secondary) mb-4">
                                 Fashion was one of the first forms of design I truly connected with. I became fascinated by the idea that even the most expressive pieces begin with structure, patterns, construction, and thoughtful decisions beneath the surface. That way of thinking continues to influence my work. I approach design not only through visuals, but through the stories people create with it.
-                            <br/><br/>
+                                <br /><br />
                                 Today, my curiosity has expanded beyond digital interfaces into emerging technologies, interaction, and the ways people experience them.
                             </p>
                         </section>
@@ -87,7 +87,8 @@ const About = () => {
                                 More like layers of thinking stacked over time.
                             </p>
                             <p className="text-(--color-text-secondary) leading-[1.7] mb-10">
-                                It doesn't always start clearly, sometimes just fragments, thoughts,<br className="hidden md:block" />
+                                It doesn't always start clearly, sometimes just fragments, thoughts,{' '}
+                                <br className="hidden md:block" />
                                 and questions. But over time, a process takes shape.
                             </p>
                         </div>
@@ -110,7 +111,7 @@ const About = () => {
                             Become through repetition.
                         </p>
                         <p className="text-(--color-text-secondary)">
-                            If my perspective resonates with you, perhaps we can create
+                            If my perspective resonates with you, perhaps we can create{' '}
                             <br className="hidden md:block" />
                             experiences that people not only use, but genuinely connect with.
                         </p>
