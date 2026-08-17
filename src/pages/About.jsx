@@ -87,7 +87,8 @@ const About = () => {
                                 More like layers of thinking stacked over time.
                             </p>
                             <p className="text-(--color-text-secondary) leading-[1.7] mb-10">
-                                It doesn't always start clearly, sometimes just fragments, thoughts,<br className="hidden md:block" />
+                                It doesn't always start clearly, sometimes just fragments, thoughts,
+                                <br className="hidden md:block" /><span className="inline md:hidden">{` `}</span>
                                 and questions. But over time, a process takes shape.
                             </p>
                         </div>
@@ -111,7 +112,7 @@ const About = () => {
                         </p>
                         <p className="text-(--color-text-secondary)">
                             If my perspective resonates with you, perhaps we can create
-                            <br className="hidden md:block" />
+                            <br className="hidden md:block" /><span className="inline md:hidden">{` `}</span>
                             experiences that people not only use, but genuinely connect with.
                         </p>
                         <span className="text-(--color-text-tertiary) inline-flex gap-1 items-center">
