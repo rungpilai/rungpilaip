@@ -12,7 +12,7 @@ const CardWork = ({ onClick, year, tags = [], title, description, thumbnail, slu
             tabIndex={0}
             onKeyDown={(e) => e.key === 'Enter' && navigate(slug)}
         >
-            <div className="w-full aspect-4/3 overflow-hidden rounded-xl bg-(--color-primary-active)">
+            <div className="w-full aspect-4/3 overflow-hidden rounded-xl">
                 <img
                     src={thumbnail}
                     alt={title}
