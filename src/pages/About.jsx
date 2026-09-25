@@ -65,9 +65,9 @@ const About = () => {
                                 and what I choose to leave behind.
                             </p>
                             <p className="leading-relaxed text-(--color-text-secondary) mb-4">
-                                Fashion was one of the first forms of design I truly connected with. I became fascinated by the idea that even the most expressive pieces begin with structure, patterns, construction, and thoughtful decisions beneath the surface. That way of thinking continues to influence my work.
+                                Fashion was one of the first forms of design I truly connected with. I was fascinated by what exists beneath it: structure, process, and the decisions that shaped it. This way of thinking influences how I approach design today, from its visual expression to the structure, context, and ideas behind it.
                                 <br /><br />
-                                Today, I’m exploring what design can become beyond the screen, from emerging technologies to new forms of interaction and experience.
+                                Today, I’m curious about the many ways design can be experienced, from digital products to objects, spaces, and emerging technologies.
                             </p>
                         </section>
 
