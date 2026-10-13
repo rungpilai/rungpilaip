@@ -10,7 +10,7 @@ export const WORKS = [
     {
         year: '2025',
         tags: ['Experimental Design'],
-        title: 'Exploring AI Eye Tracking for Design Practice in Corporate Routine',
+        title: 'AI Eye Tracking for Design Practice in Corporate Routine',
         description: 'From gut feeling to data-driven design, exploring if AI eye tracking reflects real user attention.',
         thumbnail: '/img/thumnails/et-thum.jpg',
         slug: '/work/et',
@@ -19,7 +19,7 @@ export const WORKS = [
         year: '2025',
         tags: ['UX/UI Design', 'Branding'],
         title: 'ThangSaiMai Antique Shop Website: A Quiet Brand with a Story to Tell',
-        description: "ThangSaiMai's first website, built into a distinctive antique brand.",
+        description: "A concept for ThangSaiMai's first website, shaping a local shop into a distinctive antique brand.",
         thumbnail: '/img/thumnails/tsm-thum.jpg',
         slug: '/work/tsm',
     },
