@@ -73,7 +73,6 @@ const SCG = () => {
                     <ul className={S.list}>
                         <li>Uncertainty about the renovation process</li>
                         <li>Confusion when selecting materials</li>
-                        <li>Construction Stage</li>
                         <li>Concerns about budget and quality</li>
                         <li>Difficulty finding design inspiration that fits their space</li>
                     </ul>
@@ -180,11 +179,18 @@ const SCG = () => {
                         3 out of 4 users rated the new UI higher than the existing UI.
                     </p>
                     <p>
-                        Overall,  the new UI scored 20% higher in aesthetics and purchase interest.
+                        Overall, the new UI scored 20% higher in aesthetics and purchase interest.
                     </p>
 
                     <img src="/img/work/scg/test-result.jpg" alt="Test result" className="w-full sm:max-w-xl mx-auto mt-8" />
-                    <p className={S.caption}>Test results comparing the existing and new UI across 4 users. Every participant rated the new UI higher, with improvements ranging from 13% to 20%</p>
+                    <p className={S.caption}>Test results comparing the existing and new UI across 4 users. 3 of 4 participants rated the new UI higher.</p>
+                </div>
+
+                <div className={S.section}>
+                    <p className={S.label}>Limitations & Next Steps</p>
+                    <p className={S.body}>
+                        This was a small test (n=4), and participants came from the earlier interview group, so they may have been primed by the research. The results show direction, not proof. Next step: test with new users and a larger sample.
+                    </p>
                 </div>
             </main>
         </>

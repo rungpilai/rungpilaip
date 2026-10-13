@@ -32,6 +32,13 @@ const TSM = () => {
                 </div>
 
                 <div className={S.section}>
+                    <p className={S.label}>STATUS</p>
+                    <p className={S.body}>
+                        Concept design. Development has not started yet.
+                    </p>
+                </div>
+
+                <div className={S.section}>
                     <p className={S.label}>CONCEPT & DIRECTION</p>
                     <p>Reinterpreted “antique” in a more contemporary way.</p>
                     <ul className={S.list}>
@@ -43,7 +50,7 @@ const TSM = () => {
                         <img src="/img/work/tsm/logo.jpg" alt="ThangSaiMai logo" className={`${S.imgFull} mx-auto`} />
                         <img src="/img/work/tsm/font.jpg" alt="Typography system" className={`${S.imgFull} mx-auto`} />
                     </div>
-                    <p className={S.caption}>Brand identity for Thangsaimai: logo, typography, and color palette</p>
+                    <p className={S.caption}>Brand identity for ThangSaiMai: logo, typography, and color palette</p>
                 </div>
 
                 <div className={S.section}>
