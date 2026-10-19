@@ -79,10 +79,10 @@ const SMP = () => {
                     <section id="research" className={S.section}>
                         <p className={S.label}>Research &amp; Insights</p>
                         <p className="font-medium text-(--color-text-primary)">Insight 1: Repeated dismissals signal unnecessary interruptions.</p>
-                        <p className="text-(--color-text-primary)">Users dismissed popups an average of 3.7 times per person, with 44% of dismissals occurring on classroom and cart pages.</p>
+                        <p className="text-(--color-text-primary)">Users dismissed popups an average of <span className="font-medium">3.7 times</span> per person, with 44% of dismissals occurring on classroom and cart pages.</p>
                         <p className={`${S.caption} mb-6`}>Source: Google Analytics 4 (SmartMathPro Online), 10 Sep – 7 Oct 2026</p>
                         <p className="font-medium text-(--color-text-primary)">Insight 2: Promotional messages can disrupt the purchase journey.</p>
-                        <p className="text-(--color-text-primary)">Session recordings revealed repeated navigation between coupon pages and checkout, triggered by overlapping promotional messages. The average purchase journey took nearly 17 minutes to complete.</p>
+                        <p className="text-(--color-text-primary)">Session recordings revealed repeated navigation between coupon pages and checkout, triggered by overlapping promotional messages. The average purchase journey took nearly <span className="font-medium">17 minutes</span> to complete.</p>
                         <img src="/img/work/smp/journey.webp" alt="Recorded session: closing the announcement bar, looking for a way to close a popup, viewing coupons, proceeding to checkout, a popup appearing, then going back to use a coupon" loading="lazy" className="w-full h-auto rounded-lg mt-6" />
                         <p className={S.caption}>Source: Microsoft Clarity</p>
                     </section>
