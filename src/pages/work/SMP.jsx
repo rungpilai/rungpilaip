@@ -81,7 +81,7 @@ const SMP = () => {
                         <p className="text-(--color-text-primary)">Users dismissed popups an average of 3.7 times per person, with 44% of dismissals occurring on classroom and cart pages.</p>
                         <p className={`${S.caption} mb-6`}>Source: Google Analytics 4 (SmartMathPro Online), 10 Sep – 7 Oct 2026</p>
                         <p className="font-semibold text-(--color-text-primary)">Insight 2: Promotional messages can disrupt the purchase journey.</p>
-                        <p className="text-(--color-text-primary)">Session recordings revealed repeated navigation between coupon pages and checkout, triggered by overlapping promotional messages.</p>
+                        <p className="text-(--color-text-primary)">Session recordings revealed repeated navigation between coupon pages and checkout, triggered by overlapping promotional messages. The average purchase journey took nearly 17 minutes to complete.</p>
                         <img src="/img/work/smp/journey.webp" alt="Recorded session: closing the announcement bar, looking for a way to close a pop-up, viewing coupons, proceeding to checkout, a pop-up appearing, then going back to use a coupon" loading="lazy" className="w-full h-auto rounded-lg mt-6" />
                         <p className={S.caption}>Source: Microsoft Clarity</p>
                     </section>
@@ -114,8 +114,8 @@ const SMP = () => {
                                 solution="Show the promo once, at the right moment. Two options were proposed:"
                                 solutionContent={
                                     <div className="flex flex-wrap gap-3">
-                                        <Screen src="/img/work/smp/ex1-option-a.webp" alt="Option A: promotion shown as a modal on the first visit only" caption="A · modal on first visit only" />
-                                        <Screen src="/img/work/smp/ex1-option-b.webp" alt="Option B: promotion shown on the course page after adding to cart" caption="B · move to the cart page" />
+                                        <Screen src="/img/work/smp/ex1-option-a.webp" alt="Option A: promotion shown as a modal on the first visit only" caption="A - Modal on first visit only" />
+                                        <Screen src="/img/work/smp/ex1-option-b.webp" alt="Option B: promotion shown on the course page after adding to cart" caption="B - Move to the cart page" />
                                     </div>
                                 }
                                 why={[
@@ -128,14 +128,14 @@ const SMP = () => {
                                 title="Example 2: Cart"
                                 problem="The coupon pop-up appeared twice in the cart, right before payment."
                                 problemScreens={<>
-                                    <Screen src="/img/work/smp/ex2-before-1.webp" alt="Cart with the first coupon pop-up" className="h-40 md:h-[180px]" />
-                                    <Screen src="/img/work/smp/ex2-before-2.webp" alt="Cart with a second pop-up about unused coupons" className="h-40 md:h-[180px]" />
+                                    <Screen src="/img/work/smp/ex2-before-1.webp" alt="Cart with the first coupon pop-up" />
+                                    <Screen src="/img/work/smp/ex2-before-2.webp" alt="Cart with a second pop-up about unused coupons" />
                                 </>}
                                 solution="Apply the best available coupon automatically in the order summary."
                                 solutionContent={
                                     <div className="flex flex-wrap gap-3">
-                                        <Screen src="/img/work/smp/ex2-after-summary.webp" alt="Order summary with the best coupon already applied" caption="Best coupon auto-applied" className="h-44 md:h-[200px]" />
-                                        <Screen src="/img/work/smp/ex2-after-coupons.webp" alt="Coupon list with the best coupon preselected" caption="Coupon list" className="h-44 md:h-[200px]" />
+                                        <Screen src="/img/work/smp/ex2-after-summary.webp" alt="Order summary with the best coupon already applied" caption="Best coupon auto-applied" />
+                                        <Screen src="/img/work/smp/ex2-after-coupons.webp" alt="Coupon list with the best coupon preselected" caption="Coupon list" />
                                     </div>
                                 }
                                 why={[
@@ -146,7 +146,7 @@ const SMP = () => {
                             />
                             <Example
                                 title="Example 3: Account"
-                                problem="Pop-ups stacked on top of each other and had to be closed one by one."
+                                problem="Popups stacked on top of each other and had to be closed one by one."
                                 problemScreens={<img src="/img/work/smp/ex3-before.webp" alt="Account page with several promotion pop-ups stacked on top of each other" loading="lazy" className="w-full max-w-[290px] h-auto rounded-lg" />}
                                 solution="Keep all 3 promotions, but give each its own place and moment."
                                 solutionContent={
@@ -173,7 +173,7 @@ const SMP = () => {
                                 }
                                 why={[
                                     'Each promotion appears when it is relevant, so they no longer compete for the same moment (communication priority and type).',
-                                    'Users reach the page without closing several pop-ups first (frequency and display rules).',
+                                    'Users reach the page without closing several popups first (frequency and display rules).',
                                 ]}
                             />
                         </div>
@@ -193,7 +193,7 @@ const SMP = () => {
                                 </thead>
                                 <tbody className="text-(--color-text-primary)">
                                     <tr className="border-b border-(--color-border)">
-                                        <td className="py-3.5 pr-4">Pop-up dismissals per user</td>
+                                        <td className="py-3.5 pr-4">Popup dismissals per user</td>
                                         <td className="py-3.5 pr-4 font-semibold">3.7</td>
                                         <td className="py-3.5 font-semibold">Lower</td>
                                     </tr>
