@@ -56,12 +56,6 @@ const PRINCIPLES = [
     ['Dark Patterns', 'Prevent intrusive or misleading interactions.'],
 ];
 
-const STATS = [
-    ['3–4', 'spots showing the same promo'],
-    ['3.7', 'pop-up dismissals per user'],
-    ['51%', 'of orders use a coupon'],
-];
-
 const SMP = () => {
     return (
         <main className="container-work md:mt-16">
@@ -94,15 +88,12 @@ const SMP = () => {
 
                     <section id="problem" className={S.section}>
                         <p className={S.label}>Problem</p>
-                        <p className={`${S.body} mb-7`}>The audit revealed three key issues:</p>
-                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                            {STATS.map(([num, cap]) => (
-                                <div key={num}>
-                                    <p className="text-4xl text-(--color-text-primary)">{num}</p>
-                                    <p className="text-sm text-(--color-text-tertiary) mt-1">{cap}</p>
-                                </div>
-                            ))}
-                        </div>
+                        <p className={S.body}>The audit revealed three key issues:</p>
+                        <ul className="list-disc pl-5 ml-3 mt-1 text-(--color-text-primary) flex flex-col gap-1">
+                            <li>The same promotion appeared in 3–4 spots on a single page.</li>
+                            <li>Users dismissed pop-ups 3.7 times on average.</li>
+                            <li>51% of orders use a coupon, yet coupon pop-ups interrupted the checkout.</li>
+                        </ul>
                     </section>
 
                     <section id="solution" className={S.section}>
