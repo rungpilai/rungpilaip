@@ -25,8 +25,8 @@ const Arrow = () => (
 );
 
 const Example = ({ title, problem, problemScreens, solution, solutionContent, why }) => (
-    <article className="border-t border-(--color-border) pt-6 flex flex-col gap-5">
-        <h3 className="font-semibold text-(--color-text-primary)">{title}</h3>
+    <article className="rounded-2xl border border-(--color-border) p-5 md:p-7 flex flex-col gap-5">
+        <h3 className="text-xl font-normal text-(--color-text-primary)">{title}</h3>
         <div className="grid grid-cols-1 md:grid-cols-[minmax(0,auto)_20px_minmax(0,1fr)] gap-4 md:gap-6 items-start">
             <div className="flex flex-col gap-2.5 md:pt-5 md:max-w-[290px]">
                 <p className={S.subLabel}>Problem</p>
@@ -40,7 +40,7 @@ const Example = ({ title, problem, problemScreens, solution, solutionContent, wh
                 <div className="mt-1">{solutionContent}</div>
             </div>
         </div>
-        <div className="flex flex-col gap-2.5">
+        <div className="border-t border-(--color-border) pt-5 flex flex-col gap-2.5">
             <p className={S.subLabel}>Why this solution</p>
             <ul className="list-disc pl-5 text-sm text-(--color-text-primary) flex flex-col gap-1.5">
                 {why.map((w) => <li key={w}>{w}</li>)}
@@ -110,7 +110,7 @@ const SMP = () => {
                         </div>
                         <p className={`${S.body} mb-5`}>Here are a few examples of how the guideline was applied across key pages.</p>
 
-                        <div className="flex flex-col gap-10">
+                        <div className="flex flex-col gap-6">
                             <Example
                                 title="Example 1: Homepage"
                                 problem="The same promo was repeated in several places on the first screen."
