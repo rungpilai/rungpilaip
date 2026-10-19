@@ -1,8 +1,6 @@
-import ActionLink from '../components/ActionLink';
 import PageTitle from '../components/PageTitle';
 import CopyEmailButton from '../components/CopyEmailButton';
 import { EMAIL_ADDRESS } from '../utils/email';
-import DownloadIcon from '../components/icon/DownloadIcon';
 
 const About = () => {
     return (
@@ -15,15 +13,6 @@ const About = () => {
 
                     <section className="flex flex-row items-center justify-between mb-6">
                         <div className="justify-start text-xl">Career Summary</div>
-                        <ActionLink
-                            href="/rungpilai_resume_2026.pdf"
-                            download
-                            icon={
-                                <DownloadIcon />
-                            }
-                        >
-                            DOWNLOAD CV
-                        </ActionLink>
                     </section>
 
                     <div className="flex flex-col justify-start items-start gap-5">
