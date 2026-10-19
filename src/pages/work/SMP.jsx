@@ -24,7 +24,7 @@ const Arrow = () => (
     </div>
 );
 
-const Example = ({ title, problem, problemScreens, solution, solutionContent, why }) => (
+const Example = ({ title, problem, problemScreens, solution, solutionContent, wide, why }) => (
     <article className="rounded-2xl border border-(--color-border) p-5 md:p-6 flex flex-col gap-4">
         <h3 className="text-lg font-normal text-(--color-text-primary)">{title}</h3>
         <div className="grid grid-cols-1 md:grid-cols-[minmax(0,auto)_20px_minmax(0,1fr)] gap-3 md:gap-4 items-start">
@@ -37,9 +37,10 @@ const Example = ({ title, problem, problemScreens, solution, solutionContent, wh
             <div className="flex flex-col gap-1.5">
                 <p className={S.subLabel}>Solution</p>
                 <p className={S.small}>{solution}</p>
-                <div className="mt-1">{solutionContent}</div>
+                {solutionContent && <div className="mt-1">{solutionContent}</div>}
             </div>
         </div>
+        {wide}
         <div className="border-t border-(--color-border) pt-4 flex flex-col gap-1.5">
             <p className={S.subLabel}>Why this solution</p>
             <ul className="list-disc pl-5 text-sm text-(--color-text-primary) flex flex-col gap-1">
@@ -148,8 +149,8 @@ const SMP = () => {
                                 title="Example 3: Account"
                                 problem="Popups stacked on top of each other and had to be closed one by one."
                                 problemScreens={<img src="/img/work/smp/ex3-before.webp" alt="Account page with several promotion pop-ups stacked on top of each other" loading="lazy" className="w-full max-w-[290px] h-auto rounded-lg" />}
-                                solution="Keep all 3 promotions, but give each its own place and moment."
-                                solutionContent={
+                                solution="Give each popup its own place, at the moment users need it, instead of stacking them in the middle of the screen."
+                                wide={
                                     <div className="rounded-lg border border-(--color-border) bg-white px-4 overflow-x-auto">
                                         <table className="w-full text-sm text-left">
                                             <thead>
@@ -160,7 +161,14 @@ const SMP = () => {
                                                 </tr>
                                             </thead>
                                             <tbody className="text-(--color-text-primary)">
-                                                {[['Birthday campaign', 'Entering the site', 'Homepage hero banner'], ['400–600 THB off', 'Comparing courses', 'Below the price'], ['100 THB new customer', 'At checkout', 'Auto-applied in summary']].map(([a, b, c], i, arr) => (
+                                                {[
+                                                    ['Up to 500 THB off', 'Entering the site', 'Homepage promo bar, auto-applied'],
+                                                    ['Birthday campaign', 'Entering the site', 'Homepage banner and account page'],
+                                                    ['400–600 THB off', 'Comparing courses', 'Course benefits box, below the price'],
+                                                    ['Buy 1 more, 10% off', 'Viewing a course, at the cart', 'Course benefits box and cart nudge'],
+                                                    ['100 THB new customer', 'At checkout', 'Auto-applied in order summary'],
+                                                    ['Delivery notice', 'Visiting the account', 'Account page announcement bar'],
+                                                ].map(([a, b, c], i, arr) => (
                                                     <tr key={a} className={i < arr.length - 1 ? 'border-b border-(--color-border)' : ''}>
                                                         <td className="py-2 pr-3 font-medium">{a}</td>
                                                         <td className="py-2 pr-3">{b}</td>
