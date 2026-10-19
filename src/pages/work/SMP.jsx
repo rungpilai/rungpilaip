@@ -83,7 +83,7 @@ const SMP = () => {
                         <p className={`${S.caption} mb-6`}>Source: Google Analytics 4 (SmartMathPro Online), 10 Sep – 7 Oct 2026</p>
                         <p className="font-medium text-(--color-text-primary)">Insight 2: Promotional messages can disrupt the purchase journey.</p>
                         <p className="text-(--color-text-primary)">Session recordings revealed repeated navigation between coupon pages and checkout, triggered by overlapping promotional messages. The average purchase journey took nearly 17 minutes to complete.</p>
-                        <img src="/img/work/smp/journey.webp" alt="Recorded session: closing the announcement bar, looking for a way to close a pop-up, viewing coupons, proceeding to checkout, a pop-up appearing, then going back to use a coupon" loading="lazy" className="w-full h-auto rounded-lg mt-6" />
+                        <img src="/img/work/smp/journey.webp" alt="Recorded session: closing the announcement bar, looking for a way to close a popup, viewing coupons, proceeding to checkout, a popup appearing, then going back to use a coupon" loading="lazy" className="w-full h-auto rounded-lg mt-6" />
                         <p className={S.caption}>Source: Microsoft Clarity</p>
                     </section>
 
@@ -92,8 +92,8 @@ const SMP = () => {
                         <p className={S.body}>The audit revealed three key issues:</p>
                         <ul className="list-disc pl-5 ml-3 mt-1 text-(--color-text-primary) flex flex-col gap-1">
                             <li>The same promotion appeared in 3–4 spots on a single page.</li>
-                            <li>Users dismissed pop-ups 3.7 times on average.</li>
-                            <li>51% of orders use a coupon, yet coupon pop-ups interrupted the checkout.</li>
+                            <li>Users dismissed popups 3.7 times on average.</li>
+                            <li>51% of orders use a coupon, yet coupon popups interrupted the checkout.</li>
                         </ul>
                     </section>
 
@@ -127,10 +127,10 @@ const SMP = () => {
                             />
                             <Example
                                 title="Example 2: Cart"
-                                problem="The coupon pop-up appeared twice in the cart, right before payment."
+                                problem="The coupon popup appeared twice in the cart, right before payment."
                                 problemScreens={<>
-                                    <Screen src="/img/work/smp/ex2-before-1.webp" alt="Cart with the first coupon pop-up" />
-                                    <Screen src="/img/work/smp/ex2-before-2.webp" alt="Cart with a second pop-up about unused coupons" />
+                                    <Screen src="/img/work/smp/ex2-before-1.webp" alt="Cart with the first coupon popup" />
+                                    <Screen src="/img/work/smp/ex2-before-2.webp" alt="Cart with a second popup about unused coupons" />
                                 </>}
                                 solution="Apply the best available coupon automatically in the order summary."
                                 solutionContent={
@@ -148,7 +148,7 @@ const SMP = () => {
                             <Example
                                 title="Example 3: Account"
                                 problem="Popups stacked on top of each other and had to be closed one by one."
-                                problemScreens={<img src="/img/work/smp/ex3-before.webp" alt="Account page with several promotion pop-ups stacked on top of each other" loading="lazy" className="w-full max-w-[290px] h-auto rounded-lg" />}
+                                problemScreens={<img src="/img/work/smp/ex3-before.webp" alt="Account page with several promotion popups stacked on top of each other" loading="lazy" className="w-full max-w-[290px] h-auto rounded-lg" />}
                                 solution="Keep all 3 promotions, but give each its own place and moment."
                                 solutionContent={
                                     <div className="rounded-lg border border-(--color-border) bg-white px-4 overflow-x-auto">
