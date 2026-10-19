@@ -34,7 +34,7 @@ const Example = ({ title, problem, problemScreens, solution, solutionContent, wh
                 <div className="flex flex-wrap gap-2 mt-1">{problemScreens}</div>
             </div>
             <Arrow />
-            <div className="rounded-xl bg-greyscale-10/45 p-4 flex flex-col gap-1.5">
+            <div className="rounded-xl bg-[#EDF1F9] p-4 flex flex-col gap-1.5">
                 <p className={S.subLabel}>Solution</p>
                 <p className={S.small}>{solution}</p>
                 <div className="mt-1">{solutionContent}</div>
