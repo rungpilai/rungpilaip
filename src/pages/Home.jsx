@@ -70,15 +70,15 @@ const Home = () => {
 
                     <div className="flex flex-col sm:flex-row flex-wrap gap-8 md:gap-12 mb-12 md:mb-15">
                         <div className="flex flex-col gap-1">
-                            <span className="text-sm tracking-widest text-(--color-text-subtitle) uppercase">BASED IN</span>
+                            <span className="text-sm tracking-widest text-(--color-text-tertiary) uppercase">BASED IN</span>
                             <span className="text-(--color-text-secondary)">Bangkok, TH</span>
                         </div>
                         <div className="flex flex-col gap-1">
-                            <span className="text-sm tracking-widest text-(--color-text-subtitle) uppercase">UPDATED</span>
+                            <span className="text-sm tracking-widest text-(--color-text-tertiary) uppercase">UPDATED</span>
                             <span className="text-(--color-text-secondary)">2026</span>
                         </div>
                         <div className="flex flex-col gap-1">
-                            <span className="text-sm tracking-widest text-(--color-text-subtitle) uppercase">CURRENTLY</span>
+                            <span className="text-sm tracking-widest text-(--color-text-tertiary) uppercase">CURRENTLY</span>
                             <span className="text-(--color-text-secondary)">
                                 Exploring physical computing, creative technology, and the future of interaction.
                             </span>
@@ -86,7 +86,7 @@ const Home = () => {
                     </div>
 
                     <button
-                        className="bg-transparent border-none cursor-pointer tracking-[0.08em] p-0 transition-opacity duration-200 text-(--color-text-subtitle) hover:text-(--color-text-secondary)"
+                        className="bg-transparent border-none cursor-pointer tracking-[0.08em] p-0 transition-opacity duration-200 text-(--color-text-tertiary) hover:text-(--color-text-secondary)"
                         onClick={() => handleScrollToWorks()}
                         aria-label="Scroll to work"
                     >
@@ -109,7 +109,7 @@ const Home = () => {
                 </section>
             </main>
             <div className="px-2.5 py-28 flex justify-center items-center gap-2.5">
-                <div className="text-center justify-start text-(--color-text-subtitle)">More experiments in progress ...</div>
+                <div className="text-center justify-start text-(--color-text-tertiary)">More experiments in progress ...</div>
             </div>
             <div className="container">
                 <Footer />
