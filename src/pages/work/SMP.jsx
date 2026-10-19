@@ -191,7 +191,7 @@ const SMP = () => {
                     <section id="measuring-success" className={S.section}>
                         <p className={S.label}>Measuring Success</p>
                         <p className={S.body}>Success is measured by comparing 28 days before the change (10 Sep – 7 Oct 2026) with the 28 days after, using GA4 and Microsoft Clarity.</p>
-                        <div className="overflow-x-auto">
+                        <div className="rounded-2xl border border-(--color-border) px-5 md:px-7 py-3 md:py-4 mt-6 overflow-x-auto">
                             <table className="w-full text-left">
                                 <thead>
                                     <tr className="text-sm text-(--color-text-tertiary) border-b border-(--color-border)">
@@ -206,7 +206,7 @@ const SMP = () => {
                                         <td className="py-3.5 pr-4 font-semibold">3.7</td>
                                         <td className="py-3.5 font-semibold">Lower</td>
                                     </tr>
-                                    <tr className="border-b border-(--color-border)">
+                                    <tr>
                                         <td className="py-3.5 pr-4">Add-to-cart to order completed</td>
                                         <td className="py-3.5 pr-4 font-semibold">17.2 min</td>
                                         <td className="py-3.5 font-semibold">10% faster</td>
