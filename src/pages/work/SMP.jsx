@@ -149,30 +149,25 @@ const SMP = () => {
                                 title="Example 3: Account"
                                 problem="Popups stacked on top of each other and had to be closed one by one."
                                 problemScreens={<img src="/img/work/smp/ex3-before.webp" alt="Account page with several promotion pop-ups stacked on top of each other" loading="lazy" className="w-full max-w-[290px] h-auto rounded-lg" />}
-                                solution="Give each popup its own place, at the moment users need it, instead of stacking them in the middle of the screen."
-                                wide={
+                                solution="Keep all 3 promotions, but give each its own place and moment."
+                                solutionContent={
                                     <div className="rounded-lg border border-(--color-border) bg-white px-4 overflow-x-auto">
                                         <table className="w-full text-sm text-left">
                                             <thead>
                                                 <tr className="text-(--color-text-tertiary) border-b border-(--color-border)">
                                                     <th className="font-normal py-2 pr-3">Promotion</th>
-                                                    <th className="font-normal py-2 pr-3">Shown when</th>
-                                                    <th className="font-normal py-2">Placement</th>
+                                                    <th className="font-normal py-2">Where it appears</th>
                                                 </tr>
                                             </thead>
                                             <tbody className="text-(--color-text-primary)">
                                                 {[
-                                                    ['Up to 500 THB off', 'Entering the site', 'Homepage promo bar, auto-applied'],
-                                                    ['Birthday campaign', 'Entering the site', 'Homepage banner and account page'],
-                                                    ['400–600 THB off', 'Comparing courses', 'Course benefits box, below the price'],
-                                                    ['Buy 1 more, 10% off', 'Viewing a course, at the cart', 'Course benefits box and cart nudge'],
-                                                    ['100 THB new customer', 'At checkout', 'Auto-applied in order summary'],
-                                                    ['Delivery notice', 'Visiting the account', 'Account page announcement bar'],
-                                                ].map(([a, b, c], i, arr) => (
+                                                    ['Up to 500 THB off', 'Course page and homepage banner'],
+                                                    ['New customer offer', 'When entering the site'],
+                                                    ['Birthday campaign', 'Banner'],
+                                                ].map(([a, b], i, arr) => (
                                                     <tr key={a} className={i < arr.length - 1 ? 'border-b border-(--color-border)' : ''}>
                                                         <td className="py-2 pr-3 font-medium">{a}</td>
-                                                        <td className="py-2 pr-3">{b}</td>
-                                                        <td className="py-2">{c}</td>
+                                                        <td className="py-2">{b}</td>
                                                     </tr>
                                                 ))}
                                             </tbody>
