@@ -28,8 +28,9 @@
     --color-text-primary: var(--color-greyscale-100);
     --color-text-secondary: var(--color-greyscale-90);
     --color-text-tertiary: var(--color-greyscale-70);
-    --color-text-subtitle: var(--color-greyscale-50);
+    --color-text-subtitle: #737683;
     --color-border: var(--color-greyscale-10);
+    --color-white: #FFFFFF;
 
     --color-primary: var(--color-primitive-50);
     --color-primary-border: var(--color-primitive-30);
