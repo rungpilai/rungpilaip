@@ -34,7 +34,7 @@ const Footer = () => {
                     ])}
                 </nav>
 
-                <p className="text-sm text-(--color-text-tertiary) mt-7">
+                <p className="text-sm text-(--color-text-subtitle) mt-7">
                     © Rungpilai Patpai. All rights reserved.
                 </p>
             </div>
