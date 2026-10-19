@@ -16,7 +16,7 @@ const Works = () => {
                 <section className="container pb-12">
                     <FilterableWorks />
 
-                    <p className="text-(--color-text-subtitle) text-center mt-35 mb-10">
+                    <p className="text-(--color-text-tertiary) text-center mt-35 mb-10">
                         More experiments in progress ...
                     </p>
                 </section>
