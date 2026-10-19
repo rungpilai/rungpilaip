@@ -50,10 +50,10 @@ const Example = ({ title, problem, problemScreens, solution, solutionContent, wh
 );
 
 const PRINCIPLES = [
-    ['Communication priority and type', 'Set clear message categories, purposes, and priorities.'],
-    ['Placement and timing', 'Align each message with the page context and what the user is doing.'],
-    ['Frequency and display rules', 'Limit how often messages appear and prevent repetition.'],
-    ['Dark patterns', 'Identify and prevent intrusive or misleading interactions.'],
+    ['Communication Priority & Type', 'Define each message’s purpose and priority.'],
+    ['Placement & Timing', 'Align messages with page context and user activity.'],
+    ['Frequency & Display Rules', 'Control display frequency and prevent repetition.'],
+    ['Dark Patterns', 'Prevent intrusive or misleading interactions.'],
 ];
 
 const STATS = [
@@ -108,9 +108,9 @@ const SMP = () => {
                     <section id="solution" className={S.section}>
                         <p className={S.label}>Solution</p>
                         <p className={S.body}>I developed the SMP Design Guideline, establishing four principles for consistent on-site communication.</p>
-                        <ol className="list-decimal pl-6 text-(--color-text-primary) flex flex-col gap-2 mb-6">
+                        <ol className="list-decimal pl-6 text-(--color-text-primary) flex flex-col gap-3 mb-6">
                             {PRINCIPLES.map(([name, desc]) => (
-                                <li key={name}><span className="font-semibold">{name}</span> — {desc}</li>
+                                <li key={name}><span className="font-semibold block">{name}</span>{desc}</li>
                             ))}
                         </ol>
                         <p className={`${S.body} mb-8`}>Here are a few examples of how the guideline was applied across key pages.</p>
