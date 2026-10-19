@@ -25,24 +25,24 @@ const Arrow = () => (
 );
 
 const Example = ({ title, problem, problemScreens, solution, solutionContent, why }) => (
-    <article className="rounded-2xl border border-(--color-border) p-5 md:p-7 flex flex-col gap-5">
-        <h3 className="text-xl font-normal text-(--color-text-primary)">{title}</h3>
-        <div className="grid grid-cols-1 md:grid-cols-[minmax(0,auto)_20px_minmax(0,1fr)] gap-4 md:gap-6 items-start">
-            <div className="flex flex-col gap-2.5 md:pt-5 md:max-w-[290px]">
+    <article className="rounded-2xl border border-(--color-border) p-5 md:p-6 flex flex-col gap-4">
+        <h3 className="text-lg font-normal text-(--color-text-primary)">{title}</h3>
+        <div className="grid grid-cols-1 md:grid-cols-[minmax(0,auto)_20px_minmax(0,1fr)] gap-3 md:gap-4 items-start">
+            <div className="flex flex-col gap-1.5 md:pt-4 md:max-w-[290px]">
                 <p className={S.subLabel}>Problem</p>
                 <p className={S.small}>{problem}</p>
                 <div className="flex flex-wrap gap-2 mt-1">{problemScreens}</div>
             </div>
             <Arrow />
-            <div className="rounded-xl bg-greyscale-10/45 p-5 flex flex-col gap-2.5">
+            <div className="rounded-xl bg-greyscale-10/45 p-4 flex flex-col gap-1.5">
                 <p className={S.subLabel}>Solution</p>
                 <p className={S.small}>{solution}</p>
                 <div className="mt-1">{solutionContent}</div>
             </div>
         </div>
-        <div className="border-t border-(--color-border) pt-5 flex flex-col gap-2.5">
+        <div className="border-t border-(--color-border) pt-4 flex flex-col gap-1.5">
             <p className={S.subLabel}>Why this solution</p>
-            <ul className="list-disc pl-5 text-sm text-(--color-text-primary) flex flex-col gap-1.5">
+            <ul className="list-disc pl-5 text-sm text-(--color-text-primary) flex flex-col gap-1">
                 {why.map((w) => <li key={w}>{w}</li>)}
             </ul>
         </div>
