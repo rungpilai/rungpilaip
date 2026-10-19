@@ -31,7 +31,7 @@ const FilterableWorks = ({ onWorkClick }) => {
           ))}
         </div>
         <div className="mt-8 mb-4.5 self-stretch justify-start text-(--color-text-subtitle)">{workCount} {workCount > 1 ? "works": "work"}</div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 md:gap-y-14">
           {WORKS.filter((work) =>
             selectedTag.keywords?.some(keyword => work.tags.includes(keyword)),
           ).map((work) => (
