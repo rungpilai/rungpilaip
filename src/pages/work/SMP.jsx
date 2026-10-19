@@ -108,11 +108,15 @@ const SMP = () => {
                     <section id="solution" className={S.section}>
                         <p className={S.label}>Solution</p>
                         <p className={S.body}>I developed the SMP Design Guideline, establishing four principles for consistent on-site communication.</p>
-                        <ol className="list-decimal pl-6 text-(--color-text-primary) flex flex-col gap-1.5 mb-6">
-                            {PRINCIPLES.map(([name, desc]) => (
-                                <li key={name}><span className="font-semibold block">{name}</span>{desc}</li>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 mb-8">
+                            {PRINCIPLES.map(([name, desc], i) => (
+                                <div key={name} className="border-t border-(--color-border) py-4">
+                                    <p className="text-sm text-(--color-text-subtitle) mb-1">0{i + 1}</p>
+                                    <p className="font-semibold text-(--color-text-primary)">{name}</p>
+                                    <p className="text-sm text-(--color-text-subtitle) mt-0.5">{desc}</p>
+                                </div>
                             ))}
-                        </ol>
+                        </div>
                         <p className={`${S.body} mb-8`}>Here are a few examples of how the guideline was applied across key pages.</p>
 
                         <div className="flex flex-col gap-8">
