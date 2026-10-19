@@ -108,7 +108,7 @@ const SMP = () => {
                     <section id="solution" className={S.section}>
                         <p className={S.label}>Solution</p>
                         <p className={S.body}>I developed the SMP Design Guideline, establishing four principles for consistent on-site communication.</p>
-                        <ol className="list-decimal pl-6 text-(--color-text-primary) flex flex-col gap-3 mb-6">
+                        <ol className="list-decimal pl-6 text-(--color-text-primary) flex flex-col gap-1.5 mb-6">
                             {PRINCIPLES.map(([name, desc]) => (
                                 <li key={name}><span className="font-semibold block">{name}</span>{desc}</li>
                             ))}
