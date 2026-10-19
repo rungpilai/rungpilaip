@@ -5,7 +5,7 @@ const S = {
     label: 'text-(--color-text-subtitle) text-sm tracking-[0.08em] font-sans! uppercase mb-3',
     body: 'text-(--color-text-primary) mb-4',
     caption: 'text-(--color-text-subtitle) text-sm italic mt-2',
-    subLabel: 'text-sm font-semibold text-(--color-text-primary)',
+    subLabel: 'text-sm font-medium text-(--color-text-primary)',
     small: 'text-sm text-(--color-text-primary)',
 };
 
@@ -77,10 +77,10 @@ const SMP = () => {
 
                     <section id="research" className={S.section}>
                         <p className={S.label}>Research &amp; Insights</p>
-                        <p className="font-semibold text-(--color-text-primary)">Insight 1: Repeated dismissals signal unnecessary interruptions.</p>
+                        <p className="font-medium text-(--color-text-primary)">Insight 1: Repeated dismissals signal unnecessary interruptions.</p>
                         <p className="text-(--color-text-primary)">Users dismissed popups an average of 3.7 times per person, with 44% of dismissals occurring on classroom and cart pages.</p>
                         <p className={`${S.caption} mb-6`}>Source: Google Analytics 4 (SmartMathPro Online), 10 Sep – 7 Oct 2026</p>
-                        <p className="font-semibold text-(--color-text-primary)">Insight 2: Promotional messages can disrupt the purchase journey.</p>
+                        <p className="font-medium text-(--color-text-primary)">Insight 2: Promotional messages can disrupt the purchase journey.</p>
                         <p className="text-(--color-text-primary)">Session recordings revealed repeated navigation between coupon pages and checkout, triggered by overlapping promotional messages. The average purchase journey took nearly 17 minutes to complete.</p>
                         <img src="/img/work/smp/journey.webp" alt="Recorded session: closing the announcement bar, looking for a way to close a pop-up, viewing coupons, proceeding to checkout, a pop-up appearing, then going back to use a coupon" loading="lazy" className="w-full h-auto rounded-lg mt-6" />
                         <p className={S.caption}>Source: Microsoft Clarity</p>
@@ -101,7 +101,7 @@ const SMP = () => {
                         <p className={S.body}>I developed the SMP Design Guideline, establishing four principles for consistent on-site communication.</p>
                         <ol className="list-decimal pl-5 ml-3 text-(--color-text-primary) flex flex-col gap-2 mb-6">
                             {PRINCIPLES.map(([name, desc]) => (
-                                <li key={name} className="pl-1"><span className="font-semibold">{name}:</span> {desc}</li>
+                                <li key={name} className="pl-1"><span className="font-medium">{name}:</span> {desc}</li>
                             ))}
                         </ol>
                         <p className={`${S.body} mb-5`}>Here are a few examples of how the guideline was applied across key pages.</p>
@@ -162,7 +162,7 @@ const SMP = () => {
                                             <tbody className="text-(--color-text-primary)">
                                                 {[['Birthday campaign', 'Entering the site', 'Homepage hero banner'], ['400–600 THB off', 'Comparing courses', 'Below the price'], ['100 THB new customer', 'At checkout', 'Auto-applied in summary']].map(([a, b, c], i, arr) => (
                                                     <tr key={a} className={i < arr.length - 1 ? 'border-b border-(--color-border)' : ''}>
-                                                        <td className="py-2 pr-3 font-semibold">{a}</td>
+                                                        <td className="py-2 pr-3 font-medium">{a}</td>
                                                         <td className="py-2 pr-3">{b}</td>
                                                         <td className="py-2">{c}</td>
                                                     </tr>
@@ -194,13 +194,13 @@ const SMP = () => {
                                 <tbody className="text-(--color-text-primary)">
                                     <tr className="border-b border-(--color-border)">
                                         <td className="py-3.5 pr-4">Popup dismissals per user</td>
-                                        <td className="py-3.5 pr-4 font-semibold">3.7</td>
-                                        <td className="py-3.5 font-semibold">Lower</td>
+                                        <td className="py-3.5 pr-4 font-medium">3.7</td>
+                                        <td className="py-3.5 font-medium">Lower</td>
                                     </tr>
                                     <tr>
                                         <td className="py-3.5 pr-4">Add-to-cart to order completed</td>
-                                        <td className="py-3.5 pr-4 font-semibold">17.2 min</td>
-                                        <td className="py-3.5 font-semibold">10% faster</td>
+                                        <td className="py-3.5 pr-4 font-medium">17.2 min</td>
+                                        <td className="py-3.5 font-medium">10% faster</td>
                                     </tr>
                                 </tbody>
                             </table>
