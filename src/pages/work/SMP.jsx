@@ -1,6 +1,4 @@
-import { useRef } from 'react';
 import HeaderWork from '../../components/HeaderWork';
-import TableOfContents from '../../components/TableOfContents';
 
 const S = {
     section: 'mb-14 scroll-mt-24',
@@ -10,15 +8,6 @@ const S = {
     subLabel: 'text-sm font-semibold text-(--color-text-primary)',
     small: 'text-sm text-(--color-text-primary)',
 };
-
-const SECTIONS = [
-    { id: 'overview', label: 'Overview' },
-    { id: 'research', label: 'Research & Insights' },
-    { id: 'problem', label: 'Problem' },
-    { id: 'solution', label: 'Solution' },
-    { id: 'measuring-success', label: 'Measuring Success' },
-    { id: 'result', label: 'Result' },
-];
 
 const Screen = ({ src, alt, caption, className = 'h-44 md:h-[220px]' }) => (
     <figure className="flex flex-col gap-1.5 shrink-0">
@@ -74,18 +63,10 @@ const STATS = [
 ];
 
 const SMP = () => {
-    const articleRef = useRef(null);
-
     return (
         <main className="container-work md:mt-16">
-            <div className="relative">
-                <aside className="hidden xl:block absolute top-0 left-full h-full ml-12">
-                    <div className="sticky top-24">
-                        <TableOfContents articleRef={articleRef} sections={SECTIONS} />
-                    </div>
-                </aside>
-
-                <div ref={articleRef}>
+            <div>
+                <div>
                     <HeaderWork
                         title={<>Popup Audit &amp; Optimization: Designing a <span className="text-(--color-primary)">Communication System</span> for SmartMathPro</>}
                         tags={['UX/UI Design']}
