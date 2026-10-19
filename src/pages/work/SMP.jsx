@@ -2,7 +2,7 @@ import HeaderWork from '../../components/HeaderWork';
 
 const S = {
     section: 'mb-12 scroll-mt-24',
-    label: 'text-(--color-text-subtitle) text-sm tracking-[0.08em] font-sans! uppercase mb-3',
+    label: 'text-(--color-text-primary) text-lg font-semibold tracking-[0.04em] font-sans! uppercase mb-3',
     body: 'text-(--color-text-primary) mb-4',
     caption: 'text-(--color-text-subtitle) text-sm italic mt-2',
     subLabel: 'text-sm font-semibold text-(--color-text-primary)',
