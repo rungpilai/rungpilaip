@@ -16,17 +16,36 @@ const Screen = ({ src, alt, caption, className = 'h-44 md:h-[220px]' }) => (
     </figure>
 );
 
+const Arrow = () => (
+    <div className="hidden md:flex self-center justify-center text-(--color-text-tertiary)" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M5 12h14" /><path d="M13 18l6-6" /><path d="M13 6l6 6" />
+        </svg>
+    </div>
+);
+
 const Example = ({ title, problem, problemScreens, solution, solutionContent, why }) => (
-    <article>
-        <h3 className="font-semibold text-(--color-text-primary) mb-3">{title}</h3>
-        <p className="text-(--color-text-primary)"><span className="font-semibold">Problem:</span> {problem}</p>
-        <div className="flex flex-wrap gap-3 mt-4 mb-6">{problemScreens}</div>
-        <p className="text-(--color-text-primary)"><span className="font-semibold">Solution:</span> {solution}</p>
-        <div className="mt-4 mb-6">{solutionContent}</div>
-        <p className="font-semibold text-(--color-text-primary)">Why this solution</p>
-        <ul className="list-disc pl-5 ml-3 mt-1 text-(--color-text-primary) flex flex-col gap-1">
-            {why.map((w) => <li key={w}>{w}</li>)}
-        </ul>
+    <article className="rounded-2xl border border-(--color-border) p-5 md:p-7 flex flex-col gap-5">
+        <h3 className="text-xl font-normal text-(--color-text-primary)">{title}</h3>
+        <div className="grid grid-cols-1 md:grid-cols-[minmax(0,auto)_20px_minmax(0,1fr)] gap-4 md:gap-6 items-start">
+            <div className="flex flex-col gap-2.5 md:pt-5 md:max-w-[290px]">
+                <p className={S.subLabel}>Problem</p>
+                <p className={S.small}>{problem}</p>
+                <div className="flex flex-wrap gap-2 mt-1">{problemScreens}</div>
+            </div>
+            <Arrow />
+            <div className="rounded-xl bg-greyscale-10/45 p-5 flex flex-col gap-2.5">
+                <p className={S.subLabel}>Solution</p>
+                <p className={S.small}>{solution}</p>
+                <div className="mt-1">{solutionContent}</div>
+            </div>
+        </div>
+        <div className="border-t border-(--color-border) pt-5 flex flex-col gap-2.5">
+            <p className={S.subLabel}>Why this solution</p>
+            <ul className="list-disc pl-5 text-sm text-(--color-text-primary) flex flex-col gap-1.5">
+                {why.map((w) => <li key={w}>{w}</li>)}
+            </ul>
+        </div>
     </article>
 );
 
@@ -96,7 +115,7 @@ const SMP = () => {
                         </ol>
                         <p className={`${S.body} mb-8`}>Here are a few examples of how the guideline was applied across key pages.</p>
 
-                        <div className="flex flex-col gap-12">
+                        <div className="flex flex-col gap-8">
                             <Example
                                 title="Example 1: Homepage"
                                 problem="The same promo was repeated in several places on the first screen."
@@ -140,7 +159,7 @@ const SMP = () => {
                                 problemScreens={<Screen src="/img/work/smp/ex3-before.webp" alt="Account page with several promotion pop-ups stacked on top of each other" className="w-full max-w-[290px] h-auto" />}
                                 solution="Keep all 3 promotions, but give each its own place and moment."
                                 solutionContent={
-                                    <div className="overflow-x-auto">
+                                    <div className="rounded-lg border border-(--color-border) bg-white px-4 overflow-x-auto">
                                         <table className="w-full text-sm text-left">
                                             <thead>
                                                 <tr className="text-(--color-text-tertiary) border-b border-(--color-border)">
@@ -172,7 +191,7 @@ const SMP = () => {
                     <section id="measuring-success" className={S.section}>
                         <p className={S.label}>Measuring Success</p>
                         <p className={S.body}>Success is measured by comparing 28 days before the change (10 Sep – 7 Oct 2026) with the 28 days after, using GA4 and Microsoft Clarity.</p>
-                        <div className="overflow-x-auto">
+                        <div className="rounded-2xl border border-(--color-border) px-5 md:px-7 py-3 md:py-4 mt-6 overflow-x-auto">
                             <table className="w-full text-left">
                                 <thead>
                                     <tr className="text-sm text-(--color-text-tertiary) border-b border-(--color-border)">
@@ -187,7 +206,7 @@ const SMP = () => {
                                         <td className="py-3.5 pr-4 font-semibold">3.7</td>
                                         <td className="py-3.5 font-semibold">Lower</td>
                                     </tr>
-                                    <tr className="border-b border-(--color-border)">
+                                    <tr>
                                         <td className="py-3.5 pr-4">Add-to-cart to order completed</td>
                                         <td className="py-3.5 pr-4 font-semibold">17.2 min</td>
                                         <td className="py-3.5 font-semibold">10% faster</td>
