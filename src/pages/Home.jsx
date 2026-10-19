@@ -70,16 +70,16 @@ const Home = () => {
 
                     <div className="flex flex-col sm:flex-row flex-wrap gap-8 md:gap-12 mb-12 md:mb-15">
                         <div className="flex flex-col gap-1">
-                            <span className="text-sm tracking-widest text-(--color-text-tertiary) uppercase">BASED IN</span>
-                            <span className="text-(--color-text-secondary)">Bangkok, TH</span>
+                            <span className="text-xs tracking-widest text-(--color-text-tertiary) uppercase">BASED IN</span>
+                            <span className="text-(--color-text-primary)">Bangkok, TH</span>
                         </div>
                         <div className="flex flex-col gap-1">
-                            <span className="text-sm tracking-widest text-(--color-text-tertiary) uppercase">UPDATED</span>
-                            <span className="text-(--color-text-secondary)">2026</span>
+                            <span className="text-xs tracking-widest text-(--color-text-tertiary) uppercase">UPDATED</span>
+                            <span className="text-(--color-text-primary)">2026</span>
                         </div>
                         <div className="flex flex-col gap-1">
-                            <span className="text-sm tracking-widest text-(--color-text-tertiary) uppercase">CURRENTLY</span>
-                            <span className="text-(--color-text-secondary)">
+                            <span className="text-xs tracking-widest text-(--color-text-tertiary) uppercase">CURRENTLY</span>
+                            <span className="text-(--color-text-primary)">
                                 Exploring physical computing, creative technology, and the future of interaction.
                             </span>
                         </div>
