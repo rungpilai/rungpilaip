@@ -8,6 +8,7 @@ import ET from './work/ET';
 import SC from './work/SC';
 import SCG from './work/SCG';
 import TSM from './work/TSM';
+import SMP from './work/SMP';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -42,6 +43,8 @@ const Home = () => {
                 return <SCG />;
             case '/work/tsm':
                 return <TSM />;
+            case '/work/smp':
+                return <SMP />;
             default:
                 return null;
         }
