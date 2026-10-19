@@ -28,13 +28,13 @@ const Example = ({ title, problem, problemScreens, solution, solutionContent, wh
     <article className="rounded-2xl border border-(--color-border) p-5 md:p-6 flex flex-col gap-4">
         <h3 className="text-lg font-normal text-(--color-text-primary)">{title}</h3>
         <div className="grid grid-cols-1 md:grid-cols-[minmax(0,auto)_20px_minmax(0,1fr)] gap-3 md:gap-4 items-start">
-            <div className="flex flex-col gap-1.5 md:pt-4 md:max-w-[290px]">
+            <div className="flex flex-col gap-1.5 md:max-w-[290px]">
                 <p className={S.subLabel}>Problem</p>
                 <p className={S.small}>{problem}</p>
                 <div className="flex flex-wrap gap-2 mt-1">{problemScreens}</div>
             </div>
             <Arrow />
-            <div className="rounded-xl bg-[#EDF1F9] p-4 flex flex-col gap-1.5">
+            <div className="flex flex-col gap-1.5">
                 <p className={S.subLabel}>Solution</p>
                 <p className={S.small}>{solution}</p>
                 <div className="mt-1">{solutionContent}</div>
