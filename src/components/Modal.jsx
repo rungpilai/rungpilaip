@@ -40,14 +40,14 @@ const Modal = ({ isOpen, onClose, children, showProgress = false }) => {
                     <button
                         onClick={handleClose}
                         aria-label="Close"
-                        className={`fixed top-4 right-4 md:top-6 md:right-6 z-40 ${
+                        className={`fixed top-4 right-4 md:top-10 md:right-10 z-40 ${
                                 "inline-flex items-center justify-center"
                             } ${
                                 "rounded-full size-12 border transition-colors"
                             } ${
                                 "text-(--color-text-tertiary) bg-white border-(--color-border)"
                             } ${
-                                "hover:text-white hover:bg-(--color-text-tertiary) hover:border-transparent"
+                                "cursor-pointer hover:text-white hover:bg-(--color-primary) hover:border-transparent active:bg-(--color-primary-active)"
                             }`
                         }
                     >
