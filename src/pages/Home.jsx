@@ -68,7 +68,7 @@ const Home = () => {
             <main className='mt-12 md:mt-16'>
                 <section className="container">
                     <PageTitle className="text-[32px] mb-10">
-                        User Experience Designer<br />&amp; Researcher
+                        User Experience Designer<br />and Researcher
                     </PageTitle>
 
                     <div className="flex flex-col sm:flex-row flex-wrap gap-8 md:gap-12 mb-12 md:mb-15">
