@@ -59,7 +59,7 @@ const PRINCIPLES = [
 ];
 
 const PLACEMENTS = [
-    ['Up to THB 500 off', 'Course detail page'],
+    ['Up to THB 500 off', 'Homepage banner and course detail page'],
     ['New customer offer', 'First-visit modal'],
     ['Birthday campaign', 'Campaign banner'],
 ];
