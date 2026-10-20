@@ -116,7 +116,7 @@ const SMP = () => {
                                 solutionContent={
                                     <div className="flex flex-wrap gap-3">
                                         <Screen src="/img/work/smp/ex1-option-a.webp" alt="Option A: promotion shown as a modal on the first visit only" caption="A - Modal on first visit only" />
-                                        <Screen src="/img/work/smp/ex1-option-b.webp" alt="Option B: promotion shown on the course page after adding to cart" caption="B - Move to the cart page" />
+                                        <Screen src="/img/work/smp/ex1-option-b.webp" alt="Option B: promotion shown on the course detail page" caption="B - Move to the course detail page" />
                                     </div>
                                 }
                                 why={[
