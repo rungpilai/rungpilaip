@@ -40,7 +40,7 @@ const Modal = ({ isOpen, onClose, children, showProgress = false }) => {
                     <button
                         onClick={handleClose}
                         aria-label="Close"
-                        className={`fixed top-4 right-4 md:top-10 md:right-10 z-40 ${
+                        className={`fixed top-4 right-4 md:top-16 md:right-16 z-40 ${
                                 "inline-flex items-center justify-center"
                             } ${
                                 "rounded-full size-12 border transition-colors"
