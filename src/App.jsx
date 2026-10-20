@@ -10,6 +10,7 @@ import TSM from './pages/work/TSM';
 import SCG from './pages/work/SCG';
 import SMP from './pages/work/SMP';
 import ReadingProgress from './components/ReadingProgress';
+import ProjectNav from './components/ProjectNav';
 
 const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -22,6 +23,11 @@ const ScrollToTop = () => {
 const WorkProgress = () => {
     const { pathname } = useLocation();
     return pathname.startsWith('/work/') ? <ReadingProgress /> : null;
+};
+
+const WorkNav = () => {
+    const { pathname } = useLocation();
+    return pathname.startsWith('/work/') ? <ProjectNav currentSlug={pathname} /> : null;
 };
 
 const App = () => {
@@ -39,6 +45,7 @@ const App = () => {
                 <Route path="/work/smp" element={<SMP />} />
                 <Route path="/about" element={<About />} />
             </Routes>
+            <WorkNav />
         </BrowserRouter>
     );
 };

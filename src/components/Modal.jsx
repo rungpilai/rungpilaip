@@ -2,8 +2,12 @@ import { useEffect, useRef } from "react";
 import { useState } from "react";
 import ReadingProgress from "./ReadingProgress";
 
-const Modal = ({ isOpen, onClose, children, showProgress = false }) => {
+const Modal = ({ isOpen, onClose, children, showProgress = false, footer = null, contentKey }) => {
     const scrollRef = useRef(null);
+
+    useEffect(() => {
+        if (scrollRef.current) scrollRef.current.scrollTop = 0;
+    }, [contentKey]);
     const [isMounted, setIsMounted] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
 
@@ -59,6 +63,7 @@ const Modal = ({ isOpen, onClose, children, showProgress = false }) => {
                     </button>
                 </div>
                 {children}
+                {typeof footer === 'function' ? footer(handleClose) : footer}
                 <div className="mb-16 container-about">
                 </div>
             </div>
