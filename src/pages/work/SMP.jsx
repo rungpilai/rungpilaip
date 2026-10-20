@@ -139,7 +139,7 @@ const SMP = () => {
                         solutionContent={
                             <div className="flex flex-wrap gap-3">
                                 <Screen src="/img/work/smp/ex2-after-summary.webp" alt="Order summary with the best eligible coupon applied" caption="Order summary" />
-                                <Screen src="/img/work/smp/ex2-after-coupons.webp" alt="Coupon list with the applied coupon highlighted" caption="Coupon list" />
+                                <Screen src="/img/work/smp/ex2-after-coupons.webp" alt="Coupon list with the applied coupon highlighted" caption="Coupon list" className="h-[156px] md:h-[195px]" />
                             </div>
                         }
                         why={[
@@ -204,7 +204,6 @@ const SMP = () => {
                         </tbody>
                     </table>
                 </div>
-                <p className={S.caption}>Tools: GA4 · Microsoft Clarity</p>
             </section>
 
             <section id="result" className={S.section}>
