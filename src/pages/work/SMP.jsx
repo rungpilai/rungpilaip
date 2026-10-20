@@ -44,7 +44,7 @@ const Example = ({ title, problem, problemScreens, solution, solutionContent, wi
         <div className="border-t border-(--color-border) pt-4 flex flex-col gap-1.5">
             <p className={S.subLabel}>Why this solution</p>
             <ul className="list-disc pl-5 text-sm text-(--color-text-primary) flex flex-col gap-1">
-                {why.map((w) => <li key={w}>{w}</li>)}
+                {why.map((w, i) => <li key={i}>{w}</li>)}
             </ul>
         </div>
     </article>
@@ -72,7 +72,7 @@ const SMP = () => {
                     <section id="overview" className={S.section}>
                         <p className={S.label}>Overview</p>
                         <p className={S.body}>
-                            Promotional messages on SmartMathPro Online competed for attention, creating unnecessary interruptions throughout the learning and purchasing journey. I conducted a UX audit using behavioral analytics and session recordings to identify friction points and develop the SMP Design Guideline, a unified framework for managing on-site communication.
+                            Promotional messages across SmartMathPro Online created repeated interruptions throughout the learning and purchasing journey. I audited user behavior through analytics and session recordings to identify friction points, then translated these findings into the SMP Design Guideline, a framework for managing message priority, placement, and frequency across the platform.
                         </p>
                     </section>
 
@@ -82,7 +82,7 @@ const SMP = () => {
                         <p className="text-(--color-text-primary)">Users dismissed popups an average of <span className="font-medium">3.7 times</span> per person, with 44% of dismissals occurring on classroom and cart pages.</p>
                         <p className={`${S.caption} mb-6`}>Source: Google Analytics 4 (SmartMathPro Online), 10 Sep – 7 Oct 2026</p>
                         <p className="font-medium text-(--color-text-primary)">Insight 2: Promotional messages can disrupt the purchase journey.</p>
-                        <p className="text-(--color-text-primary)">Session recordings revealed repeated navigation between coupon pages and checkout, triggered by overlapping promotional messages. The average purchase journey took nearly <span className="font-medium">17 minutes</span> to complete.</p>
+                        <p className="text-(--color-text-primary)">Session recordings showed users navigating between coupon pages and checkout while encountering promotional messages along the way. The average purchase journey took <span className="font-medium">17.2 minutes</span> from adding an item to completing an order, highlighting an opportunity to simplify the checkout experience.</p>
                         <img src="/img/work/smp/journey.webp" alt="Recorded session: closing the announcement bar, looking for a way to close a popup, viewing coupons, proceeding to checkout, a popup appearing, then going back to use a coupon" loading="lazy" className="w-full h-auto rounded-lg mt-6" />
                         <p className={S.caption}>Source: Microsoft Clarity</p>
                     </section>
@@ -120,9 +120,8 @@ const SMP = () => {
                                     </div>
                                 }
                                 why={[
-                                    'One promo, one place: repeating it added noise without reaching more people (frequency and display rules).',
-                                    'Option A keeps the offer visible to new visitors, without repeating it on every visit.',
-                                    'Option B shows the offer when it matters most, as users are about to buy (placement and timing).',
+                                    <><span className="font-medium">Option A:</span> Introduces the offer to new visitors without repeating it on every visit.</>,
+                                    <><span className="font-medium">Option B:</span> Presents the offer when users show purchase intent, making the message more contextually relevant.</>,
                                 ]}
                             />
                             <Example
@@ -132,17 +131,17 @@ const SMP = () => {
                                     <Screen src="/img/work/smp/ex2-before-1.webp" alt="Cart with the first coupon popup" />
                                     <Screen src="/img/work/smp/ex2-before-2.webp" alt="Cart with a second popup about unused coupons" />
                                 </>}
-                                solution="Apply the best available coupon automatically in the order summary."
+                                solution="Apply the best eligible coupon automatically in the order summary."
                                 solutionContent={
                                     <div className="flex flex-wrap gap-3">
-                                        <Screen src="/img/work/smp/ex2-after-summary.webp" alt="Order summary with the best coupon already applied" caption="Best coupon auto-applied" />
-                                        <Screen src="/img/work/smp/ex2-after-coupons.webp" alt="Coupon list with the best coupon preselected" caption="Coupon list" />
+                                        <Screen src="/img/work/smp/ex2-after-summary.webp" alt="Order summary with the best eligible coupon applied" caption="Order summary with the best eligible coupon applied" />
+                                        <Screen src="/img/work/smp/ex2-after-coupons.webp" alt="Coupon list with the applied coupon highlighted" caption="Coupon list with the applied coupon highlighted" />
                                     </div>
                                 }
                                 why={[
-                                    'Users no longer have to find and pick a coupon at the most sensitive step.',
-                                    'Removes two interruptions right before payment (placement and timing).',
-                                    '51% of orders use a coupon, so making it effortless has a direct effect on checkout.',
+                                    'Reduces the need to search for and manually apply a coupon during checkout.',
+                                    'Removes two promotional interruptions at a critical point in the purchase journey.',
+                                    'Makes coupon benefits easier to access, particularly when 51% of orders use a coupon.',
                                 ]}
                             />
                             <Example
