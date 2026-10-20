@@ -51,7 +51,7 @@ const Modal = ({ isOpen, onClose, children, showProgress = false, footer = null,
                             } ${
                                 "text-(--color-text-subtitle) bg-white border-(--color-border)"
                             } ${
-                                "cursor-pointer hover:text-white hover:bg-(--color-primary) hover:border-transparent active:bg-(--color-primary-active)"
+                                "cursor-pointer hover:text-white hover:bg-(--color-primary-border) hover:border-transparent active:bg-(--color-primary-active)"
                             }`
                         }
                     >

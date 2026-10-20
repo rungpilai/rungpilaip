@@ -7,7 +7,7 @@ const TagButton = ({ tag = TAGS[0], isSelected, onClick }) => {
         isSelected
           ? "bg-(--color-primary) text-white"
           : `bg-white text-(--color-text-subtitle) border-(--color-border) ${
-            `hover:text-white hover:bg-(--color-primary) hover:border-transparent active:bg-(--color-primary-active)`}`
+            `hover:text-white hover:bg-(--color-primary-border) hover:border-transparent active:bg-(--color-primary-active)`}`
       }`}
       onClick={() => onClick(tag)}
     >
