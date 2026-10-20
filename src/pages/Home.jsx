@@ -74,15 +74,15 @@ const Home = () => {
                     <div className="flex flex-col sm:flex-row flex-wrap gap-8 md:gap-12 mb-12 md:mb-15">
                         <div className="flex flex-col gap-1">
                             <span className="text-sm tracking-widest text-(--color-text-subtitle) uppercase">BASED IN</span>
-                            <span className="text-(--color-text-secondary)">Bangkok, TH</span>
+                            <span className="text-(--color-text-primary)">Bangkok, TH</span>
                         </div>
                         <div className="flex flex-col gap-1">
                             <span className="text-sm tracking-widest text-(--color-text-subtitle) uppercase">UPDATED</span>
-                            <span className="text-(--color-text-secondary)">2026</span>
+                            <span className="text-(--color-text-primary)">2026</span>
                         </div>
                         <div className="flex flex-col gap-1">
                             <span className="text-sm tracking-widest text-(--color-text-subtitle) uppercase">CURRENTLY</span>
-                            <span className="text-(--color-text-secondary)">
+                            <span className="text-(--color-text-primary)">
                                 Exploring physical computing, creative technology, and the future of interaction.
                             </span>
                         </div>
@@ -103,7 +103,7 @@ const Home = () => {
 
                 <section id="selected-work" className="container pb-8 scroll-mt-26">
                     <h2 className="text-[28px] md:text-[32px] font-normal mb-3">Curated Works</h2>
-                    <p className="text-(--color-text-secondary) leading-relaxed mb-10">
+                    <p className="text-(--color-text-primary) leading-relaxed mb-10">
                         Each project quietly reshapes how I think and who I'm becoming as a designer, <br className="hidden sm:block" />
                         here are some of the ones I'm most proud of.
                     </p>

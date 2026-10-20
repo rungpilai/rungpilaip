@@ -8,7 +8,7 @@ const Footer = () => {
 
                 <img src="/img/logo-navbar-footer.svg" alt="Rungpilai" width={83} height={45} className="mb-2" />
 
-                <div className="flex items-center gap-1.5 text-base text-(--color-text-tertiary)">
+                <div className="flex items-center gap-1.5 text-base text-(--color-text-subtitle)">
                     <span>{EMAIL_ADDRESS}</span>
                     <CopyEmailButton />
                 </div>
@@ -24,12 +24,12 @@ const Footer = () => {
                             href={href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-sm text-(--color-text-tertiary) transition-opacity duration-200 hover:text-(--color-text-secondary)"
+                            className="text-sm text-(--color-text-subtitle) transition-opacity duration-200 hover:text-(--color-text-secondary)"
                         >
                             {label}
                         </a>,
                         index !== array.length - 1 && (
-                            <span key={`${label}-sep`} className="text-(--color-text-tertiary) opacity-30">|</span>
+                            <span key={`${label}-sep`} className="text-(--color-text-subtitle) opacity-30">|</span>
                         )
                     ])}
                 </nav>

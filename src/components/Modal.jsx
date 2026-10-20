@@ -45,7 +45,7 @@ const Modal = ({ isOpen, onClose, children, showProgress = false }) => {
                             } ${
                                 "rounded-full size-12 border transition-colors"
                             } ${
-                                "text-(--color-text-tertiary) bg-white border-(--color-border)"
+                                "text-(--color-text-subtitle) bg-white border-(--color-border)"
                             } ${
                                 "cursor-pointer hover:text-white hover:bg-(--color-primary) hover:border-transparent active:bg-(--color-primary-active)"
                             }`

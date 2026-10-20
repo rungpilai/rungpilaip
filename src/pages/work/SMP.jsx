@@ -17,7 +17,7 @@ const Screen = ({ src, alt, caption, className = 'h-44 md:h-[220px]' }) => (
 );
 
 const Arrow = () => (
-    <div className="hidden md:flex self-center justify-center text-(--color-text-tertiary)" aria-hidden="true">
+    <div className="hidden md:flex self-center justify-center text-(--color-text-subtitle)" aria-hidden="true">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
             <path d="M5 12h14" /><path d="M13 18l6-6" /><path d="M13 6l6 6" />
         </svg>
@@ -157,7 +157,7 @@ const SMP = () => {
                             <div className="rounded-lg border border-(--color-border) bg-white px-4 overflow-x-auto">
                                 <table className="w-full text-sm text-left">
                                     <thead>
-                                        <tr className="text-(--color-text-tertiary) border-b border-(--color-border)">
+                                        <tr className="text-(--color-text-subtitle) border-b border-(--color-border)">
                                             <th className="font-normal py-2 pr-3">Promotion</th>
                                             <th className="font-normal py-2">Placement</th>
                                         </tr>
@@ -184,7 +184,7 @@ const SMP = () => {
                 <div className="rounded-2xl border border-(--color-border) px-5 md:px-7 py-3 md:py-4 mt-4 overflow-x-auto">
                     <table className="w-full text-left">
                         <thead>
-                            <tr className="text-sm text-(--color-text-tertiary) border-b border-(--color-border)">
+                            <tr className="text-sm text-(--color-text-subtitle) border-b border-(--color-border)">
                                 <th className="font-normal py-2.5 pr-4">Metric</th>
                                 <th className="font-normal py-2.5 pr-4 w-32">Baseline</th>
                                 <th className="font-normal py-2.5 w-32">Target</th>
