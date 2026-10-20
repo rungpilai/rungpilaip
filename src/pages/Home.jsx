@@ -111,9 +111,7 @@ const Home = () => {
                     <FilterableWorks onWorkClick={(slug) => handleOpenModal(slug)} />
                 </section>
             </main>
-            <div className="px-2.5 py-28 flex justify-center items-center gap-2.5">
-                <div className="text-center justify-start text-(--color-text-subtitle)">More experiments in progress ...</div>
-            </div>
+            <div className="h-24 md:h-32" aria-hidden="true" />
             <div className="container">
                 <Footer />
             </div>

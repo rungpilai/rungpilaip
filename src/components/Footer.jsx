@@ -24,7 +24,7 @@ const Footer = () => {
                             href={href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-sm text-(--color-text-subtitle) transition-opacity duration-200 hover:text-(--color-text-secondary)"
+                            className="text-sm text-(--color-text-subtitle) transition-colors duration-200 hover:text-(--color-primary)"
                         >
                             {label}
                         </a>,
