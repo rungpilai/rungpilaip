@@ -28,7 +28,7 @@ const ReadingProgress = ({ targetRef }) => {
 
     return (
         <div
-            className="fixed top-0 inset-x-0 z-50 h-1 bg-primitive-10"
+            className="fixed top-0 inset-x-0 z-50 h-1.5 bg-primitive-10"
             role="progressbar"
             aria-label="Reading progress"
             aria-valuemin={0}
