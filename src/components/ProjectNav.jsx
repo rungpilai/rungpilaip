@@ -20,7 +20,7 @@ const ProjectNav = ({ currentSlug, onBack, onNext }) => {
     if (index === -1) return null;
     const next = WORKS[(index + 1) % WORKS.length];
 
-    const backClass = 'group inline-flex items-center gap-1.5 text-sm tracking-[0.08em] uppercase text-(--color-text-subtitle) hover:text-(--color-primary) transition-colors duration-200 cursor-pointer';
+    const backClass = 'inline-flex items-center gap-2 px-4 py-2 rounded-full border border-(--color-border) text-sm tracking-[0.08em] uppercase text-(--color-text-subtitle) hover:text-white hover:bg-(--color-primary) hover:border-transparent active:bg-(--color-primary-active) transition-colors duration-200 cursor-pointer';
     const nextClass = 'group flex flex-col items-end gap-1.5 text-right max-w-[420px] cursor-pointer';
 
     const backContent = <><BackIcon /><span>Back</span></>;
@@ -29,7 +29,7 @@ const ProjectNav = ({ currentSlug, onBack, onNext }) => {
             <span className="inline-flex items-center gap-1.5 text-sm tracking-[0.08em] uppercase text-(--color-text-subtitle) group-hover:text-(--color-primary) transition-colors duration-200">
                 Next project <NextIcon />
             </span>
-            <span className="text-lg leading-[1.35] text-(--color-text-primary) group-hover:text-(--color-primary) transition-colors duration-200">
+            <span className="text-base leading-[1.4] text-(--color-text-primary) group-hover:text-(--color-primary) transition-colors duration-200">
                 {next.title}
             </span>
         </>
