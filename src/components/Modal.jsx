@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { useState } from "react";
-import ActionLink from "./ActionLink";
 import ReadingProgress from "./ReadingProgress";
 
 const Modal = ({ isOpen, onClose, children, showProgress = false }) => {
@@ -38,21 +37,11 @@ const Modal = ({ isOpen, onClose, children, showProgress = false }) => {
             {showProgress && <ReadingProgress targetRef={scrollRef} />}
             <div ref={scrollRef} className="relative z-30 w-full max-h-screen overflow-scroll">
                 <div className="mt-16 container-about flex flex-row justify-between">
-                    <ActionLink
-                        onClick={handleClose}
-                        icon={
-                            <svg width="9" height="12" viewBox="0 0 9 12" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 1L2 6L7 11" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        }
-                        iconPosition="left"
-                        className="!hidden md:!inline-flex">
-                        BACK
-                    </ActionLink>
                     <button
                         onClick={handleClose}
-                        className={`fixed top-4 right-4 z-40 ${
-                                "inline-flex md:hidden items-center justify-center"
+                        aria-label="Close"
+                        className={`fixed top-4 right-4 md:top-6 md:right-6 z-40 ${
+                                "inline-flex items-center justify-center"
                             } ${
                                 "rounded-full size-12 border transition-colors"
                             } ${
@@ -71,17 +60,6 @@ const Modal = ({ isOpen, onClose, children, showProgress = false }) => {
                 </div>
                 {children}
                 <div className="mb-16 container-about">
-                    <ActionLink
-                        onClick={handleClose}
-                        icon={
-                            <svg width="9" height="12" viewBox="0 0 9 12" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 1L2 6L7 11" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        }
-                        iconPosition="left"
-                        className="!hidden md:!inline-flex">
-                        BACK
-                    </ActionLink>
                 </div>
             </div>
         </div>
