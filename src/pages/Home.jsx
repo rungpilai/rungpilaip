@@ -3,7 +3,6 @@ import Footer from '../components/Footer';
 import PageTitle from '../components/PageTitle';
 import FilterableWorks from '../components/FilterableWorks';
 import Modal from '../components/Modal';
-import ProjectNav from '../components/ProjectNav';
 import About from './About';
 import ET from './work/ET';
 import SC from './work/SC';
@@ -125,14 +124,7 @@ const Home = () => {
                     isOpen={selectedModelPage.length != 0}
                     onClose={() => handleCloseModal()}
                     showProgress={selectedModelPage.startsWith('/work/')}
-                    contentKey={selectedModelPage}
-                    footer={selectedModelPage.startsWith('/work/') ? (close) => (
-                        <ProjectNav
-                            currentSlug={selectedModelPage}
-                            onBack={close}
-                            onNext={(slug) => setSelectedModelPage(slug)}
-                        />
-                    ) : null}>
+                    contentKey={selectedModelPage}>
                         {renderModalContent(selectedModelPage)}
                     </Modal>
                 : null
