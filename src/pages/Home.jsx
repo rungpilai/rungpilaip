@@ -122,7 +122,8 @@ const Home = () => {
                 selectedModelPage.length != 0 ?
                     <Modal
                     isOpen={selectedModelPage.length != 0}
-                    onClose={() => handleCloseModal()}>
+                    onClose={() => handleCloseModal()}
+                    showProgress={selectedModelPage.startsWith('/work/')}>
                         {renderModalContent(selectedModelPage)}
                     </Modal>
                 : null

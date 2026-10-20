@@ -9,6 +9,7 @@ import ET from './pages/work/ET';
 import TSM from './pages/work/TSM';
 import SCG from './pages/work/SCG';
 import SMP from './pages/work/SMP';
+import ReadingProgress from './components/ReadingProgress';
 
 const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -18,10 +19,16 @@ const ScrollToTop = () => {
     return null;
 };
 
+const WorkProgress = () => {
+    const { pathname } = useLocation();
+    return pathname.startsWith('/work/') ? <ReadingProgress /> : null;
+};
+
 const App = () => {
     return (
         <BrowserRouter>
             <ScrollToTop />
+            <WorkProgress />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/works" element={<Works />} />

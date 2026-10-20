@@ -1,8 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useState } from "react";
 import ActionLink from "./ActionLink";
+import ReadingProgress from "./ReadingProgress";
 
-const Modal = ({ isOpen, onClose, children }) => {
+const Modal = ({ isOpen, onClose, children, showProgress = false }) => {
+    const scrollRef = useRef(null);
     const [isMounted, setIsMounted] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
 
@@ -33,7 +35,8 @@ const Modal = ({ isOpen, onClose, children }) => {
             : "opacity-0 translate-y-4"
         }`}
         >
-            <div className="relative z-30 w-full max-h-screen overflow-scroll">
+            {showProgress && <ReadingProgress targetRef={scrollRef} />}
+            <div ref={scrollRef} className="relative z-30 w-full max-h-screen overflow-scroll">
                 <div className="mt-16 container-about flex flex-row justify-between">
                     <ActionLink
                         onClick={handleClose}
