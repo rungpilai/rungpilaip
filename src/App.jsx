@@ -8,6 +8,7 @@ import SC from './pages/work/SC';
 import ET from './pages/work/ET';
 import TSM from './pages/work/TSM';
 import SCG from './pages/work/SCG';
+import SMP from './pages/work/SMP';
 
 const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -28,6 +29,7 @@ const App = () => {
                 <Route path="/work/et" element={<ET />} />
                 <Route path="/work/tsm" element={<TSM />} />
                 <Route path="/work/scg" element={<SCG />} />
+                <Route path="/work/smp" element={<SMP />} />
                 <Route path="/about" element={<About />} />
             </Routes>
         </BrowserRouter>

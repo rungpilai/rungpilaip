@@ -1,5 +1,13 @@
 export const WORKS = [
     {
+        year: '2026',
+        tags: ['UX/UI Design'],
+        title: 'Popup Audit & Optimization: Designing a Communication System for SmartMathPro',
+        description: 'A UX audit of on-site promotions, turned into a guideline for when and where messages appear.',
+        thumbnail: '/img/thumnails/smp-thum.webp',
+        slug: '/work/smp',
+    },
+    {
         year: '2025',
         tags: ['UX/UI Design', 'Branding'],
         title: 'SourceCode Website Redesign: Rebuilding Brand Trust Through UX',
