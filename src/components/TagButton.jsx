@@ -6,7 +6,7 @@ const TagButton = ({ tag = TAGS[0], isSelected, onClick }) => {
       className={`px-4 py-2 rounded-full border text-sm cursor-pointer transition-all duration-200 ease-out ${
         isSelected
           ? "bg-(--color-primary) text-white"
-          : `bg-white text-(--color-text-tertiary) border-(--color-border) ${
+          : `bg-white text-(--color-text-subtitle) border-(--color-border) ${
             `hover:border-(--color-primary-active) hover:text-(--color-primary)`}`
       }`}
       onClick={() => onClick(tag)}

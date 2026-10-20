@@ -1,8 +1,13 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useState } from "react";
-import ActionLink from "./ActionLink";
+import ReadingProgress from "./ReadingProgress";
 
-const Modal = ({ isOpen, onClose, children }) => {
+const Modal = ({ isOpen, onClose, children, showProgress = false, footer = null, contentKey }) => {
+    const scrollRef = useRef(null);
+
+    useEffect(() => {
+        if (scrollRef.current) scrollRef.current.scrollTop = 0;
+    }, [contentKey]);
     const [isMounted, setIsMounted] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
 
@@ -33,29 +38,20 @@ const Modal = ({ isOpen, onClose, children }) => {
             : "opacity-0 translate-y-4"
         }`}
         >
-            <div className="relative z-30 w-full max-h-screen overflow-scroll">
+            {showProgress && <ReadingProgress targetRef={scrollRef} />}
+            <div ref={scrollRef} className="relative z-30 w-full max-h-screen overflow-scroll">
                 <div className="mt-16 container-about flex flex-row justify-between">
-                    <ActionLink
-                        onClick={handleClose}
-                        icon={
-                            <svg width="9" height="12" viewBox="0 0 9 12" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 1L2 6L7 11" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        }
-                        iconPosition="left"
-                        className="!hidden md:!inline-flex">
-                        BACK
-                    </ActionLink>
                     <button
                         onClick={handleClose}
-                        className={`fixed top-4 right-4 z-40 ${
-                                "inline-flex md:hidden items-center justify-center"
+                        aria-label="Close"
+                        className={`fixed top-4 right-4 md:top-16 md:right-16 z-40 ${
+                                "inline-flex items-center justify-center"
                             } ${
                                 "rounded-full size-12 border transition-colors"
                             } ${
-                                "text-(--color-text-tertiary) bg-white border-(--color-border)"
+                                "text-(--color-text-subtitle) bg-white border-(--color-border)"
                             } ${
-                                "hover:text-white hover:bg-(--color-text-tertiary) hover:border-transparent"
+                                "cursor-pointer hover:text-white hover:bg-(--color-primary) hover:border-transparent active:bg-(--color-primary-active)"
                             }`
                         }
                     >
@@ -67,18 +63,8 @@ const Modal = ({ isOpen, onClose, children }) => {
                     </button>
                 </div>
                 {children}
+                {typeof footer === 'function' ? footer(handleClose) : footer}
                 <div className="mb-16 container-about">
-                    <ActionLink
-                        onClick={handleClose}
-                        icon={
-                            <svg width="9" height="12" viewBox="0 0 9 12" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 1L2 6L7 11" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        }
-                        iconPosition="left"
-                        className="!hidden md:!inline-flex">
-                        BACK
-                    </ActionLink>
                 </div>
             </div>
         </div>

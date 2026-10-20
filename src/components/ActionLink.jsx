@@ -39,7 +39,7 @@ const ActionLink = ({
                 } ${
                     "gap-2 px-4 py-2 border rounded-full"
                 } ${
-                    "text-(--color-text-tertiary) border-(--color-border)"
+                    "text-(--color-text-subtitle) border-(--color-border)"
                 } ${
                     "hover:text-white hover:bg-(--color-primary) hover:border-transparent"
                 } ${

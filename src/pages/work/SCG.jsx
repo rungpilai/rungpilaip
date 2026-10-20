@@ -9,7 +9,7 @@ const S = {
     list: 'text-(--color-text-primary) list-disc pl-5 mt-1 ml-3',
     imgFull: 'w-full max-w-[680px] h-auto rounded mt-6 ',
     twoCol: 'grid grid-cols-1 md:grid-cols-2 gap-6 mt-6',
-    colLabel: 'text-sm tracking-widest text-(--color-text-tertiary) uppercase mb-2',
+    colLabel: 'text-sm tracking-widest text-(--color-text-subtitle) uppercase mb-2',
     caption: 'text-(--color-text-subtitle) text-sm italic mt-2',
 };
 
@@ -153,20 +153,20 @@ const SCG = () => {
                     <p>3 Test Activities</p>
                     <p>Task 1</p>
                     <ul className={S.list}>
-                        <li className='text-(--color-text-tertiary)'>Find a bedroom design you like.</li>
-                        <li className='text-(--color-text-tertiary)'>Rate how easy it was to find the design (1-5) (5 = Very easy)</li>
+                        <li className='text-(--color-text-subtitle)'>Find a bedroom design you like.</li>
+                        <li className='text-(--color-text-subtitle)'>Rate how easy it was to find the design (1-5) (5 = Very easy)</li>
                     </ul>
 
                     <p>Task 2</p>
                     <ul className={S.list}>
-                        <li className='text-(--color-text-tertiary)'>View details of the selected room.</li>
-                        <li className='text-(--color-text-tertiary)'>Rate interest in purchasing products from the design (1-5) (5 = Very interested)</li>
+                        <li className='text-(--color-text-subtitle)'>View details of the selected room.</li>
+                        <li className='text-(--color-text-subtitle)'>Rate interest in purchasing products from the design (1-5) (5 = Very interested)</li>
                     </ul>
 
                     <p>Task 3</p>
                     <ul className={S.list}>
-                        <li className='text-(--color-text-tertiary)'>Review the overall design layout.</li>
-                        <li className='text-(--color-text-tertiary)'>Rate the visual appeal of the design (1-5) (5 = Very beautiful)</li>
+                        <li className='text-(--color-text-subtitle)'>Review the overall design layout.</li>
+                        <li className='text-(--color-text-subtitle)'>Rate the visual appeal of the design (1-5) (5 = Very beautiful)</li>
                     </ul>
 
                     <img src="/img/work/scg/test-card.jpg" alt="Test card" className="w-full sm:max-w-sm mx-auto mt-8" />

@@ -9,7 +9,7 @@ const S = {
     list: 'text-(--color-text-primary) list-disc pl-5 mt-1 ml-3',
     imgFull: 'w-full max-w-[680px] h-auto rounded mt-6 ',
     twoCol: 'grid grid-cols-1 md:grid-cols-2 gap-6 mt-6',
-    colLabel: 'text-sm tracking-widest text-(--color-text-tertiary) uppercase mb-2',
+    colLabel: 'text-sm tracking-widest text-(--color-text-subtitle) uppercase mb-2',
     caption: 'text-(--color-text-subtitle) text-sm italic mt-2',
 };
 

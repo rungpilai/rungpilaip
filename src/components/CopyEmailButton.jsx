@@ -22,7 +22,7 @@ const CopyEmailButton = ({ email = EMAIL_ADDRESS, className = '' }) => {
             {copied ? (
                 <CheckIcon className="text-(--color-primary)" />
             ) : (
-                <CopyIcon className="text-(--color-text-tertiary) hover:text-(--color-primary-border)" />
+                <CopyIcon className="text-(--color-text-subtitle) hover:text-(--color-primary-border)" />
             )}
         </button>
     );
