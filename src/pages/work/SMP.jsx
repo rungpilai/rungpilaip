@@ -42,7 +42,7 @@ const Example = ({ title, problem, problemScreens, solution, solutionContent, wh
         </div>
         {why && (
             <div className="border-t border-(--color-border) pt-4 flex flex-col gap-1.5">
-                <p className={S.subLabel}>Why it works</p>
+                <p className={S.subLabel}>Why this solution</p>
                 <ul className="list-disc pl-5 text-sm text-(--color-text-primary) flex flex-col gap-1">
                     {why.map((w, i) => <li key={i}>{w}</li>)}
                 </ul>
@@ -83,10 +83,10 @@ const SMP = () => {
 
             <section id="research" className={S.section}>
                 <p className={S.label}>Research &amp; Insights</p>
-                <p className="font-medium text-(--color-text-primary)">01 / Repeated interruptions</p>
+                <p className="font-medium text-(--color-text-primary)">Insight 1: Repeated interruptions</p>
                 <p className="text-(--color-text-primary)">Users dismissed popups an average of <span className="font-medium">3.7 times</span>, with 44% of dismissals occurring on classroom and cart pages.</p>
                 <p className={`${S.caption} mb-6`}>Source: Google Analytics 4 · 10 Sep – 7 Oct 2026</p>
-                <p className="font-medium text-(--color-text-primary)">02 / Friction during checkout</p>
+                <p className="font-medium text-(--color-text-primary)">Insight 2: Friction during checkout</p>
                 <p className="text-(--color-text-primary)">Session recordings showed users navigating between coupons and checkout while encountering promotional messages. The average purchase journey took <span className="font-medium">17.2 minutes</span> from adding an item to completing an order.</p>
                 <img src="/img/work/smp/journey.webp" alt="Recorded session: closing the announcement bar, looking for a way to close a popup, viewing coupons, proceeding to checkout, a popup appearing, then going back to use a coupon" loading="lazy" className="w-full h-auto rounded-lg mt-6" />
                 <p className={S.caption}>Source: Microsoft Clarity</p>
@@ -113,23 +113,23 @@ const SMP = () => {
 
                 <div className="flex flex-col gap-6">
                     <Example
-                        title="01 / Homepage"
+                        title="Example 1: Homepage"
                         problem="The same promotion appeared in the announcement bar and two homepage banners."
                         problemScreens={<Screen src="/img/work/smp/ex1-before.webp" alt="Homepage before: the same promotion in the announcement bar and two banners" />}
                         solution="Two options were proposed:"
-                        solutionContent={<>
+                        solutionContent={
                             <div className="flex flex-wrap gap-3">
                                 <Screen src="/img/work/smp/ex1-option-a.webp" alt="Option A: the offer shown as a modal on the first visit only" caption="A. First-visit modal" />
                                 <Screen src="/img/work/smp/ex1-option-b.webp" alt="Option B: the offer shown on the course detail page" caption="B. Course detail page" />
                             </div>
-                            <ul className="list-disc pl-5 text-sm text-(--color-text-primary) flex flex-col gap-1 mt-3">
-                                <li><span className="font-medium">A. First-visit modal:</span> Introduce the offer without repeating it on every visit.</li>
-                                <li><span className="font-medium">B. Course detail page:</span> Show the offer when users are closer to making a purchase.</li>
-                            </ul>
-                        </>}
+                        }
+                        why={[
+                            <><span className="font-medium">A. First-visit modal:</span> Introduce the offer without repeating it on every visit.</>,
+                            <><span className="font-medium">B. Course detail page:</span> Show the offer when users are closer to making a purchase.</>,
+                        ]}
                     />
                     <Example
-                        title="02 / Cart"
+                        title="Example 2: Cart"
                         problem="Two coupon-related popups interrupted users before payment."
                         problemScreens={<>
                             <Screen src="/img/work/smp/ex2-before-1.webp" alt="Cart with the first coupon popup" />
@@ -149,7 +149,7 @@ const SMP = () => {
                         ]}
                     />
                     <Example
-                        title="03 / Account"
+                        title="Example 3: Account"
                         problem="Multiple promotional popups stacked on top of each other."
                         problemScreens={<img src="/img/work/smp/ex3-before.webp" alt="Account page with several promotion popups stacked on top of each other" loading="lazy" className="w-full max-w-[290px] h-auto rounded-lg" />}
                         solution="Give each promotion a defined placement and trigger."
