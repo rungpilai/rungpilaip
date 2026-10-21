@@ -116,16 +116,18 @@ const SMP = () => {
                         title="Example 1: Homepage"
                         problem="The same promotion appeared in the announcement bar and two homepage banners."
                         problemScreens={<Screen src="/img/work/smp/ex1-before.webp" alt="Homepage before: the same promotion in the announcement bar and two banners" />}
-                        solution="Two options were proposed:"
+                        solution="Three options were proposed:"
                         solutionContent={
                             <div className="flex flex-wrap gap-3">
-                                <Screen src="/img/work/smp/ex1-option-a.webp" alt="Option A: the offer shown as a modal on the first visit only" caption="A. First-visit modal" />
-                                <Screen src="/img/work/smp/ex1-option-b.webp" alt="Option B: the offer shown on the course detail page" caption="B. Course detail page" />
+                                <Screen src="/img/work/smp/ex1-option-a.webp" alt="Option A: the offer shown as a modal on the first visit only" caption="A. First-visit modal" className="h-40 md:h-[180px]" />
+                                <Screen src="/img/work/smp/ex1-option-b.webp" alt="Option B: the offer shown on the course detail page" caption="B. Course detail page" className="h-40 md:h-[180px]" />
+                                <Screen src="/img/work/smp/ex1-option-c.webp" alt="Option C: the offer shown in the cart at checkout" caption="C. Checkout" className="h-40 md:h-[180px]" />
                             </div>
                         }
                         why={[
                             <><span className="font-medium">A. First-visit modal:</span> Introduce the offer without repeating it on every visit.</>,
                             <><span className="font-medium">B. Course detail page:</span> Show the offer when users are closer to making a purchase.</>,
+                            <><span className="font-medium">C. Checkout:</span> Show the offer in the cart, where users can act on it right before paying.</>,
                         ]}
                     />
                     <Example
