@@ -5,7 +5,7 @@ export const WORKS = [
         title: 'Popup Audit & Optimization: Designing a Communication System for SmartMathPro',
         description: 'A UX audit of on-site promotions, turned into a guideline for when and where messages appear.',
         thumbnail: '/img/thumnails/smp-thum.webp',
-        slug: '/work/smp',
+        slug: '/work/popup-audit',
     },
     {
         year: '2025',
@@ -13,7 +13,7 @@ export const WORKS = [
         title: 'SourceCode Website Redesign: Rebuilding Brand Trust Through UX',
         description: 'Led the redesign of a company website to improve information structure, usability, and brand presence.',
         thumbnail: '/img/thumnails/sc-thum.jpg',
-        slug: '/work/sc',
+        slug: '/work/sourcecode-website',
     },
     {
         year: '2025',
@@ -21,7 +21,7 @@ export const WORKS = [
         title: 'AI Eye Tracking for Design Practice in Corporate Routine',
         description: 'From gut feeling to data-driven design, exploring if AI eye tracking reflects real user attention.',
         thumbnail: '/img/thumnails/et-thum.jpg',
-        slug: '/work/et',
+        slug: '/work/ai-eye-tracking',
     },
     {
         year: '2025',
@@ -29,7 +29,7 @@ export const WORKS = [
         title: 'ThangSaiMai Antique Shop Website: A Quiet Brand with a Story to Tell',
         description: "A concept for ThangSaiMai's first website, shaping a local shop into a distinctive antique brand.",
         thumbnail: '/img/thumnails/tsm-thum.jpg',
-        slug: '/work/tsm',
+        slug: '/work/thangsaimai-website',
     },
     {
         year: '2024',
@@ -37,7 +37,7 @@ export const WORKS = [
         title: 'SCG Home UX Case Study for Home Renovators',
         description: 'Simplified renovation decisions through a gallery redesign grounded in user behavior.',
         thumbnail: '/img/thumnails/scg-thum.jpg',
-        slug: '/work/scg',
+        slug: '/work/scg-home',
     },
 ];
 
