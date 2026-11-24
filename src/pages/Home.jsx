@@ -17,7 +17,9 @@ const Home = () => {
 
     const handleOpenModal = (slug) => {
         setSelectedModelPage(slug)
-        window.history.pushState({ modalOpen: true }, '');
+        // Put the case study's own URL (e.g. /work/smp) in the address bar so it can be copied and shared.
+        // Visiting that URL directly renders the standalone page from App.jsx.
+        window.history.pushState({ modalOpen: true }, '', slug);
     };
 
     const handleCloseModal = () => {

@@ -10,6 +10,7 @@ import TSM from './pages/work/TSM';
 import SCG from './pages/work/SCG';
 import SMP from './pages/work/SMP';
 import ReadingProgress from './components/ReadingProgress';
+import StandaloneLayout from './components/StandaloneLayout';
 
 const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -32,12 +33,12 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/works" element={<Works />} />
-                <Route path="/work/sc" element={<SC />} />
-                <Route path="/work/et" element={<ET />} />
-                <Route path="/work/tsm" element={<TSM />} />
-                <Route path="/work/scg" element={<SCG />} />
-                <Route path="/work/smp" element={<SMP />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/work/sc" element={<StandaloneLayout><SC /></StandaloneLayout>} />
+                <Route path="/work/et" element={<StandaloneLayout><ET /></StandaloneLayout>} />
+                <Route path="/work/tsm" element={<StandaloneLayout><TSM /></StandaloneLayout>} />
+                <Route path="/work/scg" element={<StandaloneLayout><SCG /></StandaloneLayout>} />
+                <Route path="/work/smp" element={<StandaloneLayout><SMP /></StandaloneLayout>} />
+                <Route path="/about" element={<StandaloneLayout><About /></StandaloneLayout>} />
             </Routes>
         </BrowserRouter>
     );
