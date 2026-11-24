@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-// Wraps pages opened directly by URL (e.g. a shared /work/smp link),
+// Wraps pages opened directly by URL (e.g. a shared /work/popup-audit link),
 // so visitors can still find their way to the rest of the portfolio.
 const StandaloneLayout = ({ children }) => {
     const navigate = useNavigate();

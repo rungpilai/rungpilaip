@@ -17,7 +17,7 @@ const Home = () => {
 
     const handleOpenModal = (slug) => {
         setSelectedModelPage(slug)
-        // Put the case study's own URL (e.g. /work/smp) in the address bar so it can be copied and shared.
+        // Put the case study's own URL (e.g. /work/popup-audit) in the address bar so it can be copied and shared.
         // Visiting that URL directly renders the standalone page from App.jsx.
         window.history.pushState({ modalOpen: true }, '', slug);
     };
@@ -37,15 +37,15 @@ const Home = () => {
         switch (slug) {
             case '/about':
                 return <About />;
-            case '/work/et':
+            case '/work/ai-eye-tracking':
                 return <ET />;
-            case '/work/sc':
+            case '/work/sourcecode-website':
                 return <SC />;
-            case '/work/scg':
+            case '/work/scg-home':
                 return <SCG />;
-            case '/work/tsm':
+            case '/work/thangsaimai-website':
                 return <TSM />;
-            case '/work/smp':
+            case '/work/popup-audit':
                 return <SMP />;
             default:
                 return null;
